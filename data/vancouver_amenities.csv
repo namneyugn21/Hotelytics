@@ -6,7 +6,7 @@ lat,lon,timestamp,amenity,name,tags
 49.3708976,-123.2804478,2015-05-03T00:42:25.000-07:00,place_of_worship,St. Monica's Anglican Church,"{'addr:housenumber': '6404', 'addr:street': 'Wellington Avenue', 'denomination': 'anglican', 'religion': 'christian'}"
 49.219983,-122.988481,2010-02-26T02:20:23.000-08:00,post_box,,{'operator': 'Canada Post'}
 49.2802556,-122.9288938,2009-03-26T04:52:17.000-07:00,telephone,,{}
-49.264041399999996,-123.1534072,2019-08-29T18:50:05.000-07:00,fuel,Shell,"{'brand:wikidata': 'Q154950', 'addr:housenumber': '2103', 'website': 'https://www.shell.ca/', 'brand:wikipedia': 'en:Royal Dutch Shell', 'fuel:octane_91': 'yes', 'fuel:octane_89': 'yes', 'addr:street': 'West Broadway', 'fuel:diesel': 'yes', 'brand': 'Shell', 'fuel:octane_87': 'yes', 'operator': 'Shell'}"
+49.2640414,-123.1534072,2019-08-29T18:50:05.000-07:00,fuel,Shell,"{'brand:wikidata': 'Q154950', 'addr:housenumber': '2103', 'website': 'https://www.shell.ca/', 'brand:wikipedia': 'en:Royal Dutch Shell', 'fuel:octane_91': 'yes', 'fuel:octane_89': 'yes', 'addr:street': 'West Broadway', 'fuel:diesel': 'yes', 'brand': 'Shell', 'fuel:octane_87': 'yes', 'operator': 'Shell'}"
 49.3707611,-123.2742072,2015-10-24T19:42:51.000-07:00,toilets,,{'male': 'yes'}
 49.3705855,-123.2743869,2015-10-24T19:42:51.000-07:00,vending_machine,,{}
 49.3705742,-123.2743627,2015-10-24T19:42:51.000-07:00,vending_machine,,{}
@@ -43,7 +43,7 @@ lat,lon,timestamp,amenity,name,tags
 49.1936682,-123.1802877,2018-05-05T12:06:12.000-07:00,atm,,"{'indoor': 'yes', 'level': '-1', 'operator': 'RBC Royal Bank'}"
 49.2248856,-122.8913862,2018-04-26T05:25:14.000-07:00,childcare,Kids & Company,{}
 49.1338641,-122.8899466,2019-11-24T07:35:44.000-08:00,dentist,Aura Orthodontics,"{'addr:housenumber': '7192', 'website': 'https://www.auraortho.com', 'phone': '+1-604-593-5225', 'healthcare:speciality': 'orthodontics', 'opening_hours': 'Mo 09:00-17:30, Tu-We 10:00-18:30, Th-Fr 10:00-19:30, Sa 08:00-16:30', 'description': 'At Aura Orthodontics our goal is simple: to create the smile that you’ve always dreamed of! Stop by our Surrey Orthodontic Clinic', 'addr:street': '120 St', 'addr:postcode': 'V3W 3M8', 'healthcare': 'dentist', 'addr:city': 'Surrey'}"
-49.2069352,-122.70086739999999,2018-04-26T22:27:11.000-07:00,bench,,{'backrest': 'yes'}
+49.2069352,-122.7008674,2018-04-26T22:27:11.000-07:00,bench,,{'backrest': 'yes'}
 49.3248324,-123.1349985,2020-05-26T01:08:22.000-07:00,parking_entrance,,{}
 49.341975,-123.063321,2008-04-28T02:25:55.000-07:00,school,Carisbrook Elementary,{'created_by': 'Potlatch 0.8b'}
 49.3413319,-123.063527,2008-04-28T02:27:08.000-07:00,parking,,{'created_by': 'Potlatch 0.8b'}
@@ -192,7 +192,7 @@ lat,lon,timestamp,amenity,name,tags
 49.0388778,-122.2401177,2016-08-24T07:24:46.000-07:00,recycling,,{'recycling_type': 'container'}
 49.0387814,-122.2400122,2016-08-24T07:24:35.000-07:00,waste_basket,,{}
 49.0389184,-122.240402,2016-08-24T07:24:45.000-07:00,bench,,{'backrest': 'yes'}
-49.186067800000004,-122.9435292,2020-01-09T02:48:51.000-08:00,library,Queensborough Library,"{'addr:housenumber': '920', 'website': 'https://www.nwpl.ca/', 'phone': '+1-604-636-4450', 'opening_hours': 'Mo-Fr 09:00-19:00; Sa 10:00-17:00; Su 12:00-17:00', 'addr:street': 'Ewen Avenue', 'operator': 'New Westminster Public Library'}"
+49.1860678,-122.9435292,2020-01-09T02:48:51.000-08:00,library,Queensborough Library,"{'addr:housenumber': '920', 'website': 'https://www.nwpl.ca/', 'phone': '+1-604-636-4450', 'opening_hours': 'Mo-Fr 09:00-19:00; Sa 10:00-17:00; Su 12:00-17:00', 'addr:street': 'Ewen Avenue', 'operator': 'New Westminster Public Library'}"
 49.2237917,-122.9418357,2019-09-02T22:08:26.000-07:00,dojo,Aikido Yoshinkai Burnaby,"{'note': 'Instruction in Yoshinkan Aikido by Shihan Robert Mustard (8th Dan)', 'addr:housenumber': '7671', 'website': 'http://aikidoburnaby.com/', 'phone': '+1-604-786-2334', 'opening_hours': 'Mo-Th 19:30-21:00 ""adults""; Sa 10:30-12:00 ""adults""; Tu,We 16:30-17:30 ""kids""', 'addr:street': 'Edmonds Street', 'addr:postcode': 'V3N 1B6', 'sport': 'aikido', 'addr:city': 'Burnaby'}"
 49.258052,-123.2497023,2010-01-10T00:54:37.000-08:00,bicycle_parking,,{'capacity': '8'}
 49.2666892,-123.2574237,2010-01-10T00:54:38.000-08:00,bicycle_parking,,{'capacity': '28'}
@@ -461,7 +461,7 @@ lat,lon,timestamp,amenity,name,tags
 49.282477,-123.1342681,2016-08-15T01:05:39.000-07:00,bench,,{}
 49.2814778,-123.1336029,2016-08-15T01:05:41.000-07:00,cafe,Exile,"{'addr:housenumber': '1220', 'addr:street': 'Bute Street'}"
 49.2804984,-123.1333683,2016-08-15T01:05:43.000-07:00,bench,,{}
-49.282076,-123.1336913,2019-09-17T20:24:48.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '2'}"
+49.282075999999996,-123.1336913,2019-09-17T20:24:48.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '2'}"
 49.2825884,-123.1344824,2016-08-15T03:05:50.000-07:00,bicycle_parking,,{}
 49.2165767,-123.129149,2016-08-15T06:32:53.000-07:00,drinking_water,,{}
 49.2166136,-123.1274076,2016-08-15T06:32:53.000-07:00,drinking_water,,{}
@@ -657,8 +657,8 @@ lat,lon,timestamp,amenity,name,tags
 49.2286102,-122.7760622,2016-08-09T02:01:09.000-07:00,toilets,,"{'toilets:disposal': 'flush', 'access': 'public'}"
 49.2794015,-122.8497883,2019-08-23T23:57:09.000-07:00,bicycle_repair_station,,"{'website': 'http://www.waymarking.com/waymarks/WMYNH2_Rocky_Point_Park_Bicycle_Repair_Stand_Port_Moody_BC_Canada', 'service:bicycle:pump': 'yes', 'fee': 'no', 'opening_hours': '24/7', 'brand': 'Dero', 'operator': 'City of Port Moody'}"
 49.2863279,-123.1256179,2019-08-28T07:25:01.000-07:00,restaurant,Kirin Mandarin Restaurant,"{'addr:housenumber': '1172', 'addr:street': 'Alberni Street', 'phone': '+1-604-682-8833'}"
-49.285993500000004,-123.1250868,2019-09-13T13:56:59.000-07:00,restaurant,Pink Elephant Thai,"{'cuisine': 'thai', 'addr:housenumber': '1152', 'addr:street': 'Alberni Street', 'addr:city': 'Vancouver'}"
-49.285902899999996,-123.1249177,2019-08-28T07:25:01.000-07:00,cafe,Tim Hortons,"{'brand:wikidata': 'Q175106', 'addr:housenumber': '1150', 'brand:wikipedia': 'en:Tim Hortons', 'cuisine': 'coffee_shop', 'addr:street': 'Alberni Street', 'takeaway': 'yes', 'brand': 'Tim Hortons'}"
+49.2859935,-123.1250868,2019-09-13T13:56:59.000-07:00,restaurant,Pink Elephant Thai,"{'cuisine': 'thai', 'addr:housenumber': '1152', 'addr:street': 'Alberni Street', 'addr:city': 'Vancouver'}"
+49.2859029,-123.1249177,2019-08-28T07:25:01.000-07:00,cafe,Tim Hortons,"{'brand:wikidata': 'Q175106', 'addr:housenumber': '1150', 'brand:wikipedia': 'en:Tim Hortons', 'cuisine': 'coffee_shop', 'addr:street': 'Alberni Street', 'takeaway': 'yes', 'brand': 'Tim Hortons'}"
 49.2860548,-123.1251718,2019-08-28T07:25:01.000-07:00,fast_food,A&W,"{'addr:housenumber': '1158', 'addr:street': 'Alberni Street'}"
 49.2860886,-123.1252316,2019-08-28T07:25:01.000-07:00,fast_food,Subway,"{'brand:wikidata': 'Q244457', 'addr:housenumber': '1162', 'brand:wikipedia': 'en:Subway (restaurant)', 'cuisine': 'sandwich', 'addr:street': 'Alberni Street', 'takeaway': 'yes', 'brand': 'Subway'}"
 49.28525,-123.1254062,2016-08-09T19:10:21.000-07:00,restaurant,Fantacity Karaoke,"{'cuisine': 'asian', 'addr:housenumber': '1133', 'addr:street': 'Robson Street'}"
@@ -1028,7 +1028,7 @@ lat,lon,timestamp,amenity,name,tags
 49.0546092,-123.1110632,2020-01-29T01:46:43.000-08:00,fuel,Chevron Cardlock,"{'addr:province': 'British Columbia', 'addr:housenumber': '2859', 'phone': '+1-604-576-2961', 'addr:street': '41B Street', 'addr:postcode': 'V4K 3N2', 'addr:city': 'Delta'}"
 49.1404419,-122.6035494,2016-09-22T03:26:14.000-07:00,bicycle_parking,,{'capacity': '5'}
 49.140592,-122.6018117,2016-09-22T03:34:08.000-07:00,toilets,,{}
-49.1408296,-122.600775,2016-09-22T03:34:08.000-07:00,toilets,,{}
+49.140829599999996,-122.600775,2016-09-22T03:34:08.000-07:00,toilets,,{}
 49.1409171,-122.6009339,2016-09-22T03:34:08.000-07:00,restaurant,The Cafe,{}
 49.1399686,-122.6001998,2016-09-22T03:34:08.000-07:00,fast_food,The Lower Cafe,{}
 49.0751472,-122.1631462,2016-09-23T02:29:42.000-07:00,waste_basket,,{}
@@ -1609,7 +1609,7 @@ lat,lon,timestamp,amenity,name,tags
 49.1656373,-122.8906934,2016-08-03T06:33:00.000-07:00,parking,,{}
 49.0347571,-123.0558168,2016-08-04T02:20:58.000-07:00,waste_basket,,{}
 49.1853312,-122.9483606,2018-09-27T09:02:46.000-07:00,pharmacy,Queensborough Community Pharmacy,"{'addr:housenumber': '1028', 'addr:street': 'Ewen Avenue'}"
-49.1854679,-122.94798779999999,2018-02-10T15:24:53.000-08:00,dentist,New Smile Dental Group,"{'addr:housenumber': '1020', 'addr:street': 'Ewen Avenue', 'phone': '+1-778-397-2552'}"
+49.1854679,-122.9479878,2018-02-10T15:24:53.000-08:00,dentist,New Smile Dental Group,"{'addr:housenumber': '1020', 'addr:street': 'Ewen Avenue', 'phone': '+1-778-397-2552'}"
 49.1853908,-122.9481916,2018-02-10T15:24:53.000-08:00,clinic,Vivacare Medical Clinic,"{'addr:housenumber': '1024', 'addr:street': 'Ewen Avenue', 'phone': '+1-778-397-1655'}"
 49.1848929,-122.9493423,2019-09-13T13:56:59.000-07:00,restaurant,Lucky Sushi,"{'cuisine': 'sushi', 'addr:housenumber': '1102', 'addr:street': 'Ewen Avenue', 'addr:unit': '103', 'addr:city': 'New Westminster'}"
 49.2862655,-123.1276613,2019-12-13T08:08:26.000-08:00,restaurant,Momo Sushi,"{'addr:housenumber': '1230', 'website': 'https://momo-sushi.com/', 'phone': '+1-604-563-2022', 'opening_hours': 'Su-Th 11:30-22:30; Fr,Sa 11:30-23:00', 'cuisine': 'japanese; sushi', 'addr:street': 'Robson Street'}"
@@ -1664,7 +1664,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2844578,-123.0656991,2019-04-28T06:48:33.000-07:00,restaurant,Scan-Delicious,"{'cuisine': 'breakfast', 'name:en': 'Scan-Delicious', 'internet_access': 'wlan'}"
 49.0459773,-122.3052022,2016-08-27T15:18:52.000-07:00,bench,,{'backrest': 'yes'}
 49.0427317,-122.3103583,2016-09-02T00:37:26.000-07:00,bench,,{'backrest': 'yes'}
-49.2670633,-123.10064560000001,2018-08-04T04:09:45.000-07:00,post_box,,{}
+49.2670633,-123.1006456,2018-08-04T04:09:45.000-07:00,post_box,,{}
 49.043081,-122.3122923,2016-08-28T13:40:03.000-07:00,bench,,{'backrest': 'yes'}
 49.0430896,-122.3122435,2016-08-28T13:40:03.000-07:00,bench,,{'backrest': 'yes'}
 49.0431165,-122.313957,2016-09-01T20:31:05.000-07:00,bench,,"{'inscription': 'ARTHUR & KATHLEEN ¶ BALLANTYNE ¶ 1910 - 2000. 1924 - 1999 ¶ IN LOVING MEMORY OF MY PARENTS', 'historic': 'memorial', 'backrest': 'yes', 'memorial': 'plaque'}"
@@ -1718,7 +1718,7 @@ lat,lon,timestamp,amenity,name,tags
 49.218633,-122.9551616,2019-07-02T01:21:58.000-07:00,fast_food,Burger King,"{'brand:wikidata': 'Q177054', 'brand:wikipedia': 'en:Burger King', 'cuisine': 'burger', 'name:en': 'Burger King', 'takeaway': 'yes', 'brand': 'Burger King'}"
 49.2023407,-122.9364175,2017-03-11T21:42:05.000-08:00,bench,,{}
 49.2186088,-122.9564849,2019-07-02T01:21:58.000-07:00,cafe,Starbucks,"{'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'brand:wikipedia': 'en:Starbucks', 'cuisine': 'coffee_shop', 'name:en': 'Starbucks', 'takeaway': 'yes', 'brand': 'Starbucks'}"
-49.2255444,-122.9968024,2018-04-21T18:51:10.000-07:00,fast_food,Chop n Toss,"{'level': '1', 'name:en': 'Chop n Toss'}"
+49.2255444,-122.99680239999999,2018-04-21T18:51:10.000-07:00,fast_food,Chop n Toss,"{'level': '1', 'name:en': 'Chop n Toss'}"
 49.2256699,-122.9964104,2017-07-15T03:44:29.000-07:00,waste_disposal,,{}
 49.2258643,-122.9969705,2019-05-27T03:58:18.000-07:00,fast_food,Burger King,"{'brand:wikidata': 'Q177054', 'level': '1', 'brand:wikipedia': 'en:Burger King', 'cuisine': 'burger', 'takeaway': 'yes', 'brand': 'Burger King'}"
 49.2258877,-122.9975787,2019-07-20T18:37:01.000-07:00,fast_food,Chef Tony Dim Sum,"{'cuisine': 'dim sum', 'name:en': 'Chef Tony Dim Sum', 'level': '1'}"
@@ -1820,8 +1820,8 @@ lat,lon,timestamp,amenity,name,tags
 49.2275513,-122.8363525,2017-03-13T04:11:16.000-07:00,bar,Fuel Cafe',"{'name:en': ""Fuel Cafe'""}"
 49.2274744,-122.8363458,2017-03-13T04:11:17.000-07:00,toilets,,{}
 49.2504908,-122.8944559,2019-09-27T12:21:02.000-07:00,cafe,Starbucks,"{'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'brand:wikipedia': 'en:Starbucks', 'cuisine': 'coffee_shop', 'name:en': 'Starbucks', 'takeaway': 'yes', 'brand': 'Starbucks'}"
-49.250841199999996,-122.8953171,2017-03-13T04:11:53.000-07:00,toilets,,{}
-49.2505499,-122.89539189999999,2017-03-13T04:12:50.000-07:00,bench,,{}
+49.2508412,-122.8953171,2017-03-13T04:11:53.000-07:00,toilets,,{}
+49.2505499,-122.8953919,2017-03-13T04:12:50.000-07:00,bench,,{}
 49.250811,-122.8953461,2017-03-13T04:14:01.000-07:00,bench,,{}
 49.2508852,-122.8953465,2017-03-13T04:14:07.000-07:00,bench,,{}
 49.251076,-122.8950025,2017-03-13T04:14:15.000-07:00,dentist,Lougheed,{'name:en': 'Lougheed'}
@@ -1831,7 +1831,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2513429,-122.8965045,2017-03-13T04:14:44.000-07:00,bench,,{}
 49.251496,-122.8966693,2019-05-21T01:15:10.000-07:00,restaurant,Ihop,"{'opening_hours': 'Mo-Sa 06:30-21:00; Su 06:30-20:00', 'name:en': 'Ihop'}"
 49.2514371,-122.8966791,2017-03-13T04:14:50.000-07:00,bench,,{}
-49.250992600000004,-122.8961527,2017-03-13T04:15:08.000-07:00,toilets,,{}
+49.2509926,-122.8961527,2017-03-13T04:15:08.000-07:00,toilets,,{}
 49.250906,-122.896278,2017-03-13T04:15:15.000-07:00,bench,,{}
 49.2507394,-122.8963302,2017-03-13T04:15:25.000-07:00,bench,,{}
 49.250742,-122.896217,2017-03-13T04:15:26.000-07:00,bench,,{}
@@ -1845,12 +1845,12 @@ lat,lon,timestamp,amenity,name,tags
 49.2808098,-123.1070156,2019-09-23T15:35:32.000-07:00,cafe,Caveman Cafe,"{'wheelchair': 'yes', 'website': 'http://www.cavemancafe.ca', 'diet:paleo': 'yes', 'diet:gluten_free': 'yes', 'level': '0', 'diet:dairy_free': 'yes', 'diet:vegan': 'yes', 'takeaway': 'yes', 'addr:unit': '1005', 'addr:city': 'Vancouver', 'diet:vegetarian': 'yes', 'addr:housenumber': '88', 'diet:halal': 'only', 'phone': '+1-604-331-0668', 'opening_hours': 'Mo-Fr 11:00-22:00; Sa 12:00-22:00; Su 12:00-18:00', 'outdoor_seating': 'no', 'addr:street': 'Pender Street', 'payment:debit_cards': 'yes', 'email': 'info@cavemancafe.ca'}"
 49.279702,-123.1072491,2019-10-31T00:54:46.000-07:00,bench,,{'backrest': 'yes'}
 49.2797351,-123.1071991,2019-10-31T00:54:39.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '5'}"
-49.280211800000004,-123.1071123,2017-03-13T04:17:01.000-07:00,bureau_de_change,Mtt Centre,{'name:en': 'Mtt Centre'}
+49.2802118,-123.1071123,2017-03-13T04:17:01.000-07:00,bureau_de_change,Mtt Centre,{'name:en': 'Mtt Centre'}
 49.280191,-123.1067396,2018-12-11T05:19:36.000-08:00,bench,,{}
 49.2802113,-123.1067608,2018-12-11T05:19:36.000-08:00,bench,,{}
 49.2802329,-123.106775,2018-12-11T05:19:36.000-08:00,bench,,{}
 49.2802749,-123.1067812,2018-12-11T05:19:37.000-08:00,bench,,{}
-49.280128500000004,-123.106917,2017-03-13T04:17:24.000-07:00,waste_disposal,,{}
+49.2801285,-123.106917,2017-03-13T04:17:24.000-07:00,waste_disposal,,{}
 49.2514409,-122.8967403,2017-03-13T04:14:51.000-07:00,waste_disposal,,{}
 49.2509488,-122.8962802,2017-03-13T04:15:13.000-07:00,bench,,{}
 49.2507602,-122.8962704,2017-03-13T04:15:28.000-07:00,waste_disposal,,{}
@@ -1898,7 +1898,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2417476,-122.7528776,2016-09-15T22:18:06.000-07:00,bench,,{}
 49.0432593,-122.3109893,2016-09-03T02:49:28.000-07:00,bench,,{'backrest': 'yes'}
 49.2599392,-123.1385987,2016-09-03T04:31:57.000-07:00,post_box,,{}
-49.264041399999996,-123.1527991,2019-05-09T03:11:56.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '3'}"
+49.2640414,-123.1527991,2019-05-09T03:11:56.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '3'}"
 49.2635189,-123.139289,2016-09-03T04:31:59.000-07:00,post_box,,{}
 49.257242,-123.1389043,2016-09-03T04:32:01.000-07:00,post_box,,{}
 49.0020039,-123.0896316,2016-09-03T04:32:07.000-07:00,bench,,{}
@@ -2054,7 +2054,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2150615,-122.9385781,2017-03-17T17:08:15.000-07:00,community_centre,The Stanjean Center,{'name:en': 'The Stanjean Center'}
 49.2280225,-122.9973552,2019-07-20T19:00:19.000-07:00,bank,CIBC,"{'brand:wikidata': 'Q666694', 'brand': 'CIBC', 'brand:wikipedia': 'en:Canadian Imperial Bank of Commerce'}"
 49.2271779,-122.9948693,2019-09-13T13:57:00.000-07:00,clinic,Metrohealth Clinic,"{'addr:housenumber': '4879', 'addr:street': 'Kingsway', 'healthcare': 'clinic', 'addr:city': 'Burnaby'}"
-49.2128537,-122.9368713,2019-07-10T04:41:29.000-07:00,fast_food,Subway,"{'brand:wikidata': 'Q244457', 'brand:wikipedia': 'en:Subway (restaurant)', 'cuisine': 'sandwich', 'name:en': 'Subway', 'takeaway': 'yes', 'brand': 'Subway'}"
+49.2128537,-122.93687129999999,2019-07-10T04:41:29.000-07:00,fast_food,Subway,"{'brand:wikidata': 'Q244457', 'brand:wikipedia': 'en:Subway (restaurant)', 'cuisine': 'sandwich', 'name:en': 'Subway', 'takeaway': 'yes', 'brand': 'Subway'}"
 49.3072703,-123.0016958,2017-03-17T19:06:28.000-07:00,bicycle_parking,,"{'access': 'permissive', 'bicycle_parking': 'rack', 'capacity': '4'}"
 49.3062344,-123.0118059,2017-03-17T19:04:37.000-07:00,bicycle_parking,,"{'access': 'permissive', 'bicycle_parking': 'rack', 'capacity': '4'}"
 49.306272,-123.0100242,2017-03-17T19:04:37.000-07:00,bicycle_parking,,"{'access': 'permissive', 'bicycle_parking': 'rack', 'capacity': '4'}"
@@ -2544,7 +2544,7 @@ lat,lon,timestamp,amenity,name,tags
 49.1196856,-122.6912218,2019-06-03T03:16:01.000-07:00,cafe,Tim Hortons,"{'brand:wikidata': 'Q175106', 'addr:housenumber': '19171', 'internet_access': 'wlan', 'phone': '+1-604-574-1812', 'brand:wikipedia': 'en:Tim Hortons', 'opening_hours': '24/7', 'cuisine': 'coffee_shop', 'addr:street': 'Fraser Highway', 'takeaway': 'yes', 'brand': 'Tim Hortons'}"
 49.1247605,-122.7048284,2019-09-04T03:34:36.000-07:00,cafe,Tim Hortons,"{'brand:wikidata': 'Q175106', 'addr:housenumber': '18682', 'internet_access': 'wlan', 'phone': '+1-778-571-0394', 'brand:wikipedia': 'en:Tim Hortons', 'opening_hours': '24/7', 'cuisine': 'coffee_shop', 'addr:street': 'Fraser Highway', 'takeaway': 'yes', 'brand': 'Tim Hortons'}"
 49.1636149,-122.8780219,2019-06-25T02:54:10.000-07:00,cafe,Tim Hortons,"{'brand:wikidata': 'Q175106', 'addr:housenumber': '12467', 'internet_access': 'wlan', 'brand:wikipedia': 'en:Tim Hortons', 'smoking': 'no', 'opening_hours': '24/7', 'cuisine': 'coffee_shop', 'addr:street': '88 Avenue', 'takeaway': 'yes', 'brand': 'Tim Hortons'}"
-49.150248500000004,-122.8899397,2019-06-24T21:43:20.000-07:00,cafe,Tim Hortons,"{'brand:wikidata': 'Q175106', 'addr:housenumber': '8080', 'internet_access': 'wlan', 'brand:wikipedia': 'en:Tim Hortons', 'opening_hours': '24/7', 'cuisine': 'coffee_shop', 'addr:street': 'Scott Road', 'takeaway': 'yes', 'brand': 'Tim Hortons'}"
+49.1502485,-122.8899397,2019-06-24T21:43:20.000-07:00,cafe,Tim Hortons,"{'brand:wikidata': 'Q175106', 'addr:housenumber': '8080', 'internet_access': 'wlan', 'brand:wikipedia': 'en:Tim Hortons', 'opening_hours': '24/7', 'cuisine': 'coffee_shop', 'addr:street': 'Scott Road', 'takeaway': 'yes', 'brand': 'Tim Hortons'}"
 49.2718964,-123.1003346,2017-02-17T04:57:12.000-08:00,bicycle_parking,,{}
 49.2713008,-123.1006565,2017-07-24T00:03:21.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'yes', 'capacity': '4'}"
 49.2714968,-123.1006411,2017-08-22T06:13:26.000-07:00,pub,Dubh Linn Gate,"{'name:en': 'Dubh Linn Gate', 'addr:street': 'Main Street'}"
@@ -2895,7 +2895,7 @@ lat,lon,timestamp,amenity,name,tags
 49.1781724,-123.1211081,2020-04-17T21:26:32.000-07:00,fast_food,Burger King,"{'brand:wikidata': 'Q177054', 'addr:housenumber': '1805-4720', 'brand:wikipedia': 'en:Burger King', 'cuisine': 'burger', 'addr:street': 'McClelland Road', 'takeaway': 'yes', 'brand': 'Burger King', 'addr:city': 'Richmond'}"
 49.1780512,-123.121115,2020-04-17T21:26:32.000-07:00,cafe,T-Go Tea,"{'addr:housenumber': '1810-4720', 'addr:street': 'McClelland Road', 'addr:city': 'Richmond'}"
 49.1776145,-123.1211398,2020-04-17T21:26:32.000-07:00,cafe,Starbucks,"{'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'addr:housenumber': '1845-4720', 'brand:wikipedia': 'en:Starbucks', 'cuisine': 'coffee_shop', 'addr:street': 'McClelland Road', 'takeaway': 'yes', 'brand': 'Starbucks', 'addr:city': 'Richmond'}"
-49.177747600000004,-123.1211322,2020-04-17T21:26:32.000-07:00,restaurant,Bánh Mì Très Bon,"{'addr:housenumber': '1840-4720', 'addr:street': 'McClelland Road', 'addr:city': 'Richmond'}"
+49.1777476,-123.1211322,2020-04-17T21:26:32.000-07:00,restaurant,Bánh Mì Très Bon,"{'addr:housenumber': '1840-4720', 'addr:street': 'McClelland Road', 'addr:city': 'Richmond'}"
 49.178038,-123.1217667,2020-04-17T21:26:32.000-07:00,restaurant,Pepper Lunch,"{'addr:housenumber': '1625-4791', 'addr:street': 'McClelland Road', 'addr:city': 'Richmond'}"
 49.1777979,-123.1217606,2020-04-17T21:26:32.000-07:00,restaurant,Thai Son Restaurant,"{'addr:housenumber': '1615-4791', 'addr:street': 'McClelland Road', 'addr:city': 'Richmond'}"
 49.1775106,-123.1208199,2020-04-17T21:26:32.000-07:00,bank,CIBC,"{'brand:wikidata': 'Q666694', 'addr:housenumber': '9231', 'brand:wikipedia': 'en:Canadian Imperial Bank of Commerce', 'addr:street': 'Alderbridge Way', 'brand': 'CIBC', 'addr:city': 'Richmond'}"
@@ -3152,7 +3152,7 @@ lat,lon,timestamp,amenity,name,tags
 49.0497832,-122.3385353,2016-12-19T16:57:36.000-08:00,waste_basket,,{}
 49.194683,-123.1818095,2016-12-19T18:24:18.000-08:00,toilets,,{}
 49.1947944,-123.1820219,2016-12-19T18:24:22.000-08:00,bar,Maple Leaf Lounge,"{'opening_hours': 'Mo-Su 05:00-23:30', 'name:fr': ""Salon feuille d'érable"", 'name:en': 'Maple Leaf Lounge'}"
-49.1944125,-123.18181680000001,2019-06-22T22:48:02.000-07:00,bar,Plaza Premium Lounge,"{'opening_hours:signed': 'no', 'name:en': 'Plaza Premium Lounge'}"
+49.1944125,-123.1818168,2019-06-22T22:48:02.000-07:00,bar,Plaza Premium Lounge,"{'opening_hours:signed': 'no', 'name:en': 'Plaza Premium Lounge'}"
 49.1956532,-123.1835037,2016-12-19T19:12:23.000-08:00,toilets,,{}
 49.1952241,-123.1825178,2016-12-19T19:14:58.000-08:00,drinking_water,,{}
 49.1953403,-123.1828912,2019-09-14T05:00:22.000-07:00,cafe,Starbucks,"{'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'brand:wikipedia': 'en:Starbucks', 'cuisine': 'coffee_shop', 'name:en': 'Starbucks', 'takeaway': 'yes', 'brand': 'Starbucks'}"
@@ -3273,7 +3273,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2628124,-123.1375056,2019-05-04T04:55:51.000-07:00,library,Firehall Branch,"{'opening_hours': 'Tu-We 13:00-20:00; Th-Sa 11:00-18:00', 'addr:housenumber': '1455', 'addr:street': 'West 10th Avenue', 'operator': 'Vancouver Public Library'}"
 49.2628203,-123.1377544,2018-10-26T20:29:55.000-07:00,fire_station,Firehall No. 4,"{'addr:housenumber': '1475', 'phone': '+1-604-665-6004', 'addr:street': 'West 10th Avenue', 'addr:postcode': 'V6H 1J8', 'operator': 'Vancouver Fire and Rescue Services', 'addr:city': 'Vancouver'}"
 49.263051,-123.138435,2019-09-13T13:56:49.000-07:00,bureau_de_change,Vancouver Bullion & Currency Exchange,"{'addr:housenumber': '2576', 'website': 'https://www.vbce.ca/', 'phone': '+1-604-739-3997', 'opening_hours': 'Mo-Fr 09:00-17:00; Sa 10:00-16:00; Su off', 'short_name': 'VBCE', 'addr:street': 'Granville Street', 'addr:city': 'Vancouver'}"
-49.2172533,-122.93134739999999,2019-07-10T04:41:29.000-07:00,fuel,Petro-Canada,"{'brand:wikidata': 'Q1208279', 'website': 'http://retail.petro-canada.ca/', 'brand:wikipedia': 'en:Petro-Canada', 'fuel:octane_91': 'yes', 'fuel:octane_89': 'yes', 'fuel:diesel': 'yes', 'brand': 'Petro-Canada', 'fuel:octane_87': 'yes', 'operator': 'Petro-Canada'}"
+49.2172533,-122.9313474,2019-07-10T04:41:29.000-07:00,fuel,Petro-Canada,"{'brand:wikidata': 'Q1208279', 'website': 'http://retail.petro-canada.ca/', 'brand:wikipedia': 'en:Petro-Canada', 'fuel:octane_91': 'yes', 'fuel:octane_89': 'yes', 'fuel:diesel': 'yes', 'brand': 'Petro-Canada', 'fuel:octane_87': 'yes', 'operator': 'Petro-Canada'}"
 49.2121909,-122.9187856,2019-07-02T01:10:30.000-07:00,bank,Vancity,"{'brand:wikidata': 'Q7914085', 'official_name': 'Vancouver City Savings Credit Union', 'brand:wikipedia': 'en:Vancity', 'atm': 'yes', 'brand': 'Vancity', 'operator': 'Vancity'}"
 49.2121346,-122.91884,2010-10-23T17:09:11.000-07:00,atm,,{'operator': 'Vancity'}
 49.2113534,-122.9230707,2010-12-19T07:21:48.000-08:00,compressed_air,,{}
@@ -4153,7 +4153,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2183839,-122.6534671,2019-09-13T13:57:02.000-07:00,fast_food,Dairy Queen,"{'addr:housenumber': '20492', 'addr:street': 'Lougheed Highway', 'addr:city': 'Maple Ridge'}"
 49.2185535,-122.6482873,2019-09-13T13:57:02.000-07:00,bank,BMO,"{'addr:housenumber': '20691', 'addr:street': 'Lougheed Highway', 'addr:city': 'Maple Ridge'}"
 49.219047,-122.6482392,2019-09-13T13:57:02.000-07:00,restaurant,Socrates Grill,"{'addr:housenumber': '19-20691', 'addr:street': 'Lougheed Highway', 'addr:city': 'Maple Ridge'}"
-49.219752,-122.64839979999999,2019-09-13T13:57:02.000-07:00,restaurant,Sushi Umibe,"{'addr:housenumber': '1-11955', 'addr:street': '207 Street', 'addr:city': 'Maple Ridge'}"
+49.219752,-122.6483998,2019-09-13T13:57:02.000-07:00,restaurant,Sushi Umibe,"{'addr:housenumber': '1-11955', 'addr:street': '207 Street', 'addr:city': 'Maple Ridge'}"
 49.2202431,-122.6484044,2019-09-13T13:57:02.000-07:00,fuel,Husky,"{'addr:housenumber': '20690', 'addr:street': 'Dewdney Trunk Road', 'addr:city': 'Maple Ridge'}"
 49.219935,-122.6498708,2019-09-13T13:57:02.000-07:00,bar,Shooter's Tap House,"{'addr:housenumber': '20644', 'addr:street': 'Dewdney Trunk Road', 'addr:city': 'Maple Ridge'}"
 49.218382,-122.6461155,2019-09-13T13:57:02.000-07:00,restaurant,The Mexican Gourmet,"{'addr:housenumber': '20757', 'addr:street': 'Lougheed Highway', 'addr:city': 'Maple Ridge'}"
@@ -4284,7 +4284,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2873005,-123.1283864,2017-01-28T06:01:18.000-08:00,restaurant,Koyuki Sapporo Ramen,"{'opening_hours': 'Su-Th 11:30-22:00; Fr-Sa 11:30-23:00', 'addr:housenumber': '795', 'name:en': 'Koyuki Sapporo Ramen', 'addr:street': 'Jervis Street'}"
 49.2093679,-123.1165285,2019-09-13T13:57:00.000-07:00,cafe,Starbucks,"{'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'addr:housenumber': '472', 'internet_access': 'wlan', 'brand:wikipedia': 'en:Starbucks', 'cuisine': 'coffee_shop', 'addr:street': 'SW Marine Drive', 'addr:postcode': 'V5X 0C4', 'takeaway': 'yes', 'brand': 'Starbucks', 'addr:city': 'Vancouver'}"
 49.2094689,-123.1164992,2019-05-29T17:42:02.000-07:00,fast_food,Subway,"{'brand:wikidata': 'Q244457', 'cuisine': 'sandwich', 'takeaway': 'yes', 'brand': 'Subway', 'brand:wikipedia': 'en:Subway (restaurant)'}"
-49.2100434,-123.1165904,2017-01-28T09:16:32.000-08:00,bank,CIBC Branch & ATM,"{'atm': 'yes', 'drive_through': 'no', 'operator': 'CIBC'}"
+49.210043399999996,-123.1165904,2017-01-28T09:16:32.000-08:00,bank,CIBC Branch & ATM,"{'atm': 'yes', 'drive_through': 'no', 'operator': 'CIBC'}"
 49.2101551,-123.1161572,2019-09-13T13:57:00.000-07:00,restaurant,Pink Elephant Thai Restaurant,"{'addr:housenumber': '434', 'cuisine': 'thai', 'outdoor_seating': 'no', 'addr:street': 'SW Marine Drive', 'addr:postcode': 'V5X 0C4', 'takeaway': 'yes', 'addr:city': 'Vancouver'}"
 49.20957,-123.1165236,2019-09-13T13:57:00.000-07:00,bank,BMO,"{'brand:wikidata': 'Q806693', 'official_name': 'Bank of Montreal', 'addr:housenumber': '480', 'brand:wikipedia': 'en:Bank of Montreal', 'addr:street': 'SW Marine Drive', 'atm': 'yes', 'addr:postcode': 'V5X 0C4', 'brand': 'BMO', 'operator': 'BMO', 'addr:city': 'Vancouver'}"
 49.2102423,-123.1161539,2019-09-13T13:57:00.000-07:00,pharmacy,Shoppers Drug Mart,"{'brand:wikidata': 'Q1820137', 'addr:housenumber': '432', 'brand:wikipedia': 'en:Shoppers Drug Mart', 'dispensing': 'yes', 'addr:street': 'SW Marine Drive', 'addr:postcode': 'V5X 0C4', 'brand': 'Shoppers Drug Mart', 'healthcare': 'pharmacy', 'addr:city': 'Vancouver'}"
@@ -4475,7 +4475,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2321796,-123.0301088,2019-09-13T13:57:02.000-07:00,restaurant,Sing Kee Restaurant,"{'addr:housenumber': '3479', 'addr:street': 'Kingsway', 'addr:city': 'Vancouver'}"
 49.2320493,-123.0262792,2019-09-13T13:57:02.000-07:00,cafe,Sugar Loop by Westcoast Darts Cafe,"{'addr:housenumber': '3608', 'addr:street': 'Kingsway', 'addr:city': 'Vancouver'}"
 49.2320583,-123.0260791,2019-09-13T13:57:02.000-07:00,restaurant,Icy Bar,"{'addr:housenumber': '3618', 'addr:street': 'Kingsway', 'addr:city': 'Vancouver'}"
-49.301845900000004,-123.1331913,2017-07-07T19:10:17.000-07:00,drinking_water,,{}
+49.3018459,-123.1331913,2017-07-07T19:10:17.000-07:00,drinking_water,,{}
 49.2634876,-123.1152419,2019-08-21T21:33:31.000-07:00,bank,RBC,"{'brand:wikidata': 'Q735261', 'opening_hours': 'Mo-Th 08:00-19:00; Fr 08:00-18:00; Sa 09:00-16:00', 'official_name': 'Royal Bank of Canada', 'brand': 'RBC', 'brand:wikipedia': 'en:Royal Bank of Canada'}"
 49.2060719,-123.125509,2019-08-11T00:05:00.000-07:00,fast_food,McDonald's,"{'brand:wikidata': 'Q38076', 'cuisine': 'burger', 'takeaway': 'yes', 'brand': ""McDonald's"", 'brand:wikipedia': ""en:McDonald's""}"
 49.1589744,-122.7809639,2018-02-10T16:17:44.000-08:00,fast_food,D-Plus Pizza,"{'cuisine': 'pizza', 'addr:housenumber': '15933-103', 'name:en': 'D-Plus Pizza', 'phone': '+1-604-593-5555'}"
@@ -4529,7 +4529,7 @@ lat,lon,timestamp,amenity,name,tags
 49.0076777,-123.0903041,2019-08-19T22:39:04.000-07:00,drinking_water,,{}
 49.1245593,-122.9222368,2017-07-08T22:48:49.000-07:00,waste_basket,,{}
 49.2650152,-123.2446685,2017-07-08T23:16:35.000-07:00,post_box,,{}
-49.264973499999996,-123.244635,2017-07-08T23:22:01.000-07:00,bench,,{}
+49.2649735,-123.244635,2017-07-08T23:22:01.000-07:00,bench,,{}
 49.2650834,-123.2447276,2017-07-08T23:21:59.000-07:00,waste_basket,,{}
 49.2660043,-123.2494951,2018-12-28T08:10:15.000-08:00,post_box,,{'operator': 'Canada Post'}
 49.2513431,-123.2359782,2017-07-09T18:28:06.000-07:00,car_sharing,,{}
@@ -5077,7 +5077,7 @@ lat,lon,timestamp,amenity,name,tags
 49.1687435,-122.5798414,2010-06-10T19:35:27.000-07:00,restaurant,Iron Chief,{}
 49.16977,-122.5765302,2010-06-12T17:45:56.000-07:00,restaurant,Tokyo Garden,{}
 49.234497,-123.1392908,2010-06-11T03:32:59.000-07:00,bank,HSBC,{}
-49.23414,-123.1399405,2019-07-29T07:40:45.000-07:00,restaurant,Grand Honour,{'cuisine': 'chinese'}
+49.234140000000004,-123.1399405,2019-07-29T07:40:45.000-07:00,restaurant,Grand Honour,{'cuisine': 'chinese'}
 49.1240007,-123.1843051,2010-06-06T05:02:23.000-07:00,cafe,Timothy's Frozen Yogurt,{}
 49.1239577,-123.1846411,2019-09-13T13:56:49.000-07:00,restaurant,Sockeye City Grill,"{'addr:housenumber': '3800', 'website': 'http://www.sockeyecity.com/', 'addr:street': 'Bayview Street', 'addr:unit': '108', 'addr:city': 'Richmond'}"
 49.2850193,-123.1145937,2018-04-04T03:55:14.000-07:00,cafe,Quantum Coffee,"{'opening_hours': 'Mo-Fr 07:00-19:00; Sa-Su 08:00-19:00', 'addr:housenumber': '451', 'addr:street': 'Granville Street', 'internet_access': 'wlan'}"
@@ -5111,7 +5111,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2845712,-123.1395915,2015-09-06T02:24:54.000-07:00,drinking_water,,{}
 49.2853742,-123.1417532,2015-09-06T02:24:48.000-07:00,bench,,{}
 49.2925524,-123.1395793,2015-09-06T02:24:49.000-07:00,bench,,{}
-49.291775200000004,-123.1383676,2018-10-26T20:30:27.000-07:00,restaurant,Adesso,"{'addr:housenumber': '1906', 'website': 'http://www.adessobistro.net', 'addr:street': 'Haro Street', 'phone': '+1-604-568-9975'}"
+49.2917752,-123.1383676,2018-10-26T20:30:27.000-07:00,restaurant,Adesso,"{'addr:housenumber': '1906', 'website': 'http://www.adessobistro.net', 'addr:street': 'Haro Street', 'phone': '+1-604-568-9975'}"
 49.291688,-123.1379809,2015-09-06T02:24:52.000-07:00,post_box,,{}
 49.048462,-122.3389052,2019-09-25T14:40:14.000-07:00,fast_food,Burger King Drive-Through,"{'opening_hours': '08:00-22:30', 'cuisine': 'burger', 'website': 'https://burgerking.ca/locations?field_geofield_distance[origin][lat]=49.054587&field_geofield_distance[origin][lon]=-122.32802600000002', 'takeaway': 'only', 'drive_through': 'yes'}"
 49.2876304,-123.113151,2015-09-07T00:52:18.000-07:00,post_box,,{}
@@ -5442,7 +5442,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2634884,-123.099877,2017-05-03T02:23:48.000-07:00,bicycle_parking,,{}
 49.2638438,-123.1002046,2017-05-03T02:23:51.000-07:00,bicycle_parking,,{}
 49.264173,-123.1003936,2017-05-03T02:23:53.000-07:00,bicycle_parking,,{}
-49.2637532,-123.0999409,2018-07-02T19:59:15.000-07:00,bench,,"{'material': 'metal', 'backrest': 'yes'}"
+49.2637532,-123.09994089999999,2018-07-02T19:59:15.000-07:00,bench,,"{'material': 'metal', 'backrest': 'yes'}"
 49.2637619,-123.0998815,2017-05-03T02:24:01.000-07:00,drinking_water,,{}
 49.1798644,-122.7381744,2018-08-15T22:09:09.000-07:00,bench,,{'backrest': 'yes'}
 49.1772657,-122.7365268,2017-05-03T20:06:41.000-07:00,bench,,{'backrest': 'yes'}
@@ -5466,7 +5466,7 @@ lat,lon,timestamp,amenity,name,tags
 49.10485,-122.8028182,2020-04-17T15:41:10.000-07:00,restaurant,Chopped Leaf,"{'addr:province': 'BC', 'addr:housenumber': '15161', 'website': 'https://www.choppedleaf.ca/', 'phone': '+1-604-574-0024', 'addr:country': 'CA', 'addr:street': '56 Ave', 'addr:postcode': 'V3S 1G0', 'addr:unit': '100', 'addr:city': 'Surrey'}"
 49.2701377,-123.1167877,2017-04-21T03:40:41.000-07:00,waste_basket,,{}
 49.279059,-122.9083114,2017-04-21T03:57:42.000-07:00,bench,,{}
-49.2790924,-122.908296,2017-04-21T03:57:42.000-07:00,bench,,{}
+49.2790924,-122.90829599999999,2017-04-21T03:57:42.000-07:00,bench,,{}
 49.2803958,-122.977928,2018-12-25T06:06:58.000-08:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'capacity': '8'}"
 49.2805051,-122.9777976,2017-04-22T03:47:17.000-07:00,fast_food,Zeta Cafe,"{'opening_hours': 'Su-Th 13:00-22:00; Fr-Sa 13:00-00:00', 'addr:housenumber': '5933', 'name:en': 'Zeta Cafe', 'addr:street': 'Hastings Street'}"
 49.2812021,-122.9998854,2019-04-13T20:23:51.000-07:00,fast_food,A&W,"{'brand:wikidata': 'Q2818848', 'cuisine': 'burger', 'name:en': 'A & W', 'brand': 'A&W', 'brand:wikipedia': 'en:A&W (Canada)'}"
@@ -5501,7 +5501,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2897335,-123.1368745,2017-10-15T03:36:11.000-07:00,bicycle_parking,,{}
 49.287267,-123.1330576,2017-10-15T03:36:12.000-07:00,bench,,{}
 49.2870401,-123.1327442,2017-10-15T03:36:15.000-07:00,bicycle_parking,,{}
-49.286728600000004,-123.1321761,2017-10-15T03:36:16.000-07:00,bench,,{}
+49.2867286,-123.1321761,2017-10-15T03:36:16.000-07:00,bench,,{}
 49.2854549,-123.127886,2017-10-15T18:45:34.000-07:00,car_sharing,,"{'operator': 'Car2go', 'capacity': '4'}"
 49.2152918,-123.0871855,2019-10-29T17:29:00.000-07:00,toilets,,"{'opening_hours': 'dawn-dusk', 'toilets:disposal': 'flush', 'male': 'yes', 'fee': 'no'}"
 49.2152922,-123.08722,2019-10-29T17:29:00.000-07:00,toilets,,"{'female': 'yes', 'fee': 'no'}"
@@ -5954,7 +5954,7 @@ lat,lon,timestamp,amenity,name,tags
 49.1995276,-122.8109761,2019-02-20T07:23:19.000-08:00,dentist,Riverside Heights Dental,"{'website': 'https://www.riversideheightsdental.com/', 'healthcare': 'dentist'}"
 49.1989948,-122.8102573,2018-03-19T01:44:31.000-07:00,fast_food,Scott's Landing Fish & Chips,"{'cuisine': 'fish_and_chips', 'addr:housenumber': '14877', 'addr:street': '108 Avenue'}"
 49.1989527,-122.8076394,2018-03-19T01:44:32.000-07:00,kindergarten,Little Koala Montessori Academy,"{'addr:housenumber': '14947', 'addr:street': '108 Avenue'}"
-49.198184499999996,-122.8119782,2018-03-19T01:44:32.000-07:00,restaurant,Pho Tau Bay,{}
+49.1981845,-122.8119782,2018-03-19T01:44:32.000-07:00,restaurant,Pho Tau Bay,{}
 49.1982423,-122.811976,2018-03-19T01:44:32.000-07:00,fast_food,Donair Affair,{}
 49.1990607,-122.8134494,2018-03-19T01:44:32.000-07:00,restaurant,Cabizerra Bistro,{}
 49.1990766,-122.8159015,2018-03-19T01:44:32.000-07:00,restaurant,Song Huong Vietnamese Restaurant,{}
@@ -6090,7 +6090,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2843293,-123.0955163,2018-10-26T20:30:30.000-07:00,restaurant,Belgard Kitchen,"{'opening_hours': 'Mo-We 11:00-23:00; Th-Fr 11:00-00:00; Sa 10:00-00:00; Su 10:00-23:00', 'website': 'http://belgardkitchen.com/', 'phone': '+1-604-699-1989', 'email': 'info@belgardkitchen.com'}"
 49.2841852,-123.0977401,2019-09-02T22:08:26.000-07:00,restaurant,Ask for Luigi,"{'opening_hours': 'Mo-Su 11:30-14:30,17:30-23:00', 'cuisine': 'italian', 'addr:housenumber': '305', 'addr:street': 'Alexander Street'}"
 49.2828397,-123.089684,2019-09-02T22:08:26.000-07:00,cafe,Ed’s Daily,"{'addr:housenumber': '686', 'opening_hours': 'Mo-Su 08:00-04:00', 'cuisine': 'coffee_shop', 'addr:street': 'Powell Street', 'addr:postcode': 'V6A 3G1', 'addr:city': 'Vancouver'}"
-49.285251099999996,-123.1186391,2020-03-11T04:43:09.000-07:00,restaurant,Rue 909 Sushi,"{'addr:province': 'BC', 'addr:housenumber': '909', 'addr:street': 'Dunsmuir Street', 'addr:city': 'Vancouver'}"
+49.2852511,-123.1186391,2020-03-11T04:43:09.000-07:00,restaurant,Rue 909 Sushi,"{'addr:province': 'BC', 'addr:housenumber': '909', 'addr:street': 'Dunsmuir Street', 'addr:city': 'Vancouver'}"
 49.2838491,-123.136338,2015-10-03T02:47:11.000-07:00,bench,,{}
 49.2525712,-123.0680577,2019-03-23T21:53:30.000-07:00,post_box,,{'collection_times': 'Mo-Fr 15:00'}
 49.2860889,-123.1163367,2019-07-14T20:19:12.000-07:00,cafe,Tim Hortons,"{'brand:wikidata': 'Q175106', 'addr:housenumber': '490', 'brand:wikipedia': 'en:Tim Hortons', 'cuisine': 'coffee_shop', 'addr:street': 'Hornby Street', 'takeaway': 'yes', 'brand': 'Tim Hortons'}"
@@ -6331,7 +6331,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2238944,-122.999027,2018-10-26T20:30:54.000-07:00,pharmacy,Innwell Pharmacy,"{'addr:housenumber': '4655', 'website': 'http://www.inwell.ca', 'phone': '+1-604-558-1175', 'drive_through': 'no', 'opening_hours': 'Mo-Fr 09:00-18:00; Sa 10:00-15:00', 'addr:street': 'Central Boulevard', 'addr:city': 'Burnaby'}"
 49.2621228,-123.1146191,2017-09-23T19:48:28.000-07:00,bench,,{}
 49.2611142,-123.1140392,2017-09-23T19:54:00.000-07:00,bicycle_parking,,{}
-49.262662399999996,-123.1141661,2017-09-23T19:56:44.000-07:00,car_sharing,,"{'operator': 'Modo', 'capacity': '1'}"
+49.2626624,-123.1141661,2017-09-23T19:56:44.000-07:00,car_sharing,,"{'operator': 'Modo', 'capacity': '1'}"
 49.2624543,-123.1137326,2017-09-23T19:56:46.000-07:00,charging_station,,{'capacity': '3'}
 49.2621147,-123.114692,2017-09-23T19:53:59.000-07:00,waste_basket,,{}
 49.2626406,-123.1138547,2017-09-23T19:56:45.000-07:00,car_sharing,,"{'operator': 'Modo', 'capacity': '2'}"
@@ -6532,7 +6532,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2793236,-123.1207279,2019-08-29T17:51:24.000-07:00,waste_basket,Garbage bin,{}
 49.1044477,-123.0738013,2019-06-09T20:15:13.000-07:00,post_box,,{}
 49.1049451,-123.0728228,2019-06-09T20:15:13.000-07:00,bench,,{}
-49.1048133,-123.0727328,2019-06-09T20:15:13.000-07:00,bench,,{}
+49.104813299999996,-123.0727328,2019-06-09T20:15:13.000-07:00,bench,,{}
 49.1104935,-123.0723445,2020-06-06T07:00:04.000-07:00,post_box,,{}
 49.0919014,-123.0506208,2019-06-09T20:40:23.000-07:00,post_box,,{}
 49.0934699,-123.0462947,2019-06-09T20:40:23.000-07:00,post_box,,{}
@@ -7061,7 +7061,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2628939,-123.1626104,2019-03-26T00:42:32.000-07:00,bench,,"{'image': 'https://www.flickr.com/photos/170604095@N05/46744856674/in/dateposted-public/', 'backrest': 'no', 'material': 'concrete', 'seats': '2'}"
 49.2628066,-123.1540031,2019-03-26T00:42:32.000-07:00,bench,,"{'image': 'https://www.flickr.com/photos/170604095@N05/33591532288/in/dateposted-public/', 'description': 'slightly covered, off of 10th towards greenway park ', 'backrest': 'no', 'material': 'wood', 'seats': '4'}"
 49.262811,-123.1542083,2019-03-26T00:42:32.000-07:00,bench,,"{'image': 'https://www.flickr.com/photos/170604095@N05/47415193802/in/dateposted-public/', 'colour': 'brown', 'backrest': 'no', 'material': 'wood', 'description': 'slightly covered off of 10th towards the greenway park ', 'seats': '4'}"
-49.286296899999996,-123.1277327,2019-09-02T22:08:29.000-07:00,cafe,Meet Fresh Robson,"{'addr:housenumber': '1232', 'payment:credit_cards': 'yes', 'internet_access': 'wlan', 'internet_access:fee': 'no', 'smoking': 'no', 'opening_hours': 'Mo-Th,Su 11:00-23:00; Fr,Sa 11:00-00:00', 'payment:cash': 'yes', 'cuisine': 'bubble_tea', 'addr:street': 'Robson street', 'payment:debit_cards': 'yes', 'addr:city': 'Vancouver'}"
+49.2862969,-123.1277327,2019-09-02T22:08:29.000-07:00,cafe,Meet Fresh Robson,"{'addr:housenumber': '1232', 'payment:credit_cards': 'yes', 'internet_access': 'wlan', 'internet_access:fee': 'no', 'smoking': 'no', 'opening_hours': 'Mo-Th,Su 11:00-23:00; Fr,Sa 11:00-00:00', 'payment:cash': 'yes', 'cuisine': 'bubble_tea', 'addr:street': 'Robson street', 'payment:debit_cards': 'yes', 'addr:city': 'Vancouver'}"
 49.1430748,-123.165036,2019-06-13T19:19:08.000-07:00,community_centre,West Richmond Community Centre,{}
 49.2765451,-123.1242981,2019-06-13T20:41:14.000-07:00,drinking_water,,"{'wheelchair': 'yes', 'access': 'yes', 'fee': 'no'}"
 49.2765083,-123.1240332,2019-11-14T02:58:25.000-08:00,bench,,"{'material': 'wood', 'backrest': 'yes'}"
@@ -7179,7 +7179,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2874204,-123.1426026,2015-08-04T11:33:46.000-07:00,drinking_water,,{}
 49.2830673,-123.1397562,2015-08-04T17:33:25.000-07:00,post_box,,{}
 49.2765744,-123.1273162,2019-09-18T23:00:49.000-07:00,police,Granville Community Policing Centre,"{'addr:housenumber': '1263', 'addr:street': 'Granville Street', 'addr:city': 'Vancouver'}"
-49.280408800000004,-123.1112274,2019-10-11T03:27:46.000-07:00,post_box,,{'collection_times': 'Mo-Fr 17:00'}
+49.2804088,-123.1112274,2019-10-11T03:27:46.000-07:00,post_box,,{'collection_times': 'Mo-Fr 17:00'}
 49.2742376,-123.1246646,2019-08-21T20:33:26.000-07:00,post_box,,{'collection_times': 'Mo-Fr 09:00'}
 49.2771593,-123.1180768,2018-11-18T19:49:55.000-08:00,post_box,,{'collection_times': 'Mo-Fr 17:00'}
 49.2756345,-123.1266949,2019-08-21T20:33:26.000-07:00,post_box,,"{'collection_times': 'Mo-Fr 16:00', 'drive_through': 'no', 'operator': 'Canada Post'}"
@@ -7266,7 +7266,7 @@ lat,lon,timestamp,amenity,name,tags
 49.3250536,-123.136371,2019-04-29T03:53:07.000-07:00,food_court,Food Court,"{'wheelchair': 'yes', 'indoor': 'yes', 'level': '1', 'layer': '1'}"
 49.3256789,-123.1353529,2019-10-29T17:29:30.000-07:00,cafe,Starbucks,"{'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'internet_access': 'wlan', 'brand:wikipedia': 'en:Starbucks', 'cuisine': 'coffee_shop', 'takeaway': 'yes', 'brand': 'Starbucks', 'addr:city': 'West Vancouver'}"
 49.3339845,-122.4572076,2016-07-07T00:40:54.000-07:00,toilets,,{}
-49.333990299999996,-122.4572584,2016-07-07T00:40:54.000-07:00,waste_basket,,{}
+49.3339903,-122.4572584,2016-07-07T00:40:54.000-07:00,waste_basket,,{}
 49.0501023,-122.3249001,2016-07-07T02:30:40.000-07:00,bicycle_parking,,"{'bicycle_parking': 'rack', 'covered': 'no', 'capacity': '7'}"
 49.0501146,-122.3249017,2016-07-07T02:30:42.000-07:00,waste_basket,,{}
 49.050095,-122.3253462,2017-09-23T22:20:31.000-07:00,recycling,,"{'recycling:glass_bottles': 'yes', 'recycling:paper': 'yes', 'recycling_type': 'container', 'amenity:waste_basket': 'yes', 'recycling:cans': 'yes'}"
@@ -7291,7 +7291,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2707223,-122.7551988,2018-05-21T00:18:31.000-07:00,restaurant,Pho Noodle House,{}
 49.2655839,-122.7772876,2019-07-29T07:37:17.000-07:00,bank,Scotiabank,{}
 49.2571236,-122.746978,2019-09-24T15:52:27.000-07:00,bank,TD Canada Trust,"{'brand:wikidata': 'Q1080670', 'brand': 'TD Canada Trust', 'brand:wikipedia': 'en:TD Canada Trust'}"
-49.263170099999996,-122.7784988,2018-05-21T05:29:33.000-07:00,doctors,Elgin Medical Clinic,{}
+49.2631701,-122.7784988,2018-05-21T05:29:33.000-07:00,doctors,Elgin Medical Clinic,{}
 49.2632337,-122.7785776,2018-05-21T05:29:34.000-07:00,doctors,Elgin Chiropractic,{}
 49.2627833,-122.7814393,2018-05-21T05:29:34.000-07:00,bank,RBC Bank,{}
 49.2339493,-122.9031713,2018-05-21T20:29:52.000-07:00,toilets,,{}
@@ -7380,7 +7380,7 @@ lat,lon,timestamp,amenity,name,tags
 49.0602367,-122.3515289,2017-10-19T19:14:22.000-07:00,post_box,,"{'post_box:type': 'community', 'operator': 'Canada Post Corporation'}"
 49.2874307,-123.1167742,2017-10-21T01:53:24.000-07:00,post_box,,{}
 49.2854083,-123.1241289,2019-08-23T03:26:01.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'yes', 'capacity': '12'}"
-49.136502899999996,-123.0259053,2019-11-20T12:23:08.000-08:00,fast_food,Quiznos,"{'brand:wikidata': 'Q1936229', 'delivery': 'no', 'addr:housenumber': '7355', 'brand:wikipedia': 'en:Quiznos', 'drive_through': 'no', 'cuisine': 'sandwich', 'addr:street': '72 Street', 'takeaway': 'yes', 'brand': 'Quiznos', 'addr:city': 'Delta'}"
+49.1365029,-123.0259053,2019-11-20T12:23:08.000-08:00,fast_food,Quiznos,"{'brand:wikidata': 'Q1936229', 'delivery': 'no', 'addr:housenumber': '7355', 'brand:wikipedia': 'en:Quiznos', 'drive_through': 'no', 'cuisine': 'sandwich', 'addr:street': '72 Street', 'takeaway': 'yes', 'brand': 'Quiznos', 'addr:city': 'Delta'}"
 49.0904611,-123.0788978,2017-10-21T21:55:45.000-07:00,fast_food,Fatburger,"{'cuisine': 'burger', 'takeaway': 'yes', 'drive_through': 'no'}"
 49.0904674,-123.0790855,2017-10-21T21:55:45.000-07:00,restaurant,Ricky's,"{'addr:housenumber': '5239', 'addr:street': 'Ladner Trunk Road'}"
 49.2430061,-123.0108388,2017-10-22T22:33:29.000-07:00,post_box,,{}
@@ -7762,7 +7762,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2844195,-123.0430982,2017-11-06T03:36:47.000-08:00,bench,,{}
 49.2844659,-123.0430362,2017-11-06T03:36:47.000-08:00,bench,,{}
 49.2844653,-123.0429366,2017-11-06T03:36:47.000-08:00,bench,,{}
-49.2844175,-123.0428735,2017-11-06T03:36:47.000-08:00,bench,,{}
+49.284417499999996,-123.0428735,2017-11-06T03:36:47.000-08:00,bench,,{}
 49.2843592,-123.0428756,2017-11-06T03:36:47.000-08:00,bench,,{}
 49.2841536,-123.0432937,2017-11-06T03:36:47.000-08:00,bench,,{'material': 'stone'}
 49.2841043,-123.043295,2017-11-06T03:36:47.000-08:00,bench,,{'material': 'stone'}
@@ -7944,7 +7944,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2754497,-123.1355545,2017-05-20T05:37:43.000-07:00,waste_basket,,{}
 49.2780136,-123.1346127,2017-10-27T01:50:20.000-07:00,bicycle_parking,,{'capacity': '4'}
 49.2627678,-123.0563725,2019-09-13T13:57:02.000-07:00,restaurant,Yook Korean Grilled BBQ and Bistro,"{'addr:housenumber': '2408', 'phone': '+1-604-428-9292', 'cuisine': 'korean', 'addr:street': 'Nanaimo Street', 'addr:postcode': 'V5N 5E4', 'addr:city': 'Vancouver'}"
-49.0654672,-122.23340519999999,2018-01-29T19:35:26.000-08:00,post_box,,{'post_box:type': 'community'}
+49.0654672,-122.2334052,2018-01-29T19:35:26.000-08:00,post_box,,{'post_box:type': 'community'}
 49.0618173,-122.2168656,2018-01-29T19:20:30.000-08:00,bench,,{'surface': 'concrete'}
 49.0533175,-122.2256405,2018-01-29T20:55:16.000-08:00,waste_basket,,{}
 49.3756821,-123.2718149,2018-01-30T04:20:41.000-08:00,ferry_terminal,Horseshoe Bay,"{'ferry': 'yes', 'public_transport': 'station'}"
@@ -8168,7 +8168,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2193073,-122.9277825,2018-05-28T02:15:43.000-07:00,waste_basket,,{}
 49.2193049,-122.9278454,2018-05-28T02:15:43.000-07:00,waste_basket,,{'operator': 'Burnaby'}
 49.2564396,-123.0635514,2018-06-15T03:57:30.000-07:00,bench,,"{'backrest': 'yes', 'direction': '80'}"
-49.2711552,-123.06939560000001,2019-10-04T00:33:32.000-07:00,restaurant,Sopra Sotto,{'cuisine': 'italian'}
+49.2711552,-123.0693956,2019-10-04T00:33:32.000-07:00,restaurant,Sopra Sotto,{'cuisine': 'italian'}
 49.2702991,-123.0694279,2019-11-02T23:23:36.000-07:00,restaurant,Libra Room,"{'addr:housenumber': '1608', 'addr:street': 'Commercial Drive'}"
 49.1097675,-122.6777949,2019-10-04T07:29:20.000-07:00,post_box,,{}
 49.2890203,-123.1221386,2019-10-04T18:47:13.000-07:00,restaurant,JOS,"{'cuisine': 'pizza', 'addr:housenumber': '1190', 'addr:street': 'West Cordova Street'}"
@@ -8538,7 +8538,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2275006,-123.1552083,2019-08-24T00:39:31.000-07:00,bench,,"{'backrest': 'no', 'material': 'wood_and_metal', 'seats': '3'}"
 49.2274063,-123.1548983,2019-03-10T03:13:05.000-07:00,bench,,"{'backrest': 'yes', 'material': 'wood', 'seats': '4'}"
 49.2270402,-123.1402454,2019-03-10T03:15:54.000-07:00,bench,,"{'description': 'Covered, attatched to bus stop ', 'backrest': 'no', 'material': 'metal', 'seats': '3'}"
-49.2268808,-123.1393818,2019-03-10T03:16:43.000-07:00,bench,,"{'description': 'Covered, Attatched to bus stop ', 'backrest': 'no', 'material': 'metal', 'seats': '3'}"
+49.226880799999996,-123.1393818,2019-03-10T03:16:43.000-07:00,bench,,"{'description': 'Covered, Attatched to bus stop ', 'backrest': 'no', 'material': 'metal', 'seats': '3'}"
 49.2615627,-123.0794414,2019-03-18T14:43:47.000-07:00,bench,,"{'wheelchair': 'limited', 'source:image': 'https://www.flickr.com/photos/170422908@N08/32402483117/in/dateposted-public/', 'colour': 'black', 'backrest': 'no', 'shelter': 'no', 'material': 'metal', 'description': 'Bench is a picnic table with four surrounding seats on each side', 'floor:material': 'brick', 'seats': '4'}"
 49.2615793,-123.0794937,2019-03-18T14:43:36.000-07:00,bench,,"{'wheelchair': 'yes', 'image': 'https://www.flickr.com/photos/170422908@N08/32402483117/in/dateposted-public/', 'colour': 'black', 'backrest': 'no', 'material': 'metal', 'description': 'A picnic table with 3 seats on each side, and the fourth side a space for a wheelchair', 'floor:material': 'brick', 'seats': '3'}"
 49.2616371,-123.0794454,2019-03-18T14:43:36.000-07:00,bench,,"{'wheelchair': 'yes', 'image': 'https://www.flickr.com/photos/170422908@N08/46429494255/in/dateposted-public/', 'colour': 'black', 'backrest': 'no', 'material': 'metal', 'covered': 'no', 'floor:material': 'brick', 'seats': '3'}"
@@ -8572,7 +8572,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2928166,-123.1306582,2013-05-31T16:43:17.000-07:00,bench,,{'source': 'survey'}
 49.2928056,-123.1306387,2013-05-31T16:43:17.000-07:00,bench,,{'source': 'survey'}
 49.3007936,-123.1571606,2020-02-20T19:48:53.000-08:00,bench,,{'source': 'survey'}
-49.301224500000004,-123.1570713,2013-05-31T16:43:18.000-07:00,restaurant,The Teahouse,"{'source': 'survey', 'start_date': '1978'}"
+49.3012245,-123.1570713,2013-05-31T16:43:18.000-07:00,restaurant,The Teahouse,"{'source': 'survey', 'start_date': '1978'}"
 49.3010722,-123.1336126,2016-03-31T09:40:17.000-07:00,cafe,Railway Cafe,{'source': 'survey'}
 49.3027539,-123.1312455,2019-06-22T20:59:44.000-07:00,cafe,Lumberman's Arch Cafe,"{'cuisine': 'burger;ice_cream;fish_and_chips', 'source': 'survey'}"
 49.3035759,-123.1373931,2013-05-31T16:43:18.000-07:00,bench,,{'source': 'survey'}
@@ -8735,7 +8735,7 @@ lat,lon,timestamp,amenity,name,tags
 49.3271158,-122.9500344,2019-12-22T03:03:00.000-08:00,theatre,,{'theatre:type': 'amphi'}
 49.3280648,-122.9495813,2019-12-22T03:08:58.000-08:00,first_aid,,{}
 49.328071,-122.9495841,2019-12-22T03:08:58.000-08:00,ranger_station,,{}
-49.328011599999996,-122.9496081,2019-12-22T03:08:58.000-08:00,drinking_water,,{}
+49.3280116,-122.9496081,2019-12-22T03:08:58.000-08:00,drinking_water,,{}
 49.3280816,-122.9495168,2019-12-22T03:08:58.000-08:00,shower,,{}
 49.1121881,-122.6559996,2019-12-22T06:00:03.000-08:00,car_rental,Enterprise,"{'brand:wikidata': 'Q17085454', 'official_name': 'Enterprise Rent-A-Car', 'brand': 'Enterprise', 'brand:wikipedia': 'en:Enterprise Rent-A-Car'}"
 49.3380391,-122.9470536,2019-12-22T15:10:38.000-08:00,parking,,"{'parking': 'surface', 'surface': 'unpaved'}"
@@ -9231,7 +9231,7 @@ lat,lon,timestamp,amenity,name,tags
 49.1853686,-122.7987328,2020-02-21T07:56:19.000-08:00,post_office,Impact Plaza,"{'brand:wikidata': 'Q1032001', 'brand:wikipedia': 'en:Canada Post', 'indoor': 'yes', 'addr:postcode': 'V3R 8X0', 'brand': 'Canada Post', 'operator': 'Canada Post'}"
 49.1853073,-122.8004145,2019-02-24T04:50:19.000-08:00,fast_food,Canadian 2 for 1 Pizza,"{'level': '0', 'cuisine': 'pizza'}"
 49.1857233,-122.8001212,2019-02-24T04:50:19.000-08:00,ice_cream,Snowy Village,{'level': '0'}
-49.1857234,-122.8000805,2019-02-24T04:50:19.000-08:00,cafe,Tasters Bakery Coffee Bar,{'level': '0'}
+49.1857234,-122.80008049999999,2019-02-24T04:50:19.000-08:00,cafe,Tasters Bakery Coffee Bar,{'level': '0'}
 49.1845268,-122.8005461,2019-02-24T05:06:04.000-08:00,restaurant,Palmyra Mediterranean Grill,{'cuisine': 'mediterranean'}
 49.2840399,-123.1235612,2019-07-14T20:19:12.000-07:00,cafe,Starbucks,"{'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'addr:housenumber': '1033', 'level': '1', 'brand:wikipedia': 'en:Starbucks', 'opening_hours': 'Mo-Su 09:00-22:00', 'description': 'The cafe is in the upper floor of the Indigo.', 'cuisine': 'coffee_shop', 'addr:street': 'Robson Street', 'takeaway': 'yes', 'brand': 'Starbucks'}"
 49.1858367,-122.7996789,2019-02-24T05:06:03.000-08:00,parking_entrance,,"{'barrier': 'gate', 'access': 'customers', 'level': '-1'}"
@@ -9495,7 +9495,7 @@ lat,lon,timestamp,amenity,name,tags
 49.3099424,-123.0822109,2012-03-26T18:47:22.000-07:00,fast_food,Dex Burgerbar,"{'source:location': 'gps', 'cuisine': 'burger', 'source': 'survey'}"
 49.2873965,-123.1143665,2019-12-24T20:04:16.000-08:00,fast_food,McDonald's,"{'source:location': 'extrapolation', 'brand:wikidata': 'Q38076', 'source:name': 'receipt', 'brand:wikipedia': ""en:McDonald's"", 'drive_through': 'no', 'cuisine': 'burger', 'source': 'survey', 'takeaway': 'yes', 'brand': ""McDonald's"", 'addr:city': 'Vancouver'}"
 49.1950338,-123.1772197,2019-09-14T05:00:22.000-07:00,cafe,Starbucks,"{'source:location': 'extrapolation', 'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'level': '1', 'brand:wikipedia': 'en:Starbucks', 'cuisine': 'coffee_shop', 'source': 'survey', 'takeaway': 'yes', 'brand': 'Starbucks'}"
-49.284463099999996,-123.1134341,2019-08-29T17:30:29.000-07:00,cafe,Starbucks,"{'source:location': 'extrapolation', 'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'addr:housenumber': '433', 'brand:wikipedia': 'en:Starbucks', 'cuisine': 'coffee_shop', 'addr:street': 'Seymour Street', 'source': 'survey', 'takeaway': 'yes', 'brand': 'Starbucks'}"
+49.2844631,-123.1134341,2019-08-29T17:30:29.000-07:00,cafe,Starbucks,"{'source:location': 'extrapolation', 'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'addr:housenumber': '433', 'brand:wikipedia': 'en:Starbucks', 'cuisine': 'coffee_shop', 'addr:street': 'Seymour Street', 'source': 'survey', 'takeaway': 'yes', 'brand': 'Starbucks'}"
 49.2890568,-123.1146229,2019-08-29T17:32:53.000-07:00,fast_food,Subway,"{'source:location': 'extrapolation', 'brand:wikidata': 'Q244457', 'brand:wikipedia': 'en:Subway (restaurant)', 'cuisine': 'sandwich', 'source': 'survey', 'takeaway': 'yes', 'brand': 'Subway'}"
 49.2850471,-123.1120652,2019-08-29T17:30:29.000-07:00,cafe,Tim Hortons,"{'source:location': 'gps', 'brand:wikidata': 'Q175106', 'website': 'https://www.timhortons.com/', 'internet_access': 'wlan', 'brand:wikipedia': 'en:Tim Hortons', 'cuisine': 'coffee_shop', 'source': 'survey', 'takeaway': 'yes', 'brand': 'Tim Hortons', 'operator': 'Restaurant Brands International Inc.'}"
 49.1948877,-123.1800593,2012-03-26T18:47:26.000-07:00,toilets,,"{'source:location': 'extrapolation', 'source': 'survey', 'level': '1'}"
@@ -9556,7 +9556,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2807997,-123.1260556,2013-10-10T06:14:56.000-07:00,fountain,,{}
 49.2585993,-123.044779,2013-10-13T05:57:33.000-07:00,fast_food,Fresh Slice Pizza,{'cuisine': 'pizza'}
 49.2584652,-123.0451425,2018-06-14T06:09:27.000-07:00,restaurant,Prince Chinese Seafood Restaurant,"{'cuisine': 'chinese', 'addr:housenumber': '2881', 'phone': '+1-604-430-6808', 'name:zh': '王子海鮮酒家'}"
-49.257986700000004,-123.0449264,2019-09-23T20:24:27.000-07:00,fast_food,Subway,"{'brand:wikidata': 'Q244457', 'wheelchair': 'yes', 'brand:wikipedia': 'en:Subway (restaurant)', 'cuisine': 'sandwich', 'takeaway': 'yes', 'brand': 'Subway'}"
+49.2579867,-123.0449264,2019-09-23T20:24:27.000-07:00,fast_food,Subway,"{'brand:wikidata': 'Q244457', 'wheelchair': 'yes', 'brand:wikipedia': 'en:Subway (restaurant)', 'cuisine': 'sandwich', 'takeaway': 'yes', 'brand': 'Subway'}"
 49.2586122,-123.0445699,2013-10-13T05:57:33.000-07:00,restaurant,Sushi House,{'cuisine': 'japanese'}
 49.257899,-123.0438067,2019-09-23T20:24:27.000-07:00,fuel,Chevron,"{'brand:wikidata': 'Q319642', 'addr:housenumber': '2902', 'brand:wikipedia': 'en:Chevron Corporation', 'addr:street': 'Grandview Highway', 'brand': 'Chevron', 'addr:city': 'Vancouver'}"
 49.2840032,-123.1254481,2019-09-02T22:08:25.000-07:00,restaurant,Guu Original Thurlow,"{'opening_hours': 'Mo-Sa 11:45-13:30,17:30-00:30; Su 17:30-00:00', 'cuisine': 'japanese', 'addr:housenumber': '838', 'addr:street': 'Thurlow Street', 'addr:city': 'Vancouver'}"
@@ -10048,13 +10048,13 @@ lat,lon,timestamp,amenity,name,tags
 49.2465089,-122.8095532,2019-11-02T23:28:04.000-07:00,bench,,{}
 49.2421323,-122.7551179,2019-11-03T17:31:53.000-08:00,bar,Taylight Tasting Room,"{'addr:housenumber': '1485', 'website': 'https://taylightbrewing.com/', 'shop': 'alcohol', 'phone': '+1-604-474-4253', 'opening_hours': 'Tu-Th 13:00-21:00; Fr, Sa 11:00-22:00; Su 23:00-20:00', 'addr:street': 'Coast Meridian Road', 'addr:unit': '402'}"
 49.2529917,-122.7332067,2019-11-03T17:31:53.000-08:00,bar,Northpaw Tasting Room,"{'addr:housenumber': '570', 'website': 'https://www.northpawbrewco.com/', 'shop': 'alcohol', 'phone': '+1-604-475-3660', 'opening_hours': 'Mo-Th 13:00-21:00; Fr, Sa 12:00-22:00; Su 12:00-20:00', 'addr:street': 'Sherling Place', 'addr:unit': '2150', 'email': 'info@northpawbrewco.com'}"
-49.251189600000004,-122.732744,2019-11-03T17:31:53.000-08:00,bar,Tinhouse Tasting Lounge,"{'addr:housenumber': '550', 'website': 'http://www.tinhousebrewing.ca/', 'shop': 'alcohol', 'phone': '+1-604-474-3434', 'opening_hours': 'Mo-We, Su 12:00-20:00; Th 12:00-21:00; Fr, Sa 12:00-22:00', 'addr:street': 'Sherling Place', 'addr:unit': '2140', 'email': 'info@tinhousebrewing.ca'}"
+49.2511896,-122.732744,2019-11-03T17:31:53.000-08:00,bar,Tinhouse Tasting Lounge,"{'addr:housenumber': '550', 'website': 'http://www.tinhousebrewing.ca/', 'shop': 'alcohol', 'phone': '+1-604-474-3434', 'opening_hours': 'Mo-We, Su 12:00-20:00; Th 12:00-21:00; Fr, Sa 12:00-22:00', 'addr:street': 'Sherling Place', 'addr:unit': '2140', 'email': 'info@tinhousebrewing.ca'}"
 49.1186824,-122.6680828,2019-11-03T07:11:29.000-08:00,car_wash,,{}
 49.1937517,-123.1212608,2019-11-03T06:42:12.000-08:00,cafe,1029 Cafe,{}
 49.1363241,-122.8900259,2020-03-25T17:28:16.000-07:00,restaurant,GNJ Vegetarian Bistro,"{'addr:housenumber': '#100-7310', 'website': 'https://www.gnjvegetarianbistro.com', 'phone': '+1-778-565-2020', 'smoking': 'outside', 'cuisine': 'indian', 'addr:street': 'Scott Road', 'addr:postcode': 'V3W 3M9', 'addr:city': 'Surrey', 'capacity': '50'}"
 49.2622765,-123.1220629,2019-11-04T18:08:17.000-08:00,post_box,,{}
 49.2622219,-123.1223325,2019-11-04T18:08:16.000-08:00,cafe,Bean Around The World,"{'opening_hours': 'Mo-Fr 06:46-16:45', 'addr:housenumber': '820', 'addr:street': 'West 10th Street'}"
-49.262359000000004,-123.1164457,2019-11-04T18:08:20.000-08:00,bicycle_parking,,{}
+49.262359,-123.1164457,2019-11-04T18:08:20.000-08:00,bicycle_parking,,{}
 49.2622867,-123.1199995,2019-11-04T18:08:18.000-08:00,waste_basket,,{}
 49.2621922,-123.1187886,2019-11-04T18:08:19.000-08:00,post_box,,{}
 49.038444,-122.2745518,2019-12-24T02:40:21.000-08:00,fast_food,Popeyes,"{'official_name': 'Popeyes Louisiana Kitchen', 'wheelchair': 'yes', 'toilets': 'yes', 'alt_name': 'Popeyes Louisiana Kitchen', 'website': 'http://popeyeschicken.ca', 'opening_hours': '11:00-22:00', 'cuisine': 'chicken', 'short_name': 'PLK', 'takeaway': 'yes', 'brand': 'Popeyes', 'start_date': '2019-11-01'}"
@@ -10078,7 +10078,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2784508,-123.0991718,2020-06-11T20:24:10.000-07:00,cafe,Wheat and Barley,"{'addr:housenumber': '212', 'alt_name': 'Brixton Cafe', 'addr:street': 'East Georgia Street', 'internet_access': 'wlan', 'addr:city': 'Vancouver'}"
 49.2743433,-123.1232695,2012-01-26T07:21:26.000-08:00,restaurant,Rodney's Oyster House,"{'cuisine': 'seafood', 'addr:housenumber': '1228', 'website': 'www.rodneysoysterhouse.com', 'addr:street': 'Hamilton Street', 'addr:postcode': 'V6B 6L2'}"
 49.286421,-123.1402621,2019-09-02T22:08:26.000-07:00,restaurant,Red Umbrella Cafe,"{'addr:housenumber': '1707', 'website': 'http://redumbrellacafebc.com', 'phone': '+1-604-688-7818', 'smoking': 'no', 'opening_hours': 'Mo-Su 07:30-16:00', 'addr:street': 'Davie Street', 'addr:postcode': 'V6G 1W5', 'addr:city': 'Vancouver'}"
-49.279583099999996,-123.1241526,2015-10-21T20:44:43.000-07:00,cafe,YaYa's,"{'addr:housenumber': '1020', 'addr:street': 'Howe Street'}"
+49.2795831,-123.1241526,2015-10-21T20:44:43.000-07:00,cafe,YaYa's,"{'addr:housenumber': '1020', 'addr:street': 'Howe Street'}"
 49.2797009,-123.1240752,2015-10-21T20:44:44.000-07:00,bench,,{}
 49.2813477,-123.1215172,2015-10-21T20:44:46.000-07:00,bench,,{}
 49.2813052,-123.1215394,2015-10-21T20:44:47.000-07:00,bench,,{}
@@ -10626,7 +10626,7 @@ lat,lon,timestamp,amenity,name,tags
 49.1330889,-122.8899039,2019-11-24T07:35:44.000-08:00,bank,BMO,"{'brand:wikidata': 'Q806693', 'official_name': 'Bank of Montreal', 'brand': 'BMO', 'brand:wikipedia': 'en:Bank of Montreal'}"
 49.13237,-122.889989,2019-11-24T07:35:44.000-08:00,dentist,New Smile Dental Group,{'healthcare': 'dentist'}
 49.1190026,-122.7321747,2019-11-24T07:59:56.000-08:00,restaurant,Umami Sushi,{'cuisine': 'sushi'}
-49.2194668,-122.9500107,2020-01-12T02:34:38.000-08:00,restaurant,Lualu Kitchen,"{'addr:province': 'BC', 'cuisine': 'chinese', 'addr:housenumber': '7355', 'addr:street': 'Edmonds Street', 'addr:city': 'Burnaby'}"
+49.2194668,-122.95001069999999,2020-01-12T02:34:38.000-08:00,restaurant,Lualu Kitchen,"{'addr:province': 'BC', 'cuisine': 'chinese', 'addr:housenumber': '7355', 'addr:street': 'Edmonds Street', 'addr:city': 'Burnaby'}"
 49.2872474,-123.1189254,2019-10-09T17:48:23.000-07:00,restaurant,Meat & Bread,"{'addr:housenumber': '1033', 'website': 'http://meatandbread.ca', 'opening_hours': 'Mo-Fr 11:00-16:00', 'cuisine': 'sandwich', 'addr:street': 'West Pender Street', 'addr:postcode': 'V6E 2M6', 'addr:city': 'Vancouver'}"
 49.2251092,-123.0909697,2019-09-13T13:56:49.000-07:00,cafe,Breka Bakery & Café,"{'addr:housenumber': '6533', 'website': 'http://www.breka.ca/', 'phone': '+1-604-325-6612', 'opening_hours': '24/7', 'designation': 'Bakery/cafe', 'addr:street': 'Fraser Street', 'addr:city': 'Vancouver'}"
 49.1182814,-122.8022258,2020-01-11T15:51:19.000-08:00,dentist,Sullivan Medical Dental Clinic,"{'addr:housenumber': '6355', 'addr:street': '152 Street', 'addr:unit': '201', 'healthcare': 'dentist'}"
@@ -10875,7 +10875,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2437836,-122.9696048,2020-01-03T06:38:11.000-08:00,restaurant,Scallion's Bistro,"{'opening_hours': 'Mo-Th 07:00-16:00; Fr 07:00-15:00', 'addr:housenumber': '6450', 'addr:street': 'Roberts Street', 'phone': '+1-604-294-5228', 'addr:city': 'Burnaby'}"
 49.0218637,-122.80721,2020-01-03T15:51:15.000-08:00,restaurant,LOCALz on Marine,"{'addr:housenumber': '14981', 'website': 'https://localzonmarine.com', 'addr:street': 'Marine Drive'}"
 49.0221551,-122.8081589,2020-01-03T15:51:15.000-08:00,restaurant,Cilantro Indian Cuisine,"{'cuisine': 'indian', 'addr:housenumber': '14945', 'website': 'http://www.cilantrowhiterock.com', 'addr:street': 'Marine Drive'}"
-49.021512799999996,-122.8059452,2020-01-03T15:51:15.000-08:00,restaurant,Uli's Restaurant,"{'cuisine': 'regional', 'addr:housenumber': '15023', 'addr:street': 'Marine Drive'}"
+49.0215128,-122.8059452,2020-01-03T15:51:15.000-08:00,restaurant,Uli's Restaurant,"{'cuisine': 'regional', 'addr:housenumber': '15023', 'addr:street': 'Marine Drive'}"
 49.0218104,-122.8069734,2020-01-03T15:51:15.000-08:00,restaurant,Jan's On The Beach,"{'cuisine': 'seafood', 'addr:housenumber': '14989', 'website': 'https://jansonthebeach.ca', 'addr:street': 'Marine Drive'}"
 49.0220092,-122.8077225,2020-01-03T15:51:15.000-08:00,ice_cream,Cones Old Fashioned Ice Cream,"{'addr:housenumber': '14961', 'addr:street': 'Marine Drive'}"
 49.021714,-122.8067325,2020-01-03T15:51:15.000-08:00,pub,Oceanside Public House,"{'addr:housenumber': '14995', 'alt_name': 'Oceanside Yacht Club Waterfront Public House', 'website': 'https://www.jrghospitality.ca/establishment/oceansidepublichouse', 'cuisine': 'regional', 'outdoor_seating': 'yes', 'addr:street': 'Marine Drive', 'operator': 'Joseph Richard Group'}"
@@ -10908,7 +10908,7 @@ lat,lon,timestamp,amenity,name,tags
 49.0503825,-122.3106005,2018-07-25T21:02:46.000-07:00,atm,,"{'drive_through': 'yes', 'operator': 'CIBC'}"
 49.2833149,-123.1295736,2019-08-16T20:29:44.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'capacity': '5'}"
 49.2822124,-123.1276914,2019-08-22T22:44:03.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '7'}"
-49.2837961,-123.1301299,2017-01-29T03:45:16.000-08:00,bench,,{}
+49.283796099999996,-123.1301299,2017-01-29T03:45:16.000-08:00,bench,,{}
 49.281861,-123.1272126,2019-10-09T18:23:57.000-07:00,bench,,{'backrest': 'yes'}
 49.26232,-123.0884041,2017-01-29T18:10:31.000-08:00,restaurant,Fassil Ethiopian Restaurant,"{'addr:housenumber': '736', 'website': 'http://www.fassil.ca/', 'phone': '+1-604-879-2001', 'cuisine': 'ethiopian', 'name:en': 'Fassil Ethiopian Restaurant', 'addr:street': 'East Broadway'}"
 49.2894547,-123.1319368,2018-02-09T05:00:18.000-08:00,restaurant,Jang Mo Jib Korean Restaurant,"{'addr:housenumber': '1575', 'phone': '+1-604-642-0712', 'opening_hours': 'Su-Th 10:00-02:00; Fr-Sa 10:00-05:00', 'name:en': 'Jang Mo Jib Korean Restaurant', 'addr:street': 'Robson Street', 'name:zh_pinyin': '外母屋'}"
@@ -11292,7 +11292,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2168746,-122.6233329,2017-07-31T07:04:17.000-07:00,fuel,Husky,{'operator': 'Husky'}
 49.2409114,-122.7339126,2011-04-13T00:13:29.000-07:00,parking,,{}
 49.2173561,-122.7442625,2011-04-13T00:13:30.000-07:00,bench,,{}
-49.2160401,-122.73549679999999,2011-04-13T00:13:30.000-07:00,bench,,{}
+49.2160401,-122.7354968,2011-04-13T00:13:30.000-07:00,bench,,{}
 49.2041162,-122.6895074,2011-04-13T00:13:31.000-07:00,parking,,{}
 49.2165898,-122.7381283,2011-04-13T00:13:32.000-07:00,bench,,{}
 49.2039952,-122.6897073,2017-06-26T22:04:23.000-07:00,toilets,,{'toilets:disposal': 'pitlatrine'}
@@ -11308,7 +11308,7 @@ lat,lon,timestamp,amenity,name,tags
 49.3662746,-122.4540568,2017-11-12T10:15:50.000-08:00,toilets,,{}
 49.2655577,-123.1199868,2019-08-29T18:18:41.000-07:00,fast_food,Subway,"{'brand:wikidata': 'Q244457', 'website': 'http://www.subway.com/', 'brand:wikipedia': 'en:Subway (restaurant)', 'cuisine': 'sandwich', 'takeaway': 'yes', 'brand': 'Subway'}"
 49.3875515,-123.0740994,2020-02-06T20:15:10.000-08:00,Observation Platform,,"{'generator:method': 'wind_turbine', 'power': 'generator', 'building': 'wind turbine', 'generator:source': 'wind'}"
-49.252902399999996,-123.0822591,2018-02-10T16:17:35.000-08:00,restaurant,Green Lemongrass,"{'cuisine': 'vietnamese', 'addr:housenumber': '1086', 'addr:street': 'Kingsway', 'phone': '+1-604-875-6638'}"
+49.2529024,-123.0822591,2018-02-10T16:17:35.000-08:00,restaurant,Green Lemongrass,"{'cuisine': 'vietnamese', 'addr:housenumber': '1086', 'addr:street': 'Kingsway', 'phone': '+1-604-875-6638'}"
 49.2826455,-123.0937429,2020-01-27T00:16:15.000-08:00,toilets,,"{'wheelchair': 'yes', 'addr:housenumber': '450', 'access': 'yes', 'fee': 'no', 'toilets:disposal': 'flush', 'addr:street': 'Powell Street', 'female': 'yes'}"
 49.2826203,-123.0937778,2020-01-27T00:16:15.000-08:00,toilets,,"{'unisex': 'yes', 'wheelchair': 'yes', 'toilets:disposal': 'flush', 'access': 'yes', 'fee': 'no'}"
 49.3358865,-123.0096884,2011-07-31T02:10:11.000-07:00,parking,,{}
@@ -11500,7 +11500,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2124748,-123.1406438,2019-09-13T13:57:04.000-07:00,cafe,Mr. Mustache Bubble Tea,"{'addr:housenumber': '8079', 'addr:street': 'Granville Street', 'addr:city': 'Vancouver'}"
 49.2123453,-123.140658,2019-09-13T13:57:04.000-07:00,restaurant,Sushi Bar Shu,"{'cuisine': 'sushi', 'addr:housenumber': '8099', 'addr:street': 'Granville Street', 'addr:city': 'Vancouver'}"
 49.2132631,-123.1400563,2019-09-13T13:57:04.000-07:00,restaurant,The Meat Up,"{'addr:housenumber': '7994', 'addr:street': 'Granville Street', 'addr:city': 'Vancouver'}"
-49.2133718,-123.14004919999999,2019-09-13T13:57:04.000-07:00,restaurant,Snackshot,"{'addr:housenumber': '7980', 'addr:street': 'Granville Street', 'addr:city': 'Vancouver'}"
+49.2133718,-123.1400492,2019-09-13T13:57:04.000-07:00,restaurant,Snackshot,"{'addr:housenumber': '7980', 'addr:street': 'Granville Street', 'addr:city': 'Vancouver'}"
 49.2135568,-123.1401448,2019-09-13T13:57:04.000-07:00,restaurant,Mirchi,"{'addr:housenumber': '7964', 'addr:street': 'Granville Street', 'addr:city': 'Vancouver'}"
 49.2139841,-123.1401327,2019-09-13T13:57:04.000-07:00,cafe,Taan Char,"{'addr:housenumber': '7908', 'addr:street': 'Granville Street', 'addr:city': 'Vancouver'}"
 49.2126966,-123.1406461,2019-09-13T13:57:04.000-07:00,cafe,Bubble Bear Cafe,"{'addr:housenumber': '8051', 'addr:street': 'Granville Street', 'addr:city': 'Vancouver'}"
@@ -11681,7 +11681,7 @@ lat,lon,timestamp,amenity,name,tags
 49.284423,-123.143926,2015-07-08T20:53:39.000-07:00,bench,,{'backrest': 'yes'}
 49.2844306,-123.1437798,2015-07-08T20:53:39.000-07:00,bench,,{'backrest': 'yes'}
 49.2844323,-123.1438466,2015-07-08T20:53:39.000-07:00,bench,,{'backrest': 'yes'}
-49.2858405,-123.14309539999999,2015-07-08T20:53:39.000-07:00,boat_rental,,{'seasonal': 'summer'}
+49.2858405,-123.1430954,2015-07-08T20:53:39.000-07:00,boat_rental,,{'seasonal': 'summer'}
 49.2858616,-123.1428826,2015-08-04T09:48:00.000-07:00,bench,,"{'layer': '1', 'backrest': 'yes'}"
 49.2859142,-123.1428675,2015-07-08T20:53:39.000-07:00,bench,,{'backrest': 'yes'}
 49.2861313,-123.1428213,2015-08-04T09:48:01.000-07:00,bench,,"{'layer': '1', 'backrest': 'yes'}"
@@ -12224,7 +12224,7 @@ lat,lon,timestamp,amenity,name,tags
 49.229018,-122.892597,2014-10-30T01:38:09.000-07:00,restaurant,Thai New West,{'cuisine': 'thai'}
 49.2831514,-123.10652,2018-04-27T06:46:25.000-07:00,restaurant,Revel Room,"{'cuisine': 'Southern', 'addr:housenumber': '238', 'addr:street': 'Abbott Street', 'addr:city': 'Vancouver'}"
 49.2499831,-123.1151714,2019-09-13T13:56:49.000-07:00,restaurant,Corner 23,"{'addr:housenumber': '4008', 'phone': '+1-604-879-8815', 'cuisine': 'chinese', 'addr:street': 'Cambie Street', 'addr:postcode': 'V5Y 2H5', 'addr:city': 'Vancouver'}"
-49.110595,-122.6768607,2019-03-18T03:18:58.000-07:00,restaurant,Boston Pizza,"{'brand:wikidata': 'Q894578', 'cuisine': 'pizza', 'brand': 'Boston Pizza', 'brand:wikipedia': 'en:Boston Pizza'}"
+49.110594999999996,-122.6768607,2019-03-18T03:18:58.000-07:00,restaurant,Boston Pizza,"{'brand:wikidata': 'Q894578', 'cuisine': 'pizza', 'brand': 'Boston Pizza', 'brand:wikipedia': 'en:Boston Pizza'}"
 49.1023131,-122.6464613,2018-08-30T20:34:50.000-07:00,restaurant,Original Joe's Restaurant & Bar,"{'addr:housenumber': '11-20811', 'addr:housename': ""Original Joe's Restaurant & Bar"", 'website': 'https://www.originaljoes.ca/', 'addr:street': 'Fraser Highway', 'addr:postcode': 'V3A 4G7', 'addr:city': 'Langley '}"
 49.272054,-122.7557372,2019-09-13T13:57:04.000-07:00,cafe,Blend Bubble Tea,"{'addr:housenumber': '3266A', 'addr:street': 'Coast Meridian Road', 'addr:city': 'Port Coquitlam'}"
 49.2725927,-122.7556417,2019-09-13T13:57:04.000-07:00,restaurant,Ball Breakers Billiards & Bistro,"{'addr:housenumber': '3310', 'addr:street': 'Coast Meridian Road', 'addr:city': 'Port Coquitlam'}"
@@ -12402,7 +12402,7 @@ lat,lon,timestamp,amenity,name,tags
 49.1929471,-122.8237896,2020-05-01T00:49:19.000-07:00,bench,,{}
 49.1930698,-122.8246768,2020-05-01T00:49:19.000-07:00,bench,,{}
 49.1930575,-122.8246352,2020-05-01T00:49:19.000-07:00,bench,,{}
-49.193024199999996,-122.8251978,2020-05-01T00:49:19.000-07:00,bench,,{}
+49.1930242,-122.8251978,2020-05-01T00:49:19.000-07:00,bench,,{}
 49.1930229,-122.82511,2020-05-01T00:49:19.000-07:00,bench,,{}
 49.2030359,-122.9106992,2020-05-01T02:18:50.000-07:00,post_box,Canada Post,{'operator': 'Canada Post'}
 49.2051433,-122.904034,2020-05-01T02:24:40.000-07:00,post_box,Canada Post,{'operator': 'Canada Post'}
@@ -12671,7 +12671,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2916032,-123.1284752,2019-09-13T13:57:07.000-07:00,restaurant,6 Degrees Eatery,"{'addr:housenumber': '1390', 'addr:street': 'Coal Harbour Quay', 'addr:city': 'Vancouver'}"
 49.2893542,-123.1389035,2019-11-26T04:14:57.000-08:00,bank,G&F Financial Group,"{'addr:housenumber': '1003', 'website': 'http://gffg.com', 'phone': '+1-604-419-8889', 'opening_hours': 'Mo-Th:10:00-19:00; Fr:10:00-17:00; Sa:10:00-16:00; Su:off', 'addr:street': 'Denman Street', 'addr:postcode': 'V6G 2M4', 'email': 'inquiry@gffg.com'}"
 49.2055807,-122.8920441,2019-08-28T18:30:10.000-07:00,bench,,{}
-49.205594,-122.89095879999999,2019-08-28T18:30:10.000-07:00,bench,,{}
+49.205594,-122.8909588,2019-08-28T18:30:10.000-07:00,bench,,{}
 49.2054314,-122.8910883,2019-08-28T18:30:10.000-07:00,bench,,{}
 49.1862464,-122.8480116,2019-08-29T19:49:18.000-07:00,bench,,{}
 49.1860683,-122.8496949,2020-02-29T01:30:57.000-08:00,post_office,Central City,"{'brand:wikidata': 'Q1032001', 'addr:postcode': 'V3T 2V0', 'brand': 'Canada Post', 'brand:wikipedia': 'en:Canada Post', 'operator': 'Canada Post'}"
@@ -12960,7 +12960,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2118846,-122.9187806,2010-10-23T17:09:13.000-07:00,bicycle_parking,,"{'source': 'gps/photo survey', 'operator': 'New West Cycle', 'capacity': '6'}"
 49.210701,-122.9174901,2018-10-26T20:29:56.000-07:00,doctors,Bowen Therapy Clinics,"{'phone': '+1-604-777-0426', 'source': 'gps/photo survey'}"
 49.2090537,-122.9153899,2010-10-22T23:18:15.000-07:00,gym,Curves,{'source': 'gps/photo survey'}
-49.211467999999996,-122.9200222,2010-10-22T23:18:16.000-07:00,cafe,Café Exotica,{}
+49.211468,-122.9200222,2010-10-22T23:18:16.000-07:00,cafe,Café Exotica,{}
 49.2105249,-122.9172402,2018-08-02T14:16:10.000-07:00,restaurant,King Sushi,"{'addr:housenumber': '410', 'fixme': 'reportedly closed?', 'opening_hours': 'Mo-Sa 11:30-21:30; Su 12:00-09:30', 'cuisine': 'sushi', 'addr:street': '6th Street', 'source': 'gps/photo survey', 'addr:city': 'New Westminster'}"
 49.2105935,-122.9173412,2019-05-23T06:06:51.000-07:00,restaurant,,"{'cuisine': 'korean', 'addr:housenumber': '412', 'addr:street': '6th Street', 'source': 'gps/photo survey', 'addr:city': 'New Westminster'}"
 49.2103295,-122.9168631,2010-10-23T17:09:12.000-07:00,bicycle_parking,,"{'source': 'gps/photo survey', 'operator': 'New West Cycle', 'capacity': '6'}"
@@ -13040,7 +13040,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2176557,-122.9778123,2019-06-27T02:31:28.000-07:00,waste_basket,,{}
 49.2822225,-123.1241191,2020-03-11T02:26:39.000-07:00,pub,Ballyhoo Public House,"{'addr:province': 'BC', 'opening_hours': 'Mo-Fr 11:00+; Sa-Su 10:00+', 'smoking': 'no', 'addr:city': 'Vancouver'}"
 49.2147769,-122.9053958,2018-10-12T21:30:27.000-07:00,toilets,,{}
-49.2145834,-122.90579579999999,2018-10-12T21:30:27.000-07:00,toilets,,{}
+49.2145834,-122.9057958,2018-10-12T21:30:27.000-07:00,toilets,,{}
 49.2326643,-123.0823954,2018-10-14T16:44:29.000-07:00,post_box,,{}
 49.2759973,-123.132089,2018-10-15T00:49:43.000-07:00,car_sharing,,"{'operator': 'Modo', 'capacity': '2'}"
 49.2754376,-123.1321481,2018-10-15T04:27:02.000-07:00,bench,,{}
@@ -13559,7 +13559,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2501092,-123.0015799,2018-11-19T18:53:39.000-08:00,cafe,The Stand,{'opening_hours': 'Mo-Th 07:00-21:00'}
 49.2502546,-123.0016169,2019-07-07T04:11:10.000-07:00,cafe,Tim Hortons,"{'brand:wikidata': 'Q175106', 'cuisine': 'coffee_shop', 'takeaway': 'yes', 'brand': 'Tim Hortons', 'brand:wikipedia': 'en:Tim Hortons'}"
 49.2514468,-123.0017365,2018-10-26T20:29:55.000-07:00,pub,Habitat,"{'addr:housenumber': '3700', 'addr:street': 'Willingdon Avenue', 'phone': '+1-604-431-4981', 'facebook': 'http://www.facebook.com/ProfessorMugsPub', 'addr:city': 'Burnaby'}"
-49.2513348,-122.99947710000001,2018-09-17T05:05:59.000-07:00,cafe,Habitat Pub,{'cuisine': 'pub'}
+49.2513348,-122.9994771,2018-09-17T05:05:59.000-07:00,cafe,Habitat Pub,{'cuisine': 'pub'}
 49.2511737,-123.000389,2010-08-22T04:19:52.000-07:00,cafe,,{}
 49.2513082,-123.0026317,2016-04-13T16:20:51.000-07:00,police,BCIT Security,{}
 49.2540202,-123.0014179,2016-12-02T17:57:37.000-08:00,cafe,Tim Hortons Express,{}
@@ -13676,7 +13676,7 @@ lat,lon,timestamp,amenity,name,tags
 49.1905793,-122.8439846,2019-09-13T13:56:49.000-07:00,pharmacy,London Drugs,"{'brand:wikidata': 'Q3258955', 'website': 'http://www.londondrugs.ca/', 'brand:wikipedia': 'en:London Drugs', 'source': 'City of Surrey 2010 GIS Data', 'surrey:date': '19860317', 'operator': 'London Drugs', 'healthcare': 'pharmacy', 'addr:city': 'Surrey', 'addr:housenumber': '10348', 'phone': '+1-604-448-4808', 'surrey:addrid': '65002', 'opening_hours': 'Mo-Sa 09:00-22:00; Su 10:00-20:00', 'dispensing': 'yes', 'addr:street': 'King George Boulevard', 'brand': 'London Drugs'}"
 49.1910007,-122.8446255,2019-09-13T13:56:49.000-07:00,cafe,Starbucks,"{'brand:wikidata': 'Q37158', 'official_name': 'Starbucks Coffee', 'wheelchair': 'yes', 'website': 'https://www.starbucks.ca/', 'internet_access': 'wlan', 'brand:wikipedia': 'en:Starbucks', 'cuisine': 'coffee_shop', 'source': 'City of Surrey 2010 GIS Data', 'takeaway': 'yes', 'surrey:date': '19860317', 'addr:city': 'Surrey', 'addr:housenumber': '10362', 'phone': '+1-604-581-2632', 'surrey:addrid': '61625', 'smoking': 'no', 'opening_hours': 'Mo-Fr 05:00-22:00; Sa 05:30-21:30; Su 06:00-21:30', 'addr:street': 'King George Boulevard', 'brand': 'Starbucks'}"
 49.1864097,-122.8502764,2019-06-25T00:59:54.000-07:00,cafe,Tim Hortons,"{'brand:wikidata': 'Q175106', 'addr:housenumber': '10153', 'website': 'https://www.timhortons.com/', 'internet_access': 'wlan', 'phone': '+1-604-582-9147', 'brand:wikipedia': 'en:Tim Hortons', 'cuisine': 'coffee_shop', 'addr:street': 'King George Boulevard', 'takeaway': 'yes', 'brand': 'Tim Hortons', 'addr:city': 'Surrey'}"
-49.1989332,-122.81025700000001,2020-01-04T19:30:59.000-08:00,fast_food,Church's Chicken,"{'brand:wikidata': 'Q1089932', 'wheelchair': 'yes', 'delivery': 'no', 'website': 'http://www.churchschickenbc.ca/', 'brand:wikipedia': ""en:Church's Chicken"", 'cuisine': 'chicken', 'addr:postcode': 'V3R 1W2', 'takeaway': 'yes', 'addr:city': 'Surrey', 'addr:housenumber': '14877', 'phone': '+1-604-584-5550', 'drive_through': 'no', 'smoking': 'no', 'opening_hours': 'Su-Sa 10:30-22:00', 'addr:street': '108 Avenue', 'brand': ""Church's Chicken""}"
+49.1989332,-122.810257,2020-01-04T19:30:59.000-08:00,fast_food,Church's Chicken,"{'brand:wikidata': 'Q1089932', 'wheelchair': 'yes', 'delivery': 'no', 'website': 'http://www.churchschickenbc.ca/', 'brand:wikipedia': ""en:Church's Chicken"", 'cuisine': 'chicken', 'addr:postcode': 'V3R 1W2', 'takeaway': 'yes', 'addr:city': 'Surrey', 'addr:housenumber': '14877', 'phone': '+1-604-584-5550', 'drive_through': 'no', 'smoking': 'no', 'opening_hours': 'Su-Sa 10:30-22:00', 'addr:street': '108 Avenue', 'brand': ""Church's Chicken""}"
 49.1184303,-122.8020322,2019-09-13T13:56:49.000-07:00,restaurant,Golden Panda Restaurant,"{'addr:housenumber': '6355', 'addr:street': '152 Street', 'addr:city': 'Surrey'}"
 49.1989911,-122.8115444,2019-09-13T13:56:49.000-07:00,pub,Jolly Mac's,"{'addr:housenumber': '14817', 'website': 'http://www.jollymacspub.com/', 'phone': '+1-604-584-4262', 'smoking': 'no', 'opening_hours': 'Mo-Sa 11:00-01:00; Su 10:00-00:00', 'cuisine': 'american', 'addr:street': '108 Avenue', 'addr:city': 'Surrey'}"
 49.1051552,-122.8057256,2019-09-23T20:08:40.000-07:00,restaurant,Mahek Restaurant & Lounge,"{'addr:housenumber': '15133', 'addr:street': '56 Ave', 'addr:city': 'Surrey'}"
@@ -14440,7 +14440,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2756725,-123.1040316,2019-09-27T06:43:44.000-07:00,bench,,{}
 49.2701159,-123.102476,2019-09-27T06:43:12.000-07:00,bicycle_parking,,{}
 49.2756858,-123.1048644,2019-09-27T06:43:45.000-07:00,bench,,{}
-49.2756729,-123.1040462,2019-09-27T06:43:45.000-07:00,bench,,{}
+49.275672899999996,-123.1040462,2019-09-27T06:43:45.000-07:00,bench,,{}
 49.275709,-123.1056849,2019-09-27T06:43:46.000-07:00,bench,,{}
 49.2703117,-123.1028575,2019-09-27T06:43:43.000-07:00,bench,,{}
 49.3121915,-123.0318485,2019-09-28T03:56:10.000-07:00,waste_basket,,{}
@@ -15234,7 +15234,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2705629,-123.0676077,2020-05-17T22:42:52.000-07:00,post_box,,{'operator': 'Canada Post'}
 49.337999,-123.1013972,2015-05-18T02:26:56.000-07:00,dentist,Edgemont Village Dental Care,{}
 49.3374026,-123.1024634,2019-05-06T23:57:45.000-07:00,dentist,Village Dental Group,{}
-49.337938199999996,-123.1014764,2015-05-18T02:26:56.000-07:00,clinic,Edgemont Chiropractic Clinic,{}
+49.3379382,-123.1014764,2015-05-18T02:26:56.000-07:00,clinic,Edgemont Chiropractic Clinic,{}
 49.3022851,-123.0038011,2015-05-18T04:09:24.000-07:00,bench,,{}
 49.3029565,-123.0027181,2015-05-18T04:09:24.000-07:00,bench,,{'material': 'wood'}
 49.3036984,-123.0065508,2015-05-18T04:09:24.000-07:00,bench,,{}
@@ -15424,7 +15424,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2787714,-123.1443578,2020-01-09T18:42:10.000-08:00,bench,,{}
 49.27875,-123.1446847,2020-01-09T18:42:10.000-08:00,bench,,{}
 49.2787401,-123.1447325,2020-01-09T18:42:10.000-08:00,bench,,{}
-49.2786358,-123.1450863,2020-01-09T18:42:10.000-08:00,bench,,{}
+49.278635799999996,-123.1450863,2020-01-09T18:42:10.000-08:00,bench,,{}
 49.2786129,-123.1451213,2020-01-09T18:42:10.000-08:00,bench,,{}
 49.2783547,-123.1453455,2020-01-09T18:42:10.000-08:00,bench,,{}
 49.2783258,-123.1453606,2020-01-09T18:42:10.000-08:00,bench,,{}
@@ -15485,9 +15485,9 @@ lat,lon,timestamp,amenity,name,tags
 49.2502594,-122.8000399,2020-04-24T22:11:50.000-07:00,waste_basket,,{}
 49.2496423,-122.8009479,2020-04-24T22:11:50.000-07:00,bench,,{'backrest': 'yes'}
 49.2442612,-122.8036417,2020-04-24T22:11:50.000-07:00,bench,,{'backrest': 'yes'}
-49.2432025,-122.8048468,2020-04-24T22:11:50.000-07:00,bench,,{'backrest': 'yes'}
+49.2432025,-122.80484679999999,2020-04-24T22:11:50.000-07:00,bench,,{'backrest': 'yes'}
 49.2407256,-122.8075903,2020-04-24T22:11:50.000-07:00,waste_basket,,{}
-49.240406899999996,-122.8076181,2020-04-24T22:11:50.000-07:00,bench,,{'backrest': 'yes'}
+49.2404069,-122.8076181,2020-04-24T22:11:50.000-07:00,bench,,{'backrest': 'yes'}
 49.2830029,-122.8694502,2020-04-24T22:26:18.000-07:00,post_box,,{}
 49.2829535,-122.8692824,2020-04-24T22:26:18.000-07:00,bicycle_parking,,{}
 49.283356,-122.8712125,2020-04-24T22:26:18.000-07:00,waste_basket,,{}
@@ -15582,7 +15582,7 @@ lat,lon,timestamp,amenity,name,tags
 49.0984273,-122.6772134,2020-01-30T19:51:12.000-08:00,fountain,,{}
 49.2890942,-123.1322732,2020-01-31T00:59:54.000-08:00,restaurant,Tri's Restaurant,"{'addr:province': 'BC', 'addr:housenumber': '1542', 'addr:street': 'Robson Street', 'addr:postcode': 'V6G 1C3', 'addr:city': 'Vancouver'}"
 49.2894158,-123.1281531,2020-01-31T15:55:01.000-08:00,restaurant,Tri Family Place,"{'addr:housenumber': '1415', 'addr:street': 'West Georgia Street', 'phone': '604-408-4040'}"
-49.4330104,-123.47736570000001,2016-06-05T05:13:42.000-07:00,toilets,,{}
+49.4330104,-123.4773657,2016-06-05T05:13:42.000-07:00,toilets,,{}
 49.2812098,-123.1024409,2014-08-22T22:03:33.000-07:00,bank,Pigeon Park Savings,{}
 49.14012,-123.1373979,2018-10-09T20:16:51.000-07:00,pub,Pioneer's Pub,{}
 49.2694468,-123.1061603,2018-09-28T07:52:35.000-07:00,restaurant,Pho Quynh Express,"{'addr:housenumber': '91', 'payment:bitcoin': 'yes', 'addr:street': 'West 2nd Avenue', 'addr:postcode': 'V5Y 1B3', 'addr:city': 'Vancouver'}"
@@ -15755,7 +15755,7 @@ lat,lon,timestamp,amenity,name,tags
 49.4550925,-123.3267508,2015-06-08T05:51:57.000-07:00,toilets,,{}
 49.0488691,-122.2886721,2015-12-12T22:07:34.000-08:00,bench,STRAUSS AND GALLO WATCHING THE FARM,"{'description': 'The Abbotsford News', 'tourism': 'artwork', 'website': 'http://www.tourismabbotsford.ca/Benches', 'artwork_type': 'sculpture', 'artist_name': 'Norm Williams'}"
 49.0491084,-122.2887731,2015-07-18T05:17:52.000-07:00,shelter,Fraser Valley Real Estate Board,{'bench': 'yes'}
-49.0492722,-122.29054,2019-09-02T22:08:25.000-07:00,music_school,A&D Music,"{'addr:housenumber': '2613', 'website': 'http://ad-music.ca', 'shop': 'musical_instrument', 'phone': '+1-778-880-0280', 'opening_hours': 'Mo-Th 10:00-21:00; Fr 10:00-18:00; Sa 10:00-14:00', 'addr:street': 'Montrose Avenue', 'entrance': 'yes', 'addr:postcode': 'V2S 3T5'}"
+49.0492722,-122.29054000000001,2019-09-02T22:08:25.000-07:00,music_school,A&D Music,"{'addr:housenumber': '2613', 'website': 'http://ad-music.ca', 'shop': 'musical_instrument', 'phone': '+1-778-880-0280', 'opening_hours': 'Mo-Th 10:00-21:00; Fr 10:00-18:00; Sa 10:00-14:00', 'addr:street': 'Montrose Avenue', 'entrance': 'yes', 'addr:postcode': 'V2S 3T5'}"
 49.0496386,-122.2905339,2019-08-07T01:30:54.000-07:00,restaurant,nine downtown kitchen lounge,"{'addr:housenumber': '2625', 'website': 'https://m.facebook.com/nine.Downtown', 'addr:street': 'Montrose Avenue', 'entrance': 'yes', 'addr:postcode': 'V2S 3T5'}"
 49.0491172,-122.2897816,2019-09-02T22:08:25.000-07:00,cafe,Sippchai 2.0,"{'alt_name': 'Sippchai Café', 'website': 'https://sippchai.com/sippchai-2-0-abbotsford-coffee-shop', 'internet_access': 'wlan', 'internet_access:fee': 'no', 'opening_hours': 'Mo-Sa 08:00-20:00; Su 08:00-17:00', 'addr:unit': '2', 'start_date': '2019-07-14'}"
 49.0491106,-122.2895248,2018-06-20T15:11:06.000-07:00,music_school,,"{'addr:housenumber': '33783', 'website': 'http://www.darcyalive.com', 'phone': '+1-604-746-7477', 'level': '1', 'description': 'Singing Lessons, Voice Coaching', 'addr:street': 'Essendene Avenue', 'addr:postcode': 'V2S 2H1'}"
@@ -15953,7 +15953,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2715186,-123.254223,2011-06-08T03:00:06.000-07:00,bicycle_parking,,{}
 49.259017,-122.9564347,2019-06-17T23:22:51.000-07:00,fuel,Esso,"{'brand:wikidata': 'Q867662', 'brand': 'Esso', 'brand:wikipedia': 'en:Esso'}"
 49.2680899,-123.1576906,2019-03-23T19:25:56.000-07:00,pharmacy,Shoppers Drug Mart,"{'brand:wikidata': 'Q1820137', 'addr:housenumber': '2302', 'brand:wikipedia': 'en:Shoppers Drug Mart', 'opening_hours': '24/7', 'dispensing': 'yes', 'addr:street': 'West 4th Avenue', 'brand': 'Shoppers Drug Mart', 'healthcare': 'pharmacy'}"
-49.2148799,-122.92198139999999,2010-10-23T17:09:13.000-07:00,place_of_worship,Mt. Calvary Lutheran Church,"{'source': 'CanVec 6.0 - NRCan', 'building': 'yes', 'religion': 'christian'}"
+49.2148799,-122.9219814,2010-10-23T17:09:13.000-07:00,place_of_worship,Mt. Calvary Lutheran Church,"{'source': 'CanVec 6.0 - NRCan', 'building': 'yes', 'religion': 'christian'}"
 49.2109625,-122.9162642,2010-10-18T21:31:08.000-07:00,place_of_worship,,"{'building': 'yes', 'source': 'CanVec 6.0 - NRCan'}"
 49.2068115,-122.9142345,2016-01-13T03:52:42.000-08:00,place_of_worship,Olivet Baptist Church,"{'source': 'CanVec 6.0 - NRCan', 'religion': 'christian'}"
 49.2150165,-122.9332378,2010-10-18T21:31:19.000-07:00,place_of_worship,,"{'building': 'yes', 'source': 'CanVec 6.0 - NRCan'}"
@@ -16333,7 +16333,7 @@ lat,lon,timestamp,amenity,name,tags
 49.0405959,-123.0897498,2020-04-18T23:45:02.000-07:00,dentist,Drs. Mottahed Sahota & Yee,"{'addr:unit': '2206', 'healthcare': 'dentist'}"
 49.040982,-123.0897646,2020-04-18T23:45:02.000-07:00,restaurant,,{'cuisine': 'japanese'}
 49.0425154,-123.0815866,2020-04-28T00:08:50.000-07:00,charging_station,,{'capacity': '10'}
-49.131380300000004,-122.892251,2020-04-19T04:02:31.000-07:00,post_office,Scottsdale,"{'brand:wikidata': 'Q1032001', 'addr:postcode': 'V4E 2A0', 'brand': 'Canada Post', 'brand:wikipedia': 'en:Canada Post', 'operator': 'Canada Post'}"
+49.1313803,-122.892251,2020-04-19T04:02:31.000-07:00,post_office,Scottsdale,"{'brand:wikidata': 'Q1032001', 'addr:postcode': 'V4E 2A0', 'brand': 'Canada Post', 'brand:wikipedia': 'en:Canada Post', 'operator': 'Canada Post'}"
 49.2671474,-123.0903903,2020-04-19T07:01:32.000-07:00,cafe,Kafka,{}
 49.1763638,-122.8670262,2020-04-19T21:31:30.000-07:00,post_box,,{'operator': 'Canada Post'}
 49.1114592,-122.7562308,2020-04-20T05:40:53.000-07:00,post_box,,{'operator': 'Canada Post'}
@@ -16447,7 +16447,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2903172,-123.12894,2020-02-25T19:21:02.000-08:00,cafe,Take Five Café,"{'addr:province': 'BC', 'addr:housenumber': '683', 'addr:street': 'Nicola Street', 'addr:city': 'Vancouver'}"
 49.24626,-123.1010258,2020-02-25T19:28:04.000-08:00,restaurant,Kizuna,"{'addr:province': 'BC', 'cuisine': 'sushi', 'addr:housenumber': '4342', 'addr:street': 'Main Street', 'addr:city': 'Vancouver'}"
 49.2506156,-123.1011955,2020-02-25T19:28:04.000-08:00,restaurant,Sushi Mania,"{'addr:province': 'BC', 'cuisine': 'sushi', 'addr:housenumber': '3851', 'addr:street': 'Main Street', 'addr:city': 'Vancouver'}"
-49.2797002,-122.79884559999999,2020-02-27T03:51:09.000-08:00,fast_food,McDonald's,"{'brand:wikidata': 'Q38076', 'addr:province': 'BC', 'addr:housenumber': '2929', 'brand:wikipedia': ""en:McDonald's"", 'drive_through': 'no', 'cuisine': 'burger', 'addr:street': 'Barnet Hwy', 'addr:postcode': 'V3B 5R5', 'takeaway': 'yes', 'brand': ""McDonald's"", 'addr:city': 'Coquitlam'}"
+49.2797002,-122.7988456,2020-02-27T03:51:09.000-08:00,fast_food,McDonald's,"{'brand:wikidata': 'Q38076', 'addr:province': 'BC', 'addr:housenumber': '2929', 'brand:wikipedia': ""en:McDonald's"", 'drive_through': 'no', 'cuisine': 'burger', 'addr:street': 'Barnet Hwy', 'addr:postcode': 'V3B 5R5', 'takeaway': 'yes', 'brand': ""McDonald's"", 'addr:city': 'Coquitlam'}"
 49.2848699,-123.128767,2020-02-27T06:25:36.000-08:00,bicycle_rental,Bute & Barclay,"{'ref': '0300', 'capacity': '14', 'network': 'Mobi'}"
 49.2639535,-123.1126594,2020-02-27T06:25:37.000-08:00,bicycle_rental,8th & Yukon,"{'ref': '0170', 'capacity': '14', 'network': 'Mobi'}"
 49.2833273,-123.1252595,2020-06-15T02:33:53.000-07:00,bicycle_rental,Smithe & Burrard,"{'ref': '0217', 'capacity': '14', 'network': 'Mobi'}"
@@ -16500,7 +16500,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2314731,-123.1175782,2020-03-06T07:06:28.000-08:00,post_office,Oakridge,"{'brand:wikidata': 'Q1032001', 'brand:wikipedia': 'en:Canada Post', 'description': 'Co-located with Photo Express', 'addr:postcode': 'V5Z 2N0', 'brand': 'Canada Post', 'operator': 'Canada Post'}"
 49.2895607,-123.1327719,2020-03-06T09:41:48.000-08:00,post_office,Robson Street,"{'brand:wikidata': 'Q1032001', 'addr:postcode': 'V6G 1C0', 'brand': 'Canada Post', 'brand:wikipedia': 'en:Canada Post', 'operator': 'Canada Post'}"
 49.2657114,-123.2552215,2020-03-06T14:58:42.000-08:00,bench,,"{'wheelchair': 'yes', 'backrest': 'no', 'material': 'wood_and_concrete'}"
-49.1625067,-122.83407389999999,2020-03-06T20:40:47.000-08:00,post_office,Bear Creek,"{'brand:wikidata': 'Q1032001', 'addr:postcode': 'V3W 5L0', 'brand': 'Canada Post', 'brand:wikipedia': 'en:Canada Post', 'operator': 'Canada Post'}"
+49.1625067,-122.8340739,2020-03-06T20:40:47.000-08:00,post_office,Bear Creek,"{'brand:wikidata': 'Q1032001', 'addr:postcode': 'V3W 5L0', 'brand': 'Canada Post', 'brand:wikipedia': 'en:Canada Post', 'operator': 'Canada Post'}"
 49.0520248,-122.315563,2016-11-27T06:35:04.000-08:00,parking_entrance,,{'level': '-2'}
 49.2261523,-122.991921,2019-09-02T22:08:25.000-07:00,cafe,Joe's Table Cafe,"{'addr:housenumber': '5021', 'internet_access': 'wlan', 'opening_hours': 'Mo-Fr 07:00-20:00; Sa 09:00-15:00; Su closed', 'cuisine': 'coffee_shop', 'addr:street': 'Kingsway', 'addr:postcode': 'V5H 2E5', 'addr:city': 'Burnaby'}"
 49.2819109,-123.1135011,2019-09-13T13:56:49.000-07:00,restaurant,White Spot,"{'brand:wikidata': 'Q7995414', 'wheelchair': 'yes', 'brand:wikipedia': 'en:White Spot', 'cuisine': 'burger', 'addr:postcode': 'V6B 1X4', 'addr:city': 'Vancouver', 'capacity': '249', 'diet:vegetarian': 'yes', 'addr:housenumber': '405', 'smoking': 'no', 'opening_hours': 'Mo-Th 06:30-23:00; Fr 06:30-00:00; Sa 08:00-00:00; Su 08:00-23:00', 'addr:street': 'Dunsmuir Street', 'brand': 'White Spot'}"
@@ -16949,7 +16949,7 @@ lat,lon,timestamp,amenity,name,tags
 49.205582,-123.0523318,2019-08-12T21:39:45.000-07:00,bench,,{'backrest': 'yes'}
 49.2056539,-123.0521977,2019-08-12T21:39:45.000-07:00,bench,,{'backrest': 'yes'}
 49.2057432,-123.0515794,2019-08-12T21:39:45.000-07:00,bench,,{'backrest': 'yes'}
-49.205686299999996,-123.0512804,2019-08-12T21:39:45.000-07:00,bench,,{'backrest': 'yes'}
+49.2056863,-123.0512804,2019-08-12T21:39:45.000-07:00,bench,,{'backrest': 'yes'}
 49.2053349,-123.0513514,2019-08-12T21:39:45.000-07:00,bench,,{'backrest': 'yes'}
 49.2053244,-123.0514037,2019-08-12T21:39:45.000-07:00,bench,,{'backrest': 'yes'}
 49.2052931,-123.0519462,2019-08-12T21:38:02.000-07:00,bench,,{'backrest': 'yes'}
@@ -17283,7 +17283,7 @@ lat,lon,timestamp,amenity,name,tags
 49.2681363,-123.1709597,2019-05-09T00:00:38.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '7'}"
 49.268245,-123.1657628,2019-05-09T00:00:39.000-07:00,bicycle_parking,,"{'bicycle_parking': 'rack', 'covered': 'no', 'capacity': '4'}"
 49.2684859,-123.1704355,2019-05-09T00:00:39.000-07:00,bicycle_parking,,"{'bicycle_parking': 'rack', 'covered': 'no', 'capacity': '4'}"
-49.2682719,-123.16754829999999,2019-05-09T00:00:39.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '2'}"
+49.2682719,-123.1675483,2019-05-09T00:00:39.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '2'}"
 49.2684305,-123.1668293,2019-05-09T00:00:39.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '2'}"
 49.2681825,-123.1662767,2019-05-09T00:00:39.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '2'}"
 49.2685587,-123.1700188,2019-05-09T00:00:39.000-07:00,bicycle_parking,,"{'bicycle_parking': 'stands', 'covered': 'no', 'capacity': '3'}"
@@ -17467,7 +17467,7 @@ lat,lon,timestamp,amenity,name,tags
 49.0917422,-122.0472131,2019-06-06T21:05:30.000-07:00,bench,,{'backrest': 'yes'}
 49.0942651,-122.0473322,2019-06-06T21:05:30.000-07:00,bench,,{'backrest': 'yes'}
 49.254289,-123.2473869,2020-05-20T01:51:36.000-07:00,bench,,{}
-49.040479500000004,-122.8165812,2020-05-20T02:41:41.000-07:00,bench,,{}
+49.0404795,-122.8165812,2020-05-20T02:41:41.000-07:00,bench,,{}
 49.0405757,-122.8165879,2020-05-20T02:41:41.000-07:00,bench,,{}
 49.2679143,-123.0002774,2020-05-20T05:15:18.000-07:00,post_office,Brentwood Town Centre,"{'brand:wikidata': 'Q1032001', 'brand:wikipedia': 'en:Canada Post', 'addr:postcode': 'V5C 2A0', 'brand': 'Canada Post', 'addr:unit': '47A', 'operator': 'Canada Post'}"
 49.0495644,-122.8572882,2020-05-20T21:02:07.000-07:00,waste_basket,,{}

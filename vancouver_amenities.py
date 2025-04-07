@@ -3,10 +3,7 @@ import pandas as pd
 # load the amenities data: amenities-vancouver.json.gz
 df = pd.read_json('data/amenities-vancouver.json.gz', compression='gzip', lines=True)
 
-df.to_csv('data/vancouver_amenities.csv', index=False)
-
 # filter out the neccessary amenities columns
-# OSM amenity category mapping for the project
 amenity_categories = {
   "food & drink": [
     'cafe', 'fast_food', 'bbq', 'restaurant', 'pub', 'bar', 'food_court', 'ice_cream', 'bistro', 'juice_bar', 'internet_cafe', 'disused:restaurant', 'water_point', 'biergarten'
@@ -28,4 +25,14 @@ amenity_categories = {
   ],
 }
 
+# create the amenities dataframe
+category_map = pd.Series({
+  amenity: category
+  for category, amenities in amenity_categories.items()
+  for amenity in amenities
+})
 
+df['category'] = df['amenity'].map(category_map).fillna('others')
+
+# create a csv file from the dataframe
+df.to_csv('data/vancouver_amenities.csv', index=False)

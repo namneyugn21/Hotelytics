@@ -27,3 +27,5 @@ amenity_categories = {
     'toilets', 'post_box', 'telephone', 'vending_machine', 'school', 'bench', 'community_centre', 'waste_basket', 'public_building', 'drinking_water', 'shelter', 'recycling', 'public_bookcase', 'university', 'dojo', 'bicycle_repair_station', 'waste_disposal', 'social_facility', 'college', 'construction', 'post_depot', 'nursery', 'kindergarten', 'conference_centre', 'shower', 'trolley_bay', 'fire_station', 'police', 'compressed_air', 'family_centre', 'townhall', 'music_school', 'scrapyard', 'language_school', 'courthouse', 'events_venue', 'prep_school', 'cram_school', 'science', 'ATLAS_clean_room', 'workshop', 'safety', 'lobby', 'animal_shelter', 'social_centre', 'vacuum_cleaner', 'smoking_area', 'studio', 'ranger_station', 'storage_rental', 'watering_place', 'trash', 'sanitary_dump_station', 'Observation Platform', 'housing co-op', 'driving_school', 'loading_dock', 'monastery', 'storage', 'payment_terminal', 'waste_transfer_station', 'office|financial', 'hunting_stand', 'money_transfer', 'letter_box', 'training', 'car_rep', 'research_institute'
   ],
 }
+
+

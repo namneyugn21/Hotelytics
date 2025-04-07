@@ -1,11 +1,14 @@
 import pandas as pd
 import geopandas as gpd 
-import folium
+import streamlit as st
+import pydeck as pdk
+
+# === DATA CLEANING ===
 
 gdf = gpd.read_file("data/vancouver_hotels.geojson")
 df = pd.DataFrame(gdf.drop(columns='geometry'))
 
-# we will filter out the neccessary columns from the dataframe
+# Filter relevant columns
 hotels = df[[
   'id',
   'name',
@@ -26,36 +29,55 @@ hotels = hotels.rename(columns={
   'addr:postcode': 'postcode'
 })
 
-# channge the id to indexing numbers
 hotels['id'] = hotels.index + 1
-
-# since the some rows have missing province and city, we will fill them with 'BC' and 'Vancouver'
-# and missing postcode with 'N/A'
 hotels['province'] = hotels['province'].fillna('BC')
 hotels['city'] = hotels['city'].fillna('Vancouver')
 hotels['postcode'] = hotels['postcode'].fillna('N/A')
 
-# create a csv file from the dataframe
 hotels.to_csv('data/vancouver_hotels.csv', index=False)
 
-# 🎯 Create and save a map using Folium
-hotel_map = folium.Map(location=[49.2827, -123.1207], zoom_start=12)  # Centered on Vancouver
+# === STREAMLIT APP ===
 
-for _, row in gdf.iterrows():
-    geom = row.geometry
-    if geom is not None:
-        # Get a Point location (use centroid if it's a polygon)
-        if geom.geom_type == 'Point':
-            lat = geom.y
-            lon = geom.x
-        else:
-            centroid = geom.centroid
-            lat = centroid.y
-            lon = centroid.x
+st.set_page_config(page_title="Vancouver Hotels Map", layout="wide")
+st.title("🏨 Vancouver Hotels Map")
+st.subheader(f"Total Hotels: {len(gdf)}")
 
-        popup = row.get("name", "Unnamed Hotel")
-        folium.Marker(location=[lat, lon], popup=popup).add_to(hotel_map)
+if st.checkbox("Show raw hotel table"):
+    st.dataframe(hotels)
 
-# Save the map to HTML file
-hotel_map.save("data/vancouver_hotels_map.html")
-print("Succesfully! Hotel data saved and map generated at: data/vancouver_hotels_map.html")
+# Re-load GeoJSON and filter to Points
+gdf = gpd.read_file("data/vancouver_hotels.geojson")
+gdf = gdf[gdf.geometry.type == 'Point']
+gdf['lon'] = gdf.geometry.x
+gdf['lat'] = gdf.geometry.y
+
+# Create pydeck layer with smaller radius (30 instead of 60)
+layer = pdk.Layer(
+    "ScatterplotLayer",
+    data=gdf,
+    get_position='[lon, lat]',
+    get_radius= 20,  # smaller circles 
+    get_fill_color=[255, 0, 0, 160],
+    pickable=True
+)
+
+
+# Optional tooltips
+tooltip = {"html": "<b>Hotel:</b> {name}", "style": {"color": "white"}}
+
+# Center map view
+view_state = pdk.ViewState(
+    latitude=gdf['lat'].mean(),
+    longitude=gdf['lon'].mean(),
+    zoom=12,
+    pitch=0
+)
+
+# Display pydeck map
+st.pydeck_chart(pdk.Deck(
+    layers=[layer],
+    initial_view_state=view_state,
+    map_style="light",  # original map color
+
+    tooltip=tooltip
+))

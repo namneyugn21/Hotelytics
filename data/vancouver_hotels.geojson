@@ -1,0 +1,4402 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-03-24T01:34:05Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3219248",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1100",
+        "addr:province": "BC",
+        "addr:street": "Burrard Street",
+        "building": "yes",
+        "email": "info@TheBurrard.com",
+        "height": "12",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "The Burrard",
+        "phone": "+1-604-681-2331",
+        "roof:colour": "#747275",
+        "tourism": "hotel",
+        "type": "multipolygon",
+        "website": "https://www.theburrard.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.127844,
+              49.2797833
+            ],
+            [
+              -123.1274851,
+              49.2795501
+            ],
+            [
+              -123.1271966,
+              49.2797391
+            ],
+            [
+              -123.1275556,
+              49.2799723
+            ],
+            [
+              -123.127844,
+              49.2797833
+            ]
+          ],
+          [
+            [
+              -123.1275379,
+              49.2798738
+            ],
+            [
+              -123.127332,
+              49.27974
+            ],
+            [
+              -123.1274814,
+              49.2796421
+            ],
+            [
+              -123.1276873,
+              49.2797759
+            ],
+            [
+              -123.1275379,
+              49.2798738
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3219248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/49381360",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1379",
+        "addr:postcode": "V6Z 2R5",
+        "addr:province": "BC",
+        "addr:street": "Howe Street",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "The Parker Hotel Vancouver",
+        "phone": "+1-604-688-7678",
+        "roof:colour": "#7a7879",
+        "tourism": "hotel",
+        "website": "https://www.executivehotels.net/vancouver-downtown-boutique-hotel/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1302393,
+              49.2759456
+            ],
+            [
+              -123.1299832,
+              49.2761193
+            ],
+            [
+              -123.130014,
+              49.2761412
+            ],
+            [
+              -123.1299414,
+              49.2761867
+            ],
+            [
+              -123.1301174,
+              49.2763003
+            ],
+            [
+              -123.1301654,
+              49.2762758
+            ],
+            [
+              -123.1301641,
+              49.2762697
+            ],
+            [
+              -123.1301879,
+              49.2762565
+            ],
+            [
+              -123.130249,
+              49.2762946
+            ],
+            [
+              -123.1303282,
+              49.2762529
+            ],
+            [
+              -123.1303711,
+              49.2762398
+            ],
+            [
+              -123.1303959,
+              49.2762193
+            ],
+            [
+              -123.1304127,
+              49.276193
+            ],
+            [
+              -123.1304431,
+              49.2761719
+            ],
+            [
+              -123.130392,
+              49.2760388
+            ],
+            [
+              -123.1302393,
+              49.2759456
+            ]
+          ]
+        ]
+      },
+      "id": "way/49381360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/91998136",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1228",
+        "addr:province": "BC",
+        "addr:street": "West Georgia Street",
+        "building": "yes",
+        "building:levels": "62",
+        "email": "slv@shangri-la.com",
+        "height": "201",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Shangri-La Vancouver",
+        "operator": "Shangri-La",
+        "phone": "+1-604-689-1120",
+        "tourism": "hotel",
+        "website": "https://www.shangri-la.com/vancouver/shangrila/",
+        "wikidata": "Q111231428"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1238923,
+              49.286
+            ],
+            [
+              -123.1238924,
+              49.2858886
+            ],
+            [
+              -123.1239201,
+              49.2858866
+            ],
+            [
+              -123.1239186,
+              49.2857881
+            ],
+            [
+              -123.1239758,
+              49.2857842
+            ],
+            [
+              -123.1241403,
+              49.2857506
+            ],
+            [
+              -123.1241269,
+              49.2857402
+            ],
+            [
+              -123.1241574,
+              49.2857336
+            ],
+            [
+              -123.1241587,
+              49.2857154
+            ],
+            [
+              -123.1239345,
+              49.2855905
+            ],
+            [
+              -123.1239182,
+              49.2855996
+            ],
+            [
+              -123.1239093,
+              49.2855721
+            ],
+            [
+              -123.1238722,
+              49.285572
+            ],
+            [
+              -123.1237879,
+              49.2855224
+            ],
+            [
+              -123.1237784,
+              49.2855168
+            ],
+            [
+              -123.1238123,
+              49.2854947
+            ],
+            [
+              -123.1237647,
+              49.2854606
+            ],
+            [
+              -123.1233937,
+              49.2856968
+            ],
+            [
+              -123.1234433,
+              49.2857284
+            ],
+            [
+              -123.1234972,
+              49.2857628
+            ],
+            [
+              -123.1238525,
+              49.2859895
+            ],
+            [
+              -123.1238639,
+              49.2859819
+            ],
+            [
+              -123.1238923,
+              49.286
+            ]
+          ]
+        ]
+      },
+      "id": "way/91998136"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/104912350",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1100",
+        "addr:province": "BC",
+        "addr:street": "Granville Street",
+        "brand": "Best Western Premier",
+        "brand:wikidata": "Q830334",
+        "building": "hotel",
+        "building:levels": "2",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Best Western Premier Chateau Granville Hotel & Suites & Conference Centre",
+        "operator": "Best Western",
+        "phone": "+1-604-669-7070",
+        "roof:colour": "#a9a29b",
+        "roof:levels": "0",
+        "tourism": "hotel",
+        "website": "https://www.bestwestern.com/en_US/book/hotels-in-vancouver/best-western-premier-chateau-granville-hotel-suites-conf-centre/propertyCode.62046.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1247296,
+              49.2775736
+            ],
+            [
+              -123.1244568,
+              49.2777517
+            ],
+            [
+              -123.1243665,
+              49.2777522
+            ],
+            [
+              -123.1242872,
+              49.2778169
+            ],
+            [
+              -123.1242902,
+              49.2778764
+            ],
+            [
+              -123.1243128,
+              49.2778865
+            ],
+            [
+              -123.1248796,
+              49.2778828
+            ],
+            [
+              -123.1249008,
+              49.277869
+            ],
+            [
+              -123.1249353,
+              49.2778683
+            ],
+            [
+              -123.1250559,
+              49.2777903
+            ],
+            [
+              -123.1247296,
+              49.2775736
+            ]
+          ]
+        ]
+      },
+      "id": "way/104912350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/119943680",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1253",
+        "addr:postcode": "V6H 3R9",
+        "addr:province": "BC",
+        "addr:street": "Johnston Street",
+        "building": "hotel",
+        "building:levels": "3",
+        "name": "Granville Island Hotel",
+        "phone": "+1-604-683-7373",
+        "start_date": "1983",
+        "tourism": "hotel",
+        "website": "https://www.granvilleislandhotel.com/",
+        "wikidata": "Q16910475"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1313628,
+              49.2693999
+            ],
+            [
+              -123.1312599,
+              49.2694026
+            ],
+            [
+              -123.1312565,
+              49.2693489
+            ],
+            [
+              -123.1314612,
+              49.2693434
+            ],
+            [
+              -123.1314556,
+              49.2692531
+            ],
+            [
+              -123.1312025,
+              49.2692598
+            ],
+            [
+              -123.1312032,
+              49.2692716
+            ],
+            [
+              -123.1311846,
+              49.2692721
+            ],
+            [
+              -123.1311499,
+              49.2692506
+            ],
+            [
+              -123.1311495,
+              49.2692404
+            ],
+            [
+              -123.1311739,
+              49.2692235
+            ],
+            [
+              -123.1311031,
+              49.2691798
+            ],
+            [
+              -123.130668,
+              49.2691914
+            ],
+            [
+              -123.1306723,
+              49.2692596
+            ],
+            [
+              -123.1306484,
+              49.269292
+            ],
+            [
+              -123.1306761,
+              49.2693213
+            ],
+            [
+              -123.1306803,
+              49.2693879
+            ],
+            [
+              -123.130939,
+              49.269381
+            ],
+            [
+              -123.1309516,
+              49.2695831
+            ],
+            [
+              -123.1309211,
+              49.2695997
+            ],
+            [
+              -123.1309084,
+              49.2695897
+            ],
+            [
+              -123.1308045,
+              49.2696463
+            ],
+            [
+              -123.1308233,
+              49.2696611
+            ],
+            [
+              -123.1307845,
+              49.2696823
+            ],
+            [
+              -123.1308222,
+              49.2697117
+            ],
+            [
+              -123.1308022,
+              49.2697226
+            ],
+            [
+              -123.1308834,
+              49.2697861
+            ],
+            [
+              -123.1309022,
+              49.2697758
+            ],
+            [
+              -123.130935,
+              49.2698015
+            ],
+            [
+              -123.1310202,
+              49.2697551
+            ],
+            [
+              -123.1310315,
+              49.2697638
+            ],
+            [
+              -123.1312215,
+              49.2696603
+            ],
+            [
+              -123.1312062,
+              49.2696484
+            ],
+            [
+              -123.1312602,
+              49.269619
+            ],
+            [
+              -123.1312575,
+              49.2695767
+            ],
+            [
+              -123.1313736,
+              49.2695736
+            ],
+            [
+              -123.1313628,
+              49.2693999
+            ]
+          ]
+        ]
+      },
+      "id": "way/119943680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/128059890",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1111",
+        "addr:postcode": "V6E 1P4",
+        "addr:province": "BC",
+        "addr:street": "Burnaby Street",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Sunset Inn & Suites",
+        "phone": "+1-604-688-2474",
+        "roof:colour": "#a9a8a4",
+        "tourism": "hotel",
+        "website": "https://www.sunsetinn.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1324111,
+              49.2801884
+            ],
+            [
+              -123.1324771,
+              49.2801458
+            ],
+            [
+              -123.1324894,
+              49.2801538
+            ],
+            [
+              -123.1324971,
+              49.2801589
+            ],
+            [
+              -123.1325958,
+              49.2800953
+            ],
+            [
+              -123.1325697,
+              49.2800781
+            ],
+            [
+              -123.1326046,
+              49.2800556
+            ],
+            [
+              -123.1325442,
+              49.2800157
+            ],
+            [
+              -123.132471,
+              49.2799674
+            ],
+            [
+              -123.132434,
+              49.2799913
+            ],
+            [
+              -123.132406,
+              49.2799728
+            ],
+            [
+              -123.1323038,
+              49.2800388
+            ],
+            [
+              -123.1323275,
+              49.2800545
+            ],
+            [
+              -123.1322672,
+              49.2800934
+            ],
+            [
+              -123.1324111,
+              49.2801884
+            ]
+          ]
+        ]
+      },
+      "id": "way/128059890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/138641345",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "602",
+        "addr:province": "BC",
+        "addr:street": "Dunsmuir Street",
+        "alt_name": "Saint Regis",
+        "brand": "St. Regis",
+        "brand:wikidata": "Q30715430",
+        "brand:wikipedia": "en:St. Regis Hotels & Resorts",
+        "building": "yes",
+        "building:levels": "6",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "St. Regis Hotel",
+        "phone": "+1-604-681-1135",
+        "roof:colour": "#8a7770",
+        "tourism": "hotel",
+        "website": "https://www.stregishotel.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.115964,
+              49.2832067
+            ],
+            [
+              -123.1161106,
+              49.2831076
+            ],
+            [
+              -123.1160478,
+              49.2830681
+            ],
+            [
+              -123.1161991,
+              49.2829659
+            ],
+            [
+              -123.1160809,
+              49.2828915
+            ],
+            [
+              -123.1160199,
+              49.282853
+            ],
+            [
+              -123.115912,
+              49.2827842
+            ],
+            [
+              -123.115615,
+              49.2829826
+            ],
+            [
+              -123.1156998,
+              49.2830366
+            ],
+            [
+              -123.115964,
+              49.2832067
+            ]
+          ]
+        ]
+      },
+      "id": "way/138641345"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/138867328",
+        "addr:housenumber": "801",
+        "addr:street": "West Georgia Street",
+        "brand": "Rosewood",
+        "brand:wikidata": "Q7368777",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Rosewood Hotel Georgia",
+        "official_name": "Rosewood Hotels & Resorts",
+        "phone": "+1-604-682-5566",
+        "toilets:wheelchair": "yes",
+        "tourism": "hotel",
+        "website": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver",
+        "wheelchair": "yes",
+        "wikidata": "Q111231429"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1194321,
+              49.2835124
+            ],
+            [
+              -123.1190855,
+              49.2832884
+            ],
+            [
+              -123.118658,
+              49.2835799
+            ],
+            [
+              -123.1188621,
+              49.2837177
+            ],
+            [
+              -123.119003,
+              49.2838119
+            ],
+            [
+              -123.1192634,
+              49.2836235
+            ],
+            [
+              -123.1194321,
+              49.2835124
+            ]
+          ]
+        ]
+      },
+      "id": "way/138867328"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/139571554",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "900",
+        "addr:province": "BC",
+        "addr:street": "West Georgia Street",
+        "brand": "Fairmont",
+        "brand:wikidata": "Q1393345",
+        "brand:wikipedia": "en:Fairmont Hotels and Resorts",
+        "building": "yes",
+        "check_date": "2024-09-18",
+        "email": "hvc.concierge@fairmont.com",
+        "height": "15",
+        "internet_access": "wlan",
+        "material": "stone",
+        "name": "Fairmont Hotel Vancouver",
+        "operator": "The Fairmont",
+        "phone": "+1-604-684-3131",
+        "roof:colour": "#99968d",
+        "tourism": "hotel",
+        "website": "https://www.fairmont.com/hotel-vancouver/",
+        "wheelchair": "yes",
+        "wikidata": "Q930702",
+        "wikipedia": "en:Hotel Vancouver"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1211112,
+              49.2842319
+            ],
+            [
+              -123.1212078,
+              49.2841661
+            ],
+            [
+              -123.1212412,
+              49.2841433
+            ],
+            [
+              -123.1214865,
+              49.2839761
+            ],
+            [
+              -123.1215248,
+              49.28395
+            ],
+            [
+              -123.1216563,
+              49.2838604
+            ],
+            [
+              -123.1215534,
+              49.2837961
+            ],
+            [
+              -123.1216537,
+              49.2837277
+            ],
+            [
+              -123.1217648,
+              49.2837971
+            ],
+            [
+              -123.1218793,
+              49.2837191
+            ],
+            [
+              -123.1216323,
+              49.2835649
+            ],
+            [
+              -123.1215884,
+              49.2835948
+            ],
+            [
+              -123.1212444,
+              49.283379
+            ],
+            [
+              -123.1211326,
+              49.2833114
+            ],
+            [
+              -123.1209659,
+              49.2834224
+            ],
+            [
+              -123.1208888,
+              49.2833759
+            ],
+            [
+              -123.1207653,
+              49.2834584
+            ],
+            [
+              -123.1207214,
+              49.2834877
+            ],
+            [
+              -123.1204934,
+              49.2836402
+            ],
+            [
+              -123.1204488,
+              49.2836699
+            ],
+            [
+              -123.1203392,
+              49.2837432
+            ],
+            [
+              -123.1205339,
+              49.2838715
+            ],
+            [
+              -123.1209172,
+              49.2841108
+            ],
+            [
+              -123.1211112,
+              49.2842319
+            ]
+          ]
+        ]
+      },
+      "id": "way/139571554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/143682581",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "645",
+        "addr:street": "Howe Street",
+        "building": "yes",
+        "building:levels": "17",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Metropolitan Hotel Vancouver",
+        "phone": "+1-604-687-1122",
+        "source": "Bing",
+        "tourism": "hotel",
+        "website": "https://www.marriott.com/hotels/travel/yvrbr-metropolitan-hotel-vancouver/",
+        "wikidata": "Q14874690",
+        "wikipedia": "en:Metropolitan Vancouver Hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1186238,
+              49.284016
+            ],
+            [
+              -123.1183058,
+              49.2838148
+            ],
+            [
+              -123.1180228,
+              49.2840051
+            ],
+            [
+              -123.1183407,
+              49.2842064
+            ],
+            [
+              -123.1186238,
+              49.284016
+            ]
+          ]
+        ]
+      },
+      "id": "way/143682581"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/181355203",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1133",
+        "addr:postcode": "V6E 3T3",
+        "addr:province": "BC",
+        "addr:street": "West Hastings Street",
+        "alt_name": "p2b Bistro & Bar",
+        "building": "yes",
+        "building:levels": "18",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Pinnacle Hotel Harbourfront",
+        "phone": "+1-604-689-9211",
+        "roof:colour": "#a29283",
+        "tourism": "hotel",
+        "website": "https://www.pinnacleharbourfronthotel.com/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.121225,
+              49.2884527
+            ],
+            [
+              -123.1204578,
+              49.2882423
+            ],
+            [
+              -123.1204121,
+              49.2883083
+            ],
+            [
+              -123.120391,
+              49.2883386
+            ],
+            [
+              -123.1203857,
+              49.2883447
+            ],
+            [
+              -123.1202703,
+              49.2885086
+            ],
+            [
+              -123.1202468,
+              49.2885432
+            ],
+            [
+              -123.1205521,
+              49.2886637
+            ],
+            [
+              -123.1209967,
+              49.2887895
+            ],
+            [
+              -123.1210325,
+              49.2887365
+            ],
+            [
+              -123.1210531,
+              49.2887043
+            ],
+            [
+              -123.1212032,
+              49.2884859
+            ],
+            [
+              -123.121225,
+              49.2884527
+            ]
+          ]
+        ]
+      },
+      "id": "way/181355203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/223089077",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1128",
+        "addr:province": "BC",
+        "addr:street": "West Hastings Street",
+        "brand": "Marriott",
+        "brand:wikidata": "Q3918608",
+        "brand:wikipedia": "en:Marriott International",
+        "building": "yes",
+        "building:levels": "4",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Marriott Pinnacle Downtown",
+        "phone": "+1-604-684-1128",
+        "roof:colour": "#7b746e",
+        "roof:shape": "flat",
+        "source": "bing;survey",
+        "tourism": "hotel",
+        "website": "https://www.marriott.com/hotels/travel/yvrdt-vancouver-marriott-pinnacle-downtown-hotel/",
+        "wheelchair": "yes",
+        "wikidata": "Q14874782"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1215446,
+              49.287974
+            ],
+            [
+              -123.1211013,
+              49.28784
+            ],
+            [
+              -123.1207266,
+              49.2877298
+            ],
+            [
+              -123.1207158,
+              49.2877462
+            ],
+            [
+              -123.1206329,
+              49.2877177
+            ],
+            [
+              -123.1206212,
+              49.2877246
+            ],
+            [
+              -123.1205586,
+              49.2877028
+            ],
+            [
+              -123.1205361,
+              49.2876788
+            ],
+            [
+              -123.1204836,
+              49.2876638
+            ],
+            [
+              -123.1204213,
+              49.2876723
+            ],
+            [
+              -123.1203918,
+              49.2876941
+            ],
+            [
+              -123.1203833,
+              49.2877223
+            ],
+            [
+              -123.1203531,
+              49.2877354
+            ],
+            [
+              -123.1203376,
+              49.2877239
+            ],
+            [
+              -123.1202248,
+              49.2878035
+            ],
+            [
+              -123.1201438,
+              49.287857
+            ],
+            [
+              -123.1201061,
+              49.2878976
+            ],
+            [
+              -123.1201348,
+              49.2879259
+            ],
+            [
+              -123.1204633,
+              49.2880223
+            ],
+            [
+              -123.1205115,
+              49.2880264
+            ],
+            [
+              -123.1205622,
+              49.2880176
+            ],
+            [
+              -123.1206132,
+              49.2879896
+            ],
+            [
+              -123.120683,
+              49.287961
+            ],
+            [
+              -123.1207665,
+              49.2879501
+            ],
+            [
+              -123.1208572,
+              49.2879606
+            ],
+            [
+              -123.1209406,
+              49.2879855
+            ],
+            [
+              -123.1208471,
+              49.2881101
+            ],
+            [
+              -123.1213533,
+              49.2882547
+            ],
+            [
+              -123.1215446,
+              49.287974
+            ]
+          ]
+        ]
+      },
+      "id": "way/223089077"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/223089121",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1180",
+        "addr:postcode": "V6E 4R5",
+        "addr:street": "West Hastings Street",
+        "building": "yes",
+        "name": "Coast Coal Harbour Hotel by APA",
+        "phone": "+1-604-697-0202",
+        "roof:colour": "#99968f",
+        "toilets:wheelchair": "yes",
+        "tourism": "hotel",
+        "website": "https://www.coasthotels.com/hotels/bc/vancouver/coast-coal-harbour-hotel/",
+        "wheelchair": "yes",
+        "wheelchair:description": "Fully wheelchair accessible hotel room, toilet and shower."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.122048,
+              49.2881294
+            ],
+            [
+              -123.1218421,
+              49.2884372
+            ],
+            [
+              -123.1223312,
+              49.2885787
+            ],
+            [
+              -123.1225428,
+              49.2882719
+            ],
+            [
+              -123.1223631,
+              49.2882201
+            ],
+            [
+              -123.1221491,
+              49.2881585
+            ],
+            [
+              -123.122048,
+              49.2881294
+            ]
+          ]
+        ]
+      },
+      "id": "way/223089121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/240895668",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1160",
+        "addr:postcode": "V6E 1N1",
+        "addr:province": "BC",
+        "addr:street": "Davie Street",
+        "building": "yes",
+        "building:levels": "24",
+        "name": "Sandman Suites Vancouver on Davie",
+        "phone": "+1-604-681-7263",
+        "source": "local_knowledge",
+        "toilets:wheelchair": "yes",
+        "tourism": "hotel",
+        "website": "http://www.sandmanhotels.ca/hotels/vancouver-davie-street/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1330163,
+              49.2809674
+            ],
+            [
+              -123.1329412,
+              49.2809212
+            ],
+            [
+              -123.1329723,
+              49.2808999
+            ],
+            [
+              -123.132946,
+              49.2808832
+            ],
+            [
+              -123.1329143,
+              49.2809044
+            ],
+            [
+              -123.1328316,
+              49.2808538
+            ],
+            [
+              -123.1326821,
+              49.2809564
+            ],
+            [
+              -123.132602,
+              49.2810112
+            ],
+            [
+              -123.1325498,
+              49.281047
+            ],
+            [
+              -123.1324899,
+              49.2810881
+            ],
+            [
+              -123.1325615,
+              49.2811349
+            ],
+            [
+              -123.1325847,
+              49.28115
+            ],
+            [
+              -123.1326683,
+              49.2812045
+            ],
+            [
+              -123.1327128,
+              49.2811741
+            ],
+            [
+              -123.1329264,
+              49.2810287
+            ],
+            [
+              -123.1330163,
+              49.2809674
+            ]
+          ]
+        ]
+      },
+      "id": "way/240895668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/299585390",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "303",
+        "addr:province": "BC",
+        "addr:street": "Columbia Street",
+        "building": "yes",
+        "name": "Columbia Hotel",
+        "start_date": "1900",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1025783,
+              49.2822713
+            ],
+            [
+              -123.1025975,
+              49.281928
+            ],
+            [
+              -123.1023923,
+              49.2819216
+            ],
+            [
+              -123.1023675,
+              49.2822648
+            ],
+            [
+              -123.1025783,
+              49.2822713
+            ]
+          ]
+        ]
+      },
+      "id": "way/299585390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/301874117",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "435",
+        "addr:province": "BC",
+        "addr:street": "West Pender Street",
+        "brand": "Ramada",
+        "brand:wikidata": "Q1502859",
+        "brand:wikipedia": "en:Ramada",
+        "building": "yes",
+        "building:levels": "6",
+        "email": "info@ramadadowntownvancouver.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Ramada Limited Downtown Vancouver",
+        "phone": "+1-604-488-1088",
+        "roof:colour": "#cdc9c6",
+        "tourism": "hotel",
+        "website": "https://www.ramadadowntownvancouver.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1120497,
+              49.2834319
+            ],
+            [
+              -123.1121794,
+              49.2835178
+            ],
+            [
+              -123.1123115,
+              49.2834288
+            ],
+            [
+              -123.1125389,
+              49.2832894
+            ],
+            [
+              -123.1124,
+              49.2832029
+            ],
+            [
+              -123.1120497,
+              49.2834319
+            ]
+          ]
+        ]
+      },
+      "id": "way/301874117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/301874786",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "757",
+        "addr:province": "BC",
+        "addr:street": "Richards Street",
+        "building": "yes",
+        "email": "reservations@kingstonhotelvancouver.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Kingston Hotel",
+        "phone": "+1-604-684-9024",
+        "roof:colour": "#716c69",
+        "tourism": "hotel",
+        "website": "https://www.kingstonhotelvancouver.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1176207,
+              49.2808682
+            ],
+            [
+              -123.1172681,
+              49.2806411
+            ],
+            [
+              -123.1171537,
+              49.2807167
+            ],
+            [
+              -123.1170811,
+              49.2807648
+            ],
+            [
+              -123.1174125,
+              49.2809782
+            ],
+            [
+              -123.1174877,
+              49.2809285
+            ],
+            [
+              -123.1175089,
+              49.2809421
+            ],
+            [
+              -123.1176207,
+              49.2808682
+            ]
+          ]
+        ]
+      },
+      "id": "way/301874786"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/305206587",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1221",
+        "addr:province": "BC",
+        "addr:street": "Granville Street",
+        "air_conditioning": "yes",
+        "brand": "Quality Inn & Suites",
+        "brand:wikidata": "Q113152195",
+        "building": "hotel",
+        "email": "info@qualityvancouver.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Quality Inn & Suites Downtown Vancouver",
+        "phone": "+1-778-907-2918",
+        "roof:colour": "#a3a09b",
+        "tourism": "hotel",
+        "website": "https://www.qualityinndowntownvancouver.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1265651,
+              49.277074
+            ],
+            [
+              -123.1268341,
+              49.2772481
+            ],
+            [
+              -123.126911,
+              49.2772976
+            ],
+            [
+              -123.1271305,
+              49.2771543
+            ],
+            [
+              -123.1267847,
+              49.2769287
+            ],
+            [
+              -123.1265651,
+              49.277074
+            ]
+          ]
+        ]
+      },
+      "id": "way/305206587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/305206773",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1212",
+        "addr:province": "BC",
+        "addr:street": "Granville Street",
+        "building": "hotel",
+        "building:levels": "3",
+        "email": "frontdesk@hotelambassador.ca",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Ambassador Hotel",
+        "phone": "+1-604-687-8294",
+        "roof:colour": "#808082",
+        "tourism": "hotel",
+        "website": "http://hotelambassador.ca/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1263345,
+              49.2769162
+            ],
+            [
+              -123.126486,
+              49.2768242
+            ],
+            [
+              -123.1263798,
+              49.2767572
+            ],
+            [
+              -123.1263586,
+              49.2767701
+            ],
+            [
+              -123.1262623,
+              49.2767086
+            ],
+            [
+              -123.1261601,
+              49.2766433
+            ],
+            [
+              -123.1261856,
+              49.2766267
+            ],
+            [
+              -123.1261092,
+              49.276582
+            ],
+            [
+              -123.1259616,
+              49.2766789
+            ],
+            [
+              -123.1260343,
+              49.2767253
+            ],
+            [
+              -123.1260595,
+              49.2767098
+            ],
+            [
+              -123.1262553,
+              49.276834
+            ],
+            [
+              -123.1262318,
+              49.276852
+            ],
+            [
+              -123.1263345,
+              49.2769162
+            ]
+          ]
+        ]
+      },
+      "id": "way/305206773"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/305364815",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1234",
+        "addr:postcode": "V6Z 1W2",
+        "addr:province": "BC",
+        "addr:street": "Hornby Street",
+        "air_conditioning": "yes",
+        "brand": "Residence Inn",
+        "brand:wikidata": "Q7315394",
+        "brand:wikipedia": "en:Residence Inn by Marriott",
+        "building": "yes",
+        "name": "Residence Inn Vancouver Downtown",
+        "official_name": "Residence Inn by Marriott",
+        "operator": "Marriott International, Inc.",
+        "phone": "+1-604-688-1234",
+        "roof:colour": "#807d73",
+        "tourism": "hotel",
+        "website": "https://www.marriott.com/hotels/travel/yvrdr-residence-inn-vancouver-downtown/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1288899,
+              49.2777999
+            ],
+            [
+              -123.1286387,
+              49.2776391
+            ],
+            [
+              -123.128559,
+              49.277588
+            ],
+            [
+              -123.1281557,
+              49.2778561
+            ],
+            [
+              -123.1281752,
+              49.277868
+            ],
+            [
+              -123.1282692,
+              49.2779303
+            ],
+            [
+              -123.1284182,
+              49.278028
+            ],
+            [
+              -123.1284843,
+              49.278068
+            ],
+            [
+              -123.1288899,
+              49.2777999
+            ]
+          ]
+        ]
+      },
+      "id": "way/305364815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/305364816",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1200",
+        "addr:postcode": "V6Z 1W2",
+        "addr:province": "BC",
+        "addr:street": "Hornby Street",
+        "building": "apartments",
+        "building:levels": "15",
+        "name": "The Landis Hotel & Suites",
+        "phone": "+1-604-681-3555",
+        "roof:colour": "#958e88",
+        "tourism": "hotel",
+        "website": "https://www.landissuitesvancouver.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1281608,
+              49.2782809
+            ],
+            [
+              -123.1284843,
+              49.278068
+            ],
+            [
+              -123.1284182,
+              49.278028
+            ],
+            [
+              -123.1282692,
+              49.2779303
+            ],
+            [
+              -123.1281752,
+              49.277868
+            ],
+            [
+              -123.1278516,
+              49.278081
+            ],
+            [
+              -123.1281608,
+              49.2782809
+            ]
+          ]
+        ]
+      },
+      "id": "way/305364816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/305365217",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "845",
+        "addr:province": "BC",
+        "addr:street": "Hornby Street",
+        "building": "yes",
+        "building:levels": "1",
+        "email": "info@wedgewoodhotel.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Wedgewood Hotel & Spa",
+        "phone": "+1-604-689-7777",
+        "roof:colour": "#b9b3a7",
+        "tourism": "hotel",
+        "website": "https://www.wedgewoodhotel.com/",
+        "wikidata": "Q111231438"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1224822,
+              49.2823271
+            ],
+            [
+              -123.1225356,
+              49.2823609
+            ],
+            [
+              -123.1225531,
+              49.282372
+            ],
+            [
+              -123.1227673,
+              49.2825078
+            ],
+            [
+              -123.122815,
+              49.282538
+            ],
+            [
+              -123.1228413,
+              49.2825547
+            ],
+            [
+              -123.1230628,
+              49.2824013
+            ],
+            [
+              -123.1229943,
+              49.2823566
+            ],
+            [
+              -123.1229406,
+              49.2823215
+            ],
+            [
+              -123.1227806,
+              49.2822206
+            ],
+            [
+              -123.122753,
+              49.2822032
+            ],
+            [
+              -123.1227094,
+              49.2821745
+            ],
+            [
+              -123.1224822,
+              49.2823271
+            ]
+          ]
+        ]
+      },
+      "id": "way/305365217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/310614125",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1348",
+        "addr:province": "BC",
+        "addr:street": "Robson Street",
+        "building": "yes",
+        "building:levels": "3",
+        "check_date": "2024-09-18",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Barclay Hotel",
+        "phone": "+1-604-688-8850",
+        "roof:colour": "#76777c",
+        "roof:shape": "flat",
+        "tourism": "hotel",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1294098,
+              49.2873759
+            ],
+            [
+              -123.1296009,
+              49.2875011
+            ],
+            [
+              -123.1296833,
+              49.2874476
+            ],
+            [
+              -123.1296552,
+              49.2874292
+            ],
+            [
+              -123.1298128,
+              49.2873268
+            ],
+            [
+              -123.129841,
+              49.2873453
+            ],
+            [
+              -123.1299369,
+              49.2872831
+            ],
+            [
+              -123.1297458,
+              49.2871579
+            ],
+            [
+              -123.1296513,
+              49.2872192
+            ],
+            [
+              -123.1296806,
+              49.2872385
+            ],
+            [
+              -123.1295218,
+              49.2873416
+            ],
+            [
+              -123.1294923,
+              49.2873223
+            ],
+            [
+              -123.1294098,
+              49.2873759
+            ]
+          ]
+        ]
+      },
+      "id": "way/310614125"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/311210094",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1755",
+        "addr:postcode": "V6G 1W5",
+        "addr:province": "BC",
+        "addr:street": "Davie Street",
+        "brand": "Best Western Plus",
+        "brand:wikidata": "Q830334",
+        "building": "yes",
+        "building:levels": "6",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Best Western Plus Sands",
+        "operator": "Best Western",
+        "phone": "+1-604-682-1831",
+        "roof:colour": "#8c8b87",
+        "tourism": "hotel",
+        "website": "https://www.bestwestern.com/en_US/book/vancouver/hotel-rooms/best-western-plus-sands/propertyCode.62025.html"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1410498,
+              49.2871152
+            ],
+            [
+              -123.1411435,
+              49.2870528
+            ],
+            [
+              -123.1411199,
+              49.2870377
+            ],
+            [
+              -123.1411985,
+              49.2869854
+            ],
+            [
+              -123.1406797,
+              49.286654
+            ],
+            [
+              -123.1406046,
+              49.2867041
+            ],
+            [
+              -123.1405832,
+              49.2866904
+            ],
+            [
+              -123.1405384,
+              49.2867202
+            ],
+            [
+              -123.1405553,
+              49.2867309
+            ],
+            [
+              -123.1405029,
+              49.2867658
+            ],
+            [
+              -123.1410498,
+              49.2871152
+            ]
+          ]
+        ]
+      },
+      "id": "way/311210094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/311569754",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1393",
+        "addr:province": "BC",
+        "addr:street": "Robson Street",
+        "building": "yes",
+        "building:levels": "3",
+        "check_date": "2024-09-18",
+        "email": "info@greenbrierhotel.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Greenbrier Hotel",
+        "phone": "+1-604-683-4558",
+        "roof:colour": "#86837e",
+        "tourism": "hotel",
+        "website": "https://www.greenbrierhotel.com/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1291843,
+              49.2880696
+            ],
+            [
+              -123.1293689,
+              49.2881877
+            ],
+            [
+              -123.1297387,
+              49.2879418
+            ],
+            [
+              -123.1295541,
+              49.2878237
+            ],
+            [
+              -123.1291843,
+              49.2880696
+            ]
+          ]
+        ]
+      },
+      "id": "way/311569754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/311624707",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1889",
+        "addr:province": "BC",
+        "addr:street": "Alberni Street",
+        "building": "yes",
+        "building:levels": "15",
+        "name": "Lord Stanley Suites On The Park",
+        "roof:colour": "#928f8a",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1352806,
+              49.2932989
+            ],
+            [
+              -123.1353319,
+              49.2932655
+            ],
+            [
+              -123.1353494,
+              49.293277
+            ],
+            [
+              -123.1355313,
+              49.2931587
+            ],
+            [
+              -123.1355165,
+              49.2931491
+            ],
+            [
+              -123.1355628,
+              49.293119
+            ],
+            [
+              -123.1354983,
+              49.2930769
+            ],
+            [
+              -123.135534,
+              49.2930537
+            ],
+            [
+              -123.1354526,
+              49.2930005
+            ],
+            [
+              -123.1354118,
+              49.293027
+            ],
+            [
+              -123.1353461,
+              49.292984
+            ],
+            [
+              -123.1351254,
+              49.2931275
+            ],
+            [
+              -123.1351541,
+              49.2931463
+            ],
+            [
+              -123.1351005,
+              49.2931811
+            ],
+            [
+              -123.1352806,
+              49.2932989
+            ]
+          ]
+        ]
+      },
+      "id": "way/311624707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/312692187",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1150",
+        "addr:postcode": "V6G 2N1",
+        "addr:province": "BC",
+        "addr:street": "Denman Street",
+        "building": "yes",
+        "building:levels": "5",
+        "email": "info@englishbayhotel.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "English Bay Hotel",
+        "phone": "+1-604-685-2231",
+        "roof:colour": "#95918e",
+        "roof:shape": "flat",
+        "tourism": "hotel",
+        "website": "https://englishbayhotel.com/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1411507,
+              49.2875766
+            ],
+            [
+              -123.1409939,
+              49.2874719
+            ],
+            [
+              -123.1407886,
+              49.2876042
+            ],
+            [
+              -123.1405989,
+              49.2877275
+            ],
+            [
+              -123.1407659,
+              49.2878334
+            ],
+            [
+              -123.1407995,
+              49.2878104
+            ],
+            [
+              -123.1411507,
+              49.2875766
+            ]
+          ]
+        ]
+      },
+      "id": "way/312692187"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/316424785",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1825",
+        "addr:province": "BC",
+        "addr:street": "Comox Street",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Shato Inn",
+        "roof:colour": "#B6B3AE",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.139653,
+              49.2892635
+            ],
+            [
+              -123.1398235,
+              49.2892144
+            ],
+            [
+              -123.1399204,
+              49.2891518
+            ],
+            [
+              -123.1400003,
+              49.2890384
+            ],
+            [
+              -123.139924,
+              49.2889883
+            ],
+            [
+              -123.1397506,
+              49.2890399
+            ],
+            [
+              -123.1396536,
+              49.2891026
+            ],
+            [
+              -123.1395767,
+              49.2892134
+            ],
+            [
+              -123.139653,
+              49.2892635
+            ]
+          ]
+        ]
+      },
+      "id": "way/316424785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/316424818",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1154",
+        "addr:postcode": "V6G 2P6",
+        "addr:province": "BC",
+        "addr:street": "Gilford Street",
+        "building": "yes",
+        "haunted": "yes",
+        "name": "Sylvia Hotel",
+        "phone": "+1-604-681-9321",
+        "roof:colour": "#838287",
+        "tourism": "hotel",
+        "website": "https://sylviahotel.com/",
+        "wikidata": "Q7660934"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1421558,
+              49.2887385
+            ],
+            [
+              -123.1423313,
+              49.2888547
+            ],
+            [
+              -123.1427276,
+              49.2886002
+            ],
+            [
+              -123.1425498,
+              49.2884824
+            ],
+            [
+              -123.1424955,
+              49.2885172
+            ],
+            [
+              -123.1422395,
+              49.2886848
+            ],
+            [
+              -123.1422092,
+              49.2887041
+            ],
+            [
+              -123.1421558,
+              49.2887385
+            ]
+          ]
+        ]
+      },
+      "id": "way/316424818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/317010758",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "921",
+        "addr:province": "BC",
+        "addr:street": "West Pender Street",
+        "brand": "Days Inn",
+        "brand:wikidata": "Q1047239",
+        "building": "yes",
+        "email": "reservations@daysinnvancouver.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Days Inn Downtown",
+        "phone": "+1-604-681-4335",
+        "tourism": "hotel",
+        "website": "https://www.daysinnvancouver.com/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1167643,
+              49.2864982
+            ],
+            [
+              -123.1168336,
+              49.2864534
+            ],
+            [
+              -123.1169472,
+              49.2863804
+            ],
+            [
+              -123.117109,
+              49.2862758
+            ],
+            [
+              -123.1171437,
+              49.2862533
+            ],
+            [
+              -123.1169745,
+              49.2861425
+            ],
+            [
+              -123.1169599,
+              49.2861519
+            ],
+            [
+              -123.1165952,
+              49.2863861
+            ],
+            [
+              -123.1167643,
+              49.2864982
+            ]
+          ]
+        ]
+      },
+      "id": "way/317010758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/324900227",
+        "building": "hotel",
+        "building:levels": "3",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1282771,
+              49.2502091
+            ],
+            [
+              -123.1282797,
+              49.2501111
+            ],
+            [
+              -123.1282516,
+              49.2501093
+            ],
+            [
+              -123.1282489,
+              49.2500375
+            ],
+            [
+              -123.1277916,
+              49.2500305
+            ],
+            [
+              -123.1277916,
+              49.2500629
+            ],
+            [
+              -123.127746,
+              49.2500638
+            ],
+            [
+              -123.1277352,
+              49.2502792
+            ],
+            [
+              -123.1277715,
+              49.25028
+            ],
+            [
+              -123.1277715,
+              49.2503002
+            ],
+            [
+              -123.1279512,
+              49.2503028
+            ],
+            [
+              -123.1279579,
+              49.2501452
+            ],
+            [
+              -123.1280665,
+              49.2501479
+            ],
+            [
+              -123.1280652,
+              49.2502074
+            ],
+            [
+              -123.1282771,
+              49.2502091
+            ]
+          ]
+        ]
+      },
+      "id": "way/324900227"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/357996612",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "3075",
+        "addr:postcode": "V5R 5J8",
+        "addr:street": "Kingsway",
+        "building": "hotel",
+        "building:colour": "beige",
+        "building:levels": "3",
+        "name": "Cassandra Hotel",
+        "phone": "+1-604-430-3441",
+        "tourism": "hotel",
+        "website": "https://www.cassandrahotel.ca/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.039714,
+              49.2362392
+            ],
+            [
+              -123.0397568,
+              49.2361975
+            ],
+            [
+              -123.0397825,
+              49.2362089
+            ],
+            [
+              -123.039847,
+              49.2361395
+            ],
+            [
+              -123.0397783,
+              49.23611
+            ],
+            [
+              -123.0399766,
+              49.2359043
+            ],
+            [
+              -123.0398581,
+              49.2358538
+            ],
+            [
+              -123.0398371,
+              49.2358795
+            ],
+            [
+              -123.0397434,
+              49.2358393
+            ],
+            [
+              -123.0396828,
+              49.235899
+            ],
+            [
+              -123.0395336,
+              49.2359189
+            ],
+            [
+              -123.0394458,
+              49.235882
+            ],
+            [
+              -123.0392773,
+              49.2360541
+            ],
+            [
+              -123.039714,
+              49.2362392
+            ]
+          ]
+        ]
+      },
+      "id": "way/357996612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/363651936",
+        "addr:city": "Vancouver",
+        "addr:province": "BC",
+        "building": "yes",
+        "landuse": "leisure",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1136436,
+              49.287422
+            ],
+            [
+              -123.1136597,
+              49.2874445
+            ],
+            [
+              -123.1136815,
+              49.2874671
+            ],
+            [
+              -123.1137195,
+              49.2874945
+            ],
+            [
+              -123.1137692,
+              49.2875177
+            ],
+            [
+              -123.113825,
+              49.287538
+            ],
+            [
+              -123.1138835,
+              49.287551
+            ],
+            [
+              -123.1139444,
+              49.2875575
+            ],
+            [
+              -123.1140101,
+              49.2875595
+            ],
+            [
+              -123.1140718,
+              49.2875543
+            ],
+            [
+              -123.1141305,
+              49.2875443
+            ],
+            [
+              -123.1141823,
+              49.287527
+            ],
+            [
+              -123.1142301,
+              49.2875036
+            ],
+            [
+              -123.114267,
+              49.2874809
+            ],
+            [
+              -123.1142978,
+              49.2874569
+            ],
+            [
+              -123.1143167,
+              49.2874341
+            ],
+            [
+              -123.1143321,
+              49.2874142
+            ],
+            [
+              -123.1144006,
+              49.2874325
+            ],
+            [
+              -123.1144305,
+              49.2873859
+            ],
+            [
+              -123.1144998,
+              49.2874044
+            ],
+            [
+              -123.1145264,
+              49.287362
+            ],
+            [
+              -123.1145994,
+              49.2873822
+            ],
+            [
+              -123.114676,
+              49.2872685
+            ],
+            [
+              -123.1146424,
+              49.2872013
+            ],
+            [
+              -123.114479,
+              49.2871336
+            ],
+            [
+              -123.114336,
+              49.2870615
+            ],
+            [
+              -123.1141735,
+              49.2869683
+            ],
+            [
+              -123.114063,
+              49.2868916
+            ],
+            [
+              -123.1139325,
+              49.2869599
+            ],
+            [
+              -123.1138203,
+              49.2868734
+            ],
+            [
+              -123.113757,
+              49.2869097
+            ],
+            [
+              -123.1137019,
+              49.2869494
+            ],
+            [
+              -123.1136544,
+              49.2869902
+            ],
+            [
+              -123.1136152,
+              49.2870357
+            ],
+            [
+              -123.1135832,
+              49.2870255
+            ],
+            [
+              -123.1135629,
+              49.2870603
+            ],
+            [
+              -123.1135441,
+              49.2871005
+            ],
+            [
+              -123.113531,
+              49.2871378
+            ],
+            [
+              -123.1135214,
+              49.287175
+            ],
+            [
+              -123.1135156,
+              49.2872198
+            ],
+            [
+              -123.1135165,
+              49.2872577
+            ],
+            [
+              -123.1135214,
+              49.2872974
+            ],
+            [
+              -123.113532,
+              49.2873333
+            ],
+            [
+              -123.1135455,
+              49.2873661
+            ],
+            [
+              -123.1135687,
+              49.2874046
+            ],
+            [
+              -123.1135929,
+              49.2874387
+            ],
+            [
+              -123.1136436,
+              49.287422
+            ]
+          ]
+        ]
+      },
+      "id": "way/363651936"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/372781912",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "514",
+        "addr:province": "BC",
+        "addr:street": "Homer Street",
+        "building": "yes",
+        "building:levels": "3",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Victorian Hotel",
+        "phone": "+1-604-681-6369",
+        "roof:colour": "#b4b2b3",
+        "tourism": "hotel",
+        "website": "https://victorianhotel.ca/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1121387,
+              49.2825032
+            ],
+            [
+              -123.1122841,
+              49.2824058
+            ],
+            [
+              -123.1121328,
+              49.2823085
+            ],
+            [
+              -123.1119904,
+              49.2824071
+            ],
+            [
+              -123.1120221,
+              49.2824278
+            ],
+            [
+              -123.1120751,
+              49.2824619
+            ],
+            [
+              -123.1121387,
+              49.2825032
+            ]
+          ]
+        ]
+      },
+      "id": "way/372781912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/390908516",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "74",
+        "addr:province": "BC",
+        "addr:street": "West Hastings Street",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Grand Union Hotel",
+        "roof:colour": "#7B7A7F",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1067241,
+              49.2817985
+            ],
+            [
+              -123.1068838,
+              49.2818277
+            ],
+            [
+              -123.1070202,
+              49.2815104
+            ],
+            [
+              -123.10685,
+              49.2814815
+            ],
+            [
+              -123.1067241,
+              49.2817985
+            ]
+          ]
+        ]
+      },
+      "id": "way/390908516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/391330819",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "550",
+        "addr:province": "BC",
+        "addr:street": "West Hastings Street",
+        "brand": "Delta Hotels",
+        "brand:wikidata": "Q5254663",
+        "brand:wikipedia": "en:Delta Hotels",
+        "building": "hotel",
+        "building:levels": "22",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Delta Hotels Vancouver Downtown Suites",
+        "operator": "Delta",
+        "phone": "+1-604-689-8188",
+        "roof:colour": "#807d78",
+        "tourism": "hotel",
+        "website": "https://www.marriott.com/hotels/travel/yvrdv-delta-hotels-vancouver-downtown-suites/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1126097,
+              49.2843449
+            ],
+            [
+              -123.1128295,
+              49.2842012
+            ],
+            [
+              -123.1128944,
+              49.2841587
+            ],
+            [
+              -123.1129668,
+              49.2841107
+            ],
+            [
+              -123.1127253,
+              49.2839498
+            ],
+            [
+              -123.1126873,
+              49.2839754
+            ],
+            [
+              -123.1126193,
+              49.2840211
+            ],
+            [
+              -123.1126793,
+              49.2840573
+            ],
+            [
+              -123.1125489,
+              49.2841468
+            ],
+            [
+              -123.1124888,
+              49.2841069
+            ],
+            [
+              -123.1123692,
+              49.2841863
+            ],
+            [
+              -123.1126097,
+              49.2843449
+            ]
+          ]
+        ]
+      },
+      "id": "way/391330819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/397338520",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1041",
+        "addr:province": "BC",
+        "addr:street": "Southwest Marine Drive",
+        "brand": "Best Western Plus",
+        "brand:wikidata": "Q830334",
+        "building": "yes",
+        "name": "Best Western Plus Vancouver Airport Hotel",
+        "phone": "+1-604-263-1555",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1309134,
+              49.2046274
+            ],
+            [
+              -123.1309124,
+              49.2046431
+            ],
+            [
+              -123.1308174,
+              49.204642
+            ],
+            [
+              -123.1308156,
+              49.2047077
+            ],
+            [
+              -123.1308144,
+              49.2047509
+            ],
+            [
+              -123.1306304,
+              49.2047487
+            ],
+            [
+              -123.1306274,
+              49.2048664
+            ],
+            [
+              -123.1306124,
+              49.2048663
+            ],
+            [
+              -123.1306104,
+              49.2049327
+            ],
+            [
+              -123.1305914,
+              49.2049324
+            ],
+            [
+              -123.1305904,
+              49.2049486
+            ],
+            [
+              -123.1305594,
+              49.2049483
+            ],
+            [
+              -123.1305574,
+              49.2050129
+            ],
+            [
+              -123.1310174,
+              49.2050184
+            ],
+            [
+              -123.1310194,
+              49.2049537
+            ],
+            [
+              -123.1310204,
+              49.2049291
+            ],
+            [
+              -123.1310244,
+              49.2047534
+            ],
+            [
+              -123.1310255,
+              49.2047121
+            ],
+            [
+              -123.1310274,
+              49.2046445
+            ],
+            [
+              -123.1310284,
+              49.2046077
+            ],
+            [
+              -123.1309444,
+              49.2046067
+            ],
+            [
+              -123.1309444,
+              49.2046278
+            ],
+            [
+              -123.1309134,
+              49.2046274
+            ]
+          ]
+        ]
+      },
+      "id": "way/397338520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/617484484",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1177",
+        "addr:province": "BC",
+        "addr:street": "Melville Street",
+        "building": "yes",
+        "email": "reservations@theloden.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Loden Hotel",
+        "phone": "+1-877-225-6336",
+        "roof:colour": "#948d85",
+        "tourism": "hotel",
+        "website": "https://theloden.com/",
+        "wikidata": "Q111231425"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.122965,
+              49.2876546
+            ],
+            [
+              -123.1230582,
+              49.287714
+            ],
+            [
+              -123.1233646,
+              49.2875093
+            ],
+            [
+              -123.1232714,
+              49.28745
+            ],
+            [
+              -123.122965,
+              49.2876546
+            ]
+          ]
+        ]
+      },
+      "id": "way/617484484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/694792930",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "433",
+        "addr:postcode": "V6B 6L9",
+        "addr:province": "BC",
+        "addr:street": "Robson Street",
+        "brand": "Hilton",
+        "brand:wikidata": "Q598884",
+        "brand:wikipedia": "en:Hilton Hotels & Resorts",
+        "building": "yes",
+        "check_date:internet_access": "2023-10-27",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "material": "concrete/glass",
+        "name": "Hilton Vancouver Downtown",
+        "phone": "+1-604-602-1999",
+        "roof:colour": "#b9b3a5",
+        "rooms": "207",
+        "tourism": "hotel",
+        "website": "https://www.hilton.com/en/hotels/yvrwghh-hilton-vancouver-downtown/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.116901,
+              49.2800767
+            ],
+            [
+              -123.1172504,
+              49.2798464
+            ],
+            [
+              -123.116951,
+              49.279653
+            ],
+            [
+              -123.1166016,
+              49.2798834
+            ],
+            [
+              -123.116901,
+              49.2800767
+            ]
+          ]
+        ]
+      },
+      "id": "way/694792930"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/706528898",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "833",
+        "addr:province": "BC",
+        "addr:street": "West Pender Street",
+        "building": "yes",
+        "name": "Azur Legacy Collection Hotel",
+        "roof:shape": "#b6a18c",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1161431,
+              49.2860607
+            ],
+            [
+              -123.1164736,
+              49.2858443
+            ],
+            [
+              -123.1162995,
+              49.2857299
+            ],
+            [
+              -123.1159663,
+              49.2859516
+            ],
+            [
+              -123.1161431,
+              49.2860607
+            ]
+          ]
+        ]
+      },
+      "id": "way/706528898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1102208404",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "567",
+        "addr:province": "BC",
+        "addr:street": "Hornby Street",
+        "building": "yes",
+        "email": "reservations@hotellesoleil.com",
+        "internet_access": "wlan",
+        "name": "Le Soleil Hotel and Suites",
+        "phone": "+1-604-632-3000",
+        "roof:colour": "#a4a089",
+        "tourism": "hotel",
+        "website": "https://www.hotellesoleil.com/vancouver/home/",
+        "wheelchair": "yes",
+        "wikidata": "Q16896009"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1185999,
+              49.285347
+            ],
+            [
+              -123.1183687,
+              49.2851992
+            ],
+            [
+              -123.1182497,
+              49.2851234
+            ],
+            [
+              -123.1180308,
+              49.2852687
+            ],
+            [
+              -123.1182249,
+              49.2853935
+            ],
+            [
+              -123.1183801,
+              49.2854928
+            ],
+            [
+              -123.1185999,
+              49.285347
+            ]
+          ]
+        ]
+      },
+      "id": "way/1102208404"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1363418927",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1088",
+        "addr:postcode": "V6Z 2R9",
+        "addr:province": "BC",
+        "addr:street": "Burrard Street",
+        "air_conditioning": "yes",
+        "brand": "Sheraton",
+        "brand:wikidata": "Q634831",
+        "brand:wikipedia": "en:Sheraton Hotels and Resorts",
+        "internet_access": "wlan",
+        "name": "Sheraton Vancouver Wall Centre Hotel",
+        "note": "Most of this site is dedicated to hotel use, including parts of each tower and underground.",
+        "operator": "Sheraton",
+        "phone": "+1-604-331-1000",
+        "rooms": "733",
+        "stars": "4",
+        "toilets:wheelchair": "yes",
+        "tourism": "hotel",
+        "website": "https://www.marriott.com/en-us/hotels/yvrws-sheraton-vancouver-wall-centre/overview/",
+        "website:map": "https://www.marriott.com/marriottassets/marriott/YVRWS/PDF/2019_Sheraton_Vancouver_Wall_Centre_Floor_Plans_-_Booklet-FINAL.pdf",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1273266,
+              49.2801083
+            ],
+            [
+              -123.1270359,
+              49.2799221
+            ],
+            [
+              -123.1265585,
+              49.2796166
+            ],
+            [
+              -123.1265318,
+              49.2796376
+            ],
+            [
+              -123.1259254,
+              49.2800374
+            ],
+            [
+              -123.1256471,
+              49.2802224
+            ],
+            [
+              -123.1252076,
+              49.2805145
+            ],
+            [
+              -123.1259751,
+              49.2810061
+            ],
+            [
+              -123.1270446,
+              49.2802956
+            ],
+            [
+              -123.1273266,
+              49.2801083
+            ]
+          ]
+        ]
+      },
+      "id": "way/1363418927"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/638748345",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "788",
+        "addr:postcode": "V6B 3A4",
+        "addr:province": "BC",
+        "addr:street": "Richards Street",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "L' Hermitage",
+        "phone": "+1-778-327-4100",
+        "tourism": "hotel",
+        "website": "https://www.lhermitagevancouver.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.116967,
+          49.2805221
+        ]
+      },
+      "id": "node/638748345"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/638750749",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "180",
+        "addr:postcode": "V6B 4P4",
+        "addr:street": "West Georgia Street",
+        "name": "Sandman Hotel Vancouver City Centre",
+        "phone": "+1-604-681-2211",
+        "tourism": "hotel",
+        "website": "http://www.sandmanhotels.ca/hotels/vancouver-city-centre/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.11296,
+          49.2788858
+        ]
+      },
+      "id": "node/638750749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/638750750",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "733",
+        "addr:street": "Beatty Street",
+        "email": "hotel@ywcavan.org",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "YWCA Hotel / Residence",
+        "phone": "+1-604-895-5830",
+        "tourism": "hotel",
+        "website": "https://www.ywcavan.org/hotel",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1130745,
+          49.2783539
+        ]
+      },
+      "id": "node/638750750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/638750751",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "773",
+        "addr:province": "BC",
+        "addr:street": "Beatty Street",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Georgian Court Hotel",
+        "phone": "+1-604-682-5555",
+        "tourism": "hotel",
+        "website": "https://georgiancourthotelvancouver.com/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.113659,
+          49.2780805
+        ]
+      },
+      "id": "node/638750751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/638751995",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "111",
+        "addr:province": "BC",
+        "addr:street": "Robson Street",
+        "alt_name": "Hampton Inn",
+        "brand": "Hampton",
+        "brand:wikidata": "Q5646230",
+        "brand:wikipedia": "en:Hampton by Hilton",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hampton Inn & Suites by Hilton Vancouver-Downtown",
+        "official_name": "Hampton by Hilton",
+        "operator": "Hilton",
+        "phone": "+1-604-602-1008",
+        "tourism": "hotel",
+        "website": "https://www.hilton.com/en/hotels/yvrhshx-hampton-suites-vancouver-downtown/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.113987,
+          49.277907
+        ]
+      },
+      "id": "node/638751995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/638771016",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1110",
+        "addr:postcode": "V6Z 1R2",
+        "addr:province": "BC",
+        "addr:street": "Howe Street",
+        "brand": "Holiday Inn",
+        "brand:wikidata": "Q2717882",
+        "brand:wikipedia": "en:Holiday Inn",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Holiday Inn and Suites Downtown",
+        "phone": "+1-604-684-2151",
+        "tourism": "hotel",
+        "website": "https://www.holidayinnvancouverdowntown.com/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1256597,
+          49.2784828
+        ]
+      },
+      "id": "node/638771016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/652956533",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "838",
+        "addr:postcode": "V6B 6A2",
+        "addr:province": "BC",
+        "addr:street": "Hamilton Street",
+        "email": "reservations@rosedaleonrobson.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Rosedale on Robson Suite Hotel",
+        "phone": "+1-800-661-8870",
+        "tourism": "hotel",
+        "website": "https://www.rosedaleonrobson.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.116222,
+          49.2783489
+        ]
+      },
+      "id": "node/652956533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/652992171",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1015",
+        "addr:postcode": "V6Z 1Y5",
+        "addr:province": "BC",
+        "addr:street": "Burrard Street",
+        "email": "reserve@century-plaza.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Century Plaza Hotel and Spa",
+        "phone": "+1-604-687-0575",
+        "toilets:wheelchair": "yes",
+        "tourism": "hotel",
+        "website": "https://www.century-plaza.com/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1270521,
+          49.2808331
+        ]
+      },
+      "id": "node/652992171"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/652994289",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "845",
+        "addr:province": "BC",
+        "addr:street": "Burrard Street",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "The Sutton Place Hotel",
+        "phone": "+1-866-378-8866",
+        "tourism": "hotel",
+        "website": "https://www.suttonplace.com/hotels/sutton-place-hotel-vancouver-van",
+        "wheelchair": "yes",
+        "wikidata": "Q14874771"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.124276,
+          49.282958
+        ]
+      },
+      "id": "node/652994289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/736729135",
+        "addr:housenumber": "1300",
+        "addr:street": "Robson Street",
+        "check_date": "2024-09-18",
+        "email": "reservations@thelistelhotel.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "The Listel Hotel",
+        "phone": "+1-604-684-8461",
+        "tourism": "hotel",
+        "website": "https://www.thelistelhotel.com/",
+        "wheelchair": "yes",
+        "wikidata": "Q17118059"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1291922,
+          49.2872256
+        ]
+      },
+      "id": "node/736729135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/883378920",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1225",
+        "addr:province": "BC",
+        "addr:street": "Robson Street",
+        "check_date": "2024-01-27",
+        "email": "info@bluehorizonhotel.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Blue Horizon Hotel",
+        "phone": "+1-604-688-1411",
+        "stars": "3",
+        "tourism": "hotel",
+        "website": "https://bluehorizonhotel.com/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.127255,
+          49.2864636
+        ]
+      },
+      "id": "node/883378920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/910187940",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1038",
+        "addr:postcode": "V6C 0B9",
+        "addr:province": "BC",
+        "addr:street": "Canada Place",
+        "brand": "Fairmont",
+        "brand:wikidata": "Q1393345",
+        "check_date": "2023-01-25",
+        "internet_access": "wlan",
+        "name": "Fairmont Pacific Rim",
+        "phone": "+1-604-695-5300",
+        "stars": "5",
+        "tourism": "hotel",
+        "website": "https://www.fairmont.com/pacificrim",
+        "wheelchair": "yes",
+        "wikidata": "Q2411231"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.116883,
+          49.2880994
+        ]
+      },
+      "id": "node/910187940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/911592824",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "900",
+        "addr:street": "Canada Place",
+        "brand": "Fairmont",
+        "brand:wikidata": "Q1393345",
+        "internet_access": "yes",
+        "name": "Fairmont Waterfront",
+        "phone": "+1-604-691-1991",
+        "tourism": "hotel",
+        "website": "https://www.fairmont.com/waterfront",
+        "wikidata": "Q111231417"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.113634,
+          49.2872705
+        ]
+      },
+      "id": "node/911592824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/912958393",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "999",
+        "addr:street": "Canada Place",
+        "addr:unit": "300",
+        "brand": "Pan Pacific",
+        "brand:wikidata": "Q4272131",
+        "check_date": "2023-01-23",
+        "internet_access": "wlan",
+        "name": "Pan Pacific Vancouver",
+        "phone": "+1-604-662-8111",
+        "stars": "5",
+        "tourism": "hotel",
+        "website": "https://www.panpacific.com/en/hotels-and-resorts/pp-vancouver.html",
+        "wikidata": "Q17111664",
+        "wikipedia": "en:Pan Pacific Vancouver Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.113048,
+          49.2878972
+        ]
+      },
+      "id": "node/912958393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1187566965",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "322",
+        "addr:province": "BC",
+        "addr:street": "Davie Street",
+        "email": "info@opushotel.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Opus",
+        "phone": "+1-866-642-6787",
+        "tourism": "hotel",
+        "website": "https://vancouver.opushotel.com/en-us",
+        "wikidata": "Q111231447"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.122482,
+          49.27458
+        ]
+      },
+      "id": "node/1187566965"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1782907725",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1601",
+        "addr:postcode": "V6G 2V4",
+        "addr:province": "BC",
+        "addr:street": "Bayshore Drive",
+        "brand": "Westin",
+        "brand:wikidata": "Q1969162",
+        "brand:wikipedia": "en:Westin Hotels & Resorts",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Westin Bayshore",
+        "phone": "+1-604-682-3377",
+        "tourism": "hotel",
+        "website": "https://www.marriott.com/hotels/travel/yvrwi-the-westin-bayshore-vancouver/",
+        "wikidata": "Q14874772"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.129135,
+          49.2921331
+        ]
+      },
+      "id": "node/1782907725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2490635042",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "654",
+        "addr:province": "BC",
+        "addr:street": "Nelson Street",
+        "brand": "Comfort Inn",
+        "brand:wikidata": "Q1075788",
+        "brand:wikipedia": "en:Choice Hotels",
+        "email": "stay@hotelbelmont.ca",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hotel Belmont Vancouver",
+        "phone": "+1-604-605-4333",
+        "tourism": "hotel",
+        "website": "https://www.hotelbelmont.ca/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.122843,
+          49.2789109
+        ]
+      },
+      "id": "node/2490635042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2862381376",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1128",
+        "addr:postcode": "V6E 4H6",
+        "addr:province": "BC",
+        "addr:street": "Alberni Street",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Carmana Plaza",
+        "phone": "+1-604-683-1399",
+        "smoking": "outside",
+        "tourism": "hotel",
+        "website": "https://www.carmanaplaza.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.124856,
+          49.2857066
+        ]
+      },
+      "id": "node/2862381376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3487930121",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "177",
+        "addr:province": "BC",
+        "addr:street": "Robson Street",
+        "email": "info@hotelbluvancouver.com",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Blu Hotel",
+        "phone": "+1-604-620-6200",
+        "tourism": "hotel",
+        "website": "https://hotelbluvancouver.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.114459,
+          49.2781605
+        ]
+      },
+      "id": "node/3487930121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3661889586",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "2889",
+        "addr:postcode": "V5K 2A1",
+        "addr:province": "BC",
+        "addr:street": "East Hastings Street",
+        "brand": "Independent",
+        "email": "reservations@atriumhotelvancouver.com",
+        "fax": "+1 604 253 1234",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Atrium Hotel Vancouver",
+        "phone": "+1 604 254 1000",
+        "smoking": "no",
+        "tourism": "hotel",
+        "website": "https://www.atriumhotelvancouver.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.0452068,
+          49.2813793
+        ]
+      },
+      "id": "node/3661889586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3703503799",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1361",
+        "addr:postcode": "V6E 1C6",
+        "addr:province": "BC",
+        "addr:street": "Robson Street",
+        "name": "Tropicana Suite Hotel",
+        "phone": "+1-604-687-6631",
+        "tourism": "hotel",
+        "website": "https://www.tropicanavancouver.com/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1292409,
+          49.2877656
+        ]
+      },
+      "id": "node/3703503799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3707239292",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1080",
+        "addr:province": "BC",
+        "addr:street": "Howe Street",
+        "name": "Executive Hotels & Real Estate",
+        "phone": "+1-604-642-5250",
+        "tourism": "hotel",
+        "website": "https://www.executivehotels.net/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.125222,
+          49.278899
+        ]
+      },
+      "id": "node/3707239292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3733886692",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1821",
+        "addr:province": "BC",
+        "addr:street": "Robson Street",
+        "internet_access": "yes",
+        "internet_access:fee": "yes",
+        "name": "Times Square Suites Hotel",
+        "phone": "+1-604-684-2223",
+        "smoking": "isolated",
+        "stars": "5",
+        "tourism": "hotel",
+        "website": "https://www.timessquaresuites.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1355903,
+          49.2917164
+        ]
+      },
+      "id": "node/3733886692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3734934563",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "900",
+        "addr:province": "BC",
+        "addr:street": "Seymour Street",
+        "email": "info@modahotel.ca",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Moda Hotel",
+        "phone": "+1-604-683-4251",
+        "tourism": "hotel",
+        "website": "http://www.modahotel.ca/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.120444,
+          49.2794963
+        ]
+      },
+      "id": "node/3734934563"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3743637091",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1022",
+        "addr:province": "BC",
+        "addr:street": "Seymour Street",
+        "name": "Level",
+        "tourism": "hotel",
+        "website": "https://stayinglevel.com/destinations/vancouver/seymour/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.122394,
+          49.2781552
+        ]
+      },
+      "id": "node/3743637091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3789313502",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1489",
+        "addr:province": "BC",
+        "addr:street": "East Hastings Street",
+        "email": "info@hotelatthewaldorf.ca",
+        "internet_access": "wlan",
+        "name": "Hotel At The Waldorf",
+        "phone": "+1-604-253-7141",
+        "tourism": "hotel",
+        "website": "https://www.hotelatthewaldorf.ca/",
+        "wikidata": "Q7773258",
+        "wikipedia": "en:Hotel at the Waldorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.074332,
+          49.2814894
+        ]
+      },
+      "id": "node/3789313502"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3897533448",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "317",
+        "addr:province": "BC",
+        "addr:street": "Cambie Street",
+        "name": "Danny's Inn",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1094244,
+          49.283245
+        ]
+      },
+      "id": "node/3897533448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3945299557",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1080",
+        "addr:province": "BC",
+        "addr:street": "Hornby Street",
+        "name": "WorldMark Vancouver - The Canadian",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.12574,
+          49.2797517
+        ]
+      },
+      "id": "node/3945299557"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4281289326",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "655",
+        "addr:postcode": "V6C 2R7",
+        "addr:province": "BC",
+        "addr:street": "Burrard Street",
+        "brand": "Hyatt Regency",
+        "brand:wikidata": "Q1425063",
+        "brand:wikipedia": "en:Hyatt",
+        "check_date": "2024-01-27",
+        "check_date:internet_access": "2023-10-21",
+        "height": "110",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hyatt Regency Vancouver",
+        "operator": "Hyatt",
+        "phone": "+1-604-683-1234",
+        "tourism": "hotel",
+        "website": "https://vancouver.regency.hyatt.com/",
+        "wikidata": "Q14874629"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.120638,
+          49.2851852
+        ]
+      },
+      "id": "node/4281289326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5090968771",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "21",
+        "addr:province": "BC",
+        "addr:street": "Water Street",
+        "name": "The Packing House",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.10482,
+          49.2837268
+        ]
+      },
+      "id": "node/5090968771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5304513656",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "39",
+        "addr:province": "BC",
+        "addr:street": "Smithe Street",
+        "brand": "JW Marriott",
+        "brand:wikidata": "Q1067636",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "JW Marriott parq Vancouver",
+        "phone": "+1-604-676-0888",
+        "tourism": "hotel",
+        "website": "https://www.marriott.com/hotels/travel/yvrjw-jw-marriott-parq-vancouver/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.112766,
+          49.2753903
+        ]
+      },
+      "id": "node/5304513656"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5304513657",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "45",
+        "addr:province": "BC",
+        "addr:street": "Smithe Street",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "the DOUGLAS, Autograph Collection",
+        "phone": "+1-604-676-0889",
+        "tourism": "hotel",
+        "website": "https://www.marriott.com/hotels/travel/yvrps-the-douglas-autograph-collection/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1139417,
+          49.2757138
+        ]
+      },
+      "id": "node/5304513657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7132464452",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "837",
+        "addr:province": "BC",
+        "addr:street": "West Hastings Street",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Auberge Hotel Vancouver",
+        "phone": "+1-604-678-8899",
+        "tourism": "hotel",
+        "website": "https://www.aubergevancouver.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.115258,
+          49.2865686
+        ]
+      },
+      "id": "node/7132464452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7132474094",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1161",
+        "addr:postcode": "V6E 0C6",
+        "addr:province": "BC",
+        "addr:street": "West Georgia Street",
+        "brand": "Paradox Hotel Vancouver",
+        "email": "hello@paradoxhotels.com",
+        "internet_access": "yes",
+        "name": "Paradox Main Entrance",
+        "phone": "+1-236-900-6001",
+        "rooms": "147",
+        "tourism": "hotel",
+        "website": "https://www.paradoxhotels.com/vancouver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1240507,
+          49.286925
+        ]
+      },
+      "id": "node/7132474094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7132483329",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "475",
+        "addr:province": "BC",
+        "addr:street": "Howe Street",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Exchange Hotel Vancouver",
+        "phone": "+1-604-563-4693",
+        "tourism": "hotel",
+        "website": "https://www.exchangehotelvan.com/",
+        "wikidata": "Q111392007"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.115708,
+          49.2856155
+        ]
+      },
+      "id": "node/7132483329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7140612025",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1001",
+        "addr:province": "BC",
+        "addr:street": "Hornby Street",
+        "addr:unit": "2951",
+        "air_conditioning": "yes",
+        "internet_access": "wlan",
+        "name": "Embarc Vancouver",
+        "phone": "+1-604-893-7444",
+        "tourism": "hotel",
+        "website": "https://www.diamondresorts.com/destinations/property/Embarc-Vancouver",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.125404,
+          49.2805081
+        ]
+      },
+      "id": "node/7140612025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7140625973",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1431",
+        "addr:province": "BC",
+        "addr:street": "Robson Street",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Divya Sutra Suites on Robson Downtown Vancouver",
+        "phone": "+1-604-685-1301",
+        "tourism": "hotel",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.130403,
+          49.2884061
+        ]
+      },
+      "id": "node/7140625973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7140634033",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "718",
+        "addr:province": "BC",
+        "addr:street": "Drake Street",
+        "email": "info@gecgranvillesuites.ca",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "GEC Granville Suites",
+        "phone": "+1-604-669-9888",
+        "tourism": "hotel",
+        "website": "https://www.gecgranvillesuites.ca/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1283603,
+          49.2761123
+        ]
+      },
+      "id": "node/7140634033"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141210836",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "31",
+        "addr:province": "BC",
+        "addr:street": "West Pender Street",
+        "alt_name": "Skwachays Lodge",
+        "email": "info@skwachays.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Skwachàys Lodge",
+        "phone": "+1-604-687-3589",
+        "tourism": "hotel",
+        "website": "https://skwachays.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.106143,
+          49.2809751
+        ]
+      },
+      "id": "node/7141210836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141251865",
+        "addr:housenumber": "711",
+        "addr:street": "West Broadway",
+        "brand": "Holiday Inn",
+        "brand:wikidata": "Q2717882",
+        "brand:wikipedia": "en:Holiday Inn",
+        "email": "info@hivancouver.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Holiday Inn Vancouver-Centre (Broadway)",
+        "phone": "+1-604-879-0511",
+        "tourism": "hotel",
+        "website": "https://www.ihg.com/holidayinn/hotels/us/en/vancouver/yvrbw/hoteldetail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.120439,
+          49.2635214
+        ]
+      },
+      "id": "node/7141251865"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141325848",
+        "addr:housenumber": "403",
+        "addr:street": "East Hastings Street",
+        "check_date": "2024-06-02",
+        "email": "info@patriciahotel.ca",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Patricia Hotel",
+        "phone": "+1-604-255-4301",
+        "tourism": "hotel",
+        "website": "https://www.patriciahotel.ca/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.0951511,
+          49.2814701
+        ]
+      },
+      "id": "node/7141325848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141465280",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "2030",
+        "addr:province": "BC",
+        "addr:street": "Barclay Street",
+        "email": "info@rosellensuites.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Rosellen Suites at Stanley Park",
+        "phone": "+1-604-689-4807",
+        "tourism": "hotel",
+        "website": "https://www.rosellensuites.com/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.141371,
+          49.2921694
+        ]
+      },
+      "id": "node/7141465280"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11342321739",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "1771",
+        "addr:province": "BC",
+        "addr:street": "Comox Street",
+        "air_conditioning": "yes",
+        "brand": "Sonder",
+        "brand:wikidata": "Q96419376",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Sonder at Revival",
+        "phone": "+1-438-795-6650",
+        "tourism": "hotel",
+        "website": "https://www.sonder.com/en-ca/destinations/vancouver/VAN-COMO1771-329/c31094?sleeps=1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.138761,
+          49.2884423
+        ]
+      },
+      "id": "node/11342321739"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12104693488",
+        "addr:city": "Vancouver",
+        "addr:housenumber": "204",
+        "addr:province": "BC",
+        "addr:street": "Carrall Street",
+        "name": "Glory Hotel",
+        "tourism": "hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1041,
+          49.2830039
+        ]
+      },
+      "id": "node/12104693488"
+    }
+  ]
+}

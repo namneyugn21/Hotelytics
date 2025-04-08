@@ -40,5 +40,3 @@ hotels['centroid'] = hotels_proj.centroid
 hotels['centroid'] = hotels.set_geometry('centroid').to_crs(epsg=4326)['centroid'] # conver back to WGS 84
 
 hotels.to_csv('data/vancouver_hotels.csv', index=False)
-
-

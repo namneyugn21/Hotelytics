@@ -42,57 +42,19 @@ This project uses OpenStreetMap (OSM) data to help users find the most suitable 
 - **Visualization**: `folium`, `matplotlib`
 - **Web Interface**: `streamlit`, `streamlit-folium`
 
-## Deliverables
-
-- Cleaned and categorized spatial datasets (GeoJSON and CSV)
-- A fully functional Streamlit web application:
-  - Hotel ranking based on user preferences
-  - Interactive map of hotels and amenities
-  - Tour path visualized on a dynamic map
-- Visualizations:
-  - Amenity distribution and density
-  - Bar charts of hotel scores
-  - Walking path maps
-- Final report documenting:
-  - Data pipeline
-  - Scoring and routing logic
-  - Application of data science concepts
-  - Individual team member contributions
-
-
-## Concepts Applied
-
-This project applies multiple core data science concepts:
-
-- **Graph Theory**: Street network modeled as a graph, used for shortest path routing.
-- **Geospatial Analysis**: Coordinate projections, buffer zones, spatial joins, and clustering.
-- **Feature Engineering**: Categorizing and weighting amenities for scoring models.
-- **Clustering**: DBSCAN used to identify high-density zones of amenities.
-- **Data Wrangling**: Cleaning and normalizing OpenStreetMap data and tags.
-- **Decision Modeling**: Scoring logic reflects user-defined priorities and spatial context.
-
 ## How to Run
+1. **Install Required Packages**: Make sure you have Python 3.8+ installed. Then install the required libraries by running the following commands:
+    ```bash
+    pip install streamlit folium streamlit-folium pandas geopandas shapel
+    ```
 
-1. **Install Required Packages**  
-   Make sure you have Python 3.8+ installed. Then install the required libraries by running the following commands:
-
-   ```bash
-   pip install streamlit
-   pip install folium
-   pip install streamlit-folium
-   pip install pandas
-   pip install geopandas
-   pip install shapel
-   ```
-
-2. **Run with this commend line** 
-  Navigate to the project directory in your terminal and run:
-
-  ```bash
-  streamlit run app.py
-  ```
+2. **Run with this commend line**: Navigate to the project directory in your terminal and run:
+    ```bash
+    streamlit run app.py
+    ```
 
 ## Authors
 
 This project was developed as part of a data science course at Simon Fraser University.  
-Contributors: Nam Nguyen and Vi Phung
+Contributors: [Vu Hai Nam Nguyen](mailto:vhn1@sfu.ca?subject=Hotelytics:%20General%20Inquiry) and [The Vi Phung](mailto:tvp@sfu.ca?subject=Hotelytics:%20General%20Inquiry)
+

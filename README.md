@@ -71,6 +71,24 @@ This project applies multiple core data science concepts:
 - **Data Wrangling**: Cleaning and normalizing OpenStreetMap data and tags.
 - **Decision Modeling**: Scoring logic reflects user-defined priorities and spatial context.
 
+## How to Run
+
+1. **Install Required Packages**  
+   Make sure you have Python 3.8+ installed. Then install the required libraries by running the following commands:
+
+   ```bash
+   pip install streamlit
+   pip install folium
+   pip install streamlit-folium
+   pip install pandas
+   pip install geopandas
+   pip install shapel
+
+2. **Run with this commend line** 
+  Navigate to the project directory in your terminal and run:
+
+  ```bash
+  streamlit run app.py
 
 ## Authors
 

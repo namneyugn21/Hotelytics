@@ -83,13 +83,14 @@ This project applies multiple core data science concepts:
    pip install pandas
    pip install geopandas
    pip install shapel
+   ```
 
 2. **Run with this commend line** 
   Navigate to the project directory in your terminal and run:
 
   ```bash
   streamlit run app.py
-
+  ```
 
 ## Authors
 

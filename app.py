@@ -17,17 +17,17 @@ st.set_page_config(
   page_title="Vancouver Hotels",
   layout="wide",
 )
-st.subheader(f"Total Hotels: {len(hotels)}")
+st.title("Hotelytics: Vancouver Hotel and Tour Generator")
 
-# show data table
+
+# show hotel data
+st.subheader("Map of Hotels")
+st.write(f"There are {len(hotels)} hotels in Vancouver, BC, Canada. The data is obtained from OpenStreetMap and filtered for hotels in Vancouver only.")
+
 df = hotels[['id', 'name', 'housenumber', 'unit', 'street', 'city', 'province', 'postcode']]
 if st.checkbox("Show raw hotel data"):
-  st.dataframe(df)
+  st.dataframe(df, use_container_width=True)
 
-# show folium map
-hotels_geo = hotels.set_geometry('centroid')
-
-st.subheader("Map of Hotels")
 m = folium.Map(location=[49.2827, -123.1207], zoom_start=14)
 
 for _, row in hotels.iterrows():
@@ -37,4 +37,4 @@ for _, row in hotels.iterrows():
     icon=folium.Icon(color='cadetblue', icon='bed', prefix='fa')
   ).add_to(m)
 
-st_folium(m, width="100%", height=500)
+st_folium(m, width="100%")

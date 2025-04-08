@@ -90,6 +90,7 @@ This project applies multiple core data science concepts:
   ```bash
   streamlit run app.py
 
+
 ## Authors
 
 This project was developed as part of a data science course at Simon Fraser University.  

@@ -8,51 +8,46 @@ from shapely import wkt
 # === Load Vancouver Hotels Data ===
 df = pd.read_csv("data/vancouver_hotels.csv")
 df['centroid'] = df['centroid'].apply(wkt.loads)
-
-# Convert to GeoDataFrame with EPSG:4326
 hotels = gpd.GeoDataFrame(df, geometry='centroid', crs="EPSG:4326")
 
-# === STREAMLIT APP SETUP ===
-st.set_page_config(
-  page_title="Vancouver Hotels",
-  layout="wide",
-)
+# === Streamlit Setup ===
+st.set_page_config(page_title="Vancouver Hotels", layout="wide")
 st.title("Hotelytics: Vancouver Hotel and Tour Generator")
 
-# === Show Hotel Info ===
-st.subheader("Map of Hotels")
-st.write(f"There are {len(hotels)} hotels in Vancouver, BC, Canada. The data is obtained from OpenStreetMap and filtered for hotels in Vancouver only.")
+st.subheader("Map of Hotels and Attractions")
+st.write(f"There are {len(hotels)} hotels in Vancouver. This map shows both hotels and curated attractions around the city.")
 
-df = hotels[['id', 'name', 'housenumber', 'unit', 'street', 'city', 'province', 'postcode']]
+# Optional: Show raw hotel data
 if st.checkbox("Show raw hotel data"):
-  st.dataframe(df, use_container_width=True)
+    df = hotels[['id', 'name', 'housenumber', 'unit', 'street', 'city', 'province', 'postcode']]
+    st.dataframe(df, use_container_width=True)
 
-# === Initialize Map ===
+# === Create Base Map ===
 m = folium.Map(location=[49.2827, -123.1207], zoom_start=14)
+
+# === Create Feature Groups ===
+hotel_layer = folium.FeatureGroup(name="Hotels", show=True)
+attraction_layer = folium.FeatureGroup(name="Tourist Attractions", show=True)
 
 # === Add Hotel Markers ===
 for _, row in hotels.iterrows():
-  folium.Marker(
-    location=[row['centroid'].y, row['centroid'].x],
-    popup=folium.Popup(
-      f"<strong>{row['name']}</strong><br>{row['housenumber']} {row['street']}, {row['city']}, {row['province']} {row['postcode']}", 
-      max_width=300
-    ),
-    icon=folium.Icon(color='cadetblue', icon='bed', prefix='fa')
-  ).add_to(m)
+    folium.Marker(
+        location=[row['centroid'].y, row['centroid'].x],
+        popup=folium.Popup(
+            f"<strong>{row['name']}</strong><br>{row['housenumber']} {row['street']}, {row['city']}, {row['province']} {row['postcode']}", 
+            max_width=300
+        ),
+        icon=folium.Icon(color='cadetblue', icon='bed', prefix='fa')
+    ).add_to(hotel_layer)
 
-# === Load and Display Tourist Attractions ===
-st.subheader("Tourist Attractions")
-
-# Load attraction data
+# === Load Attractions ===
 try:
     attractions = pd.read_csv("data/vancouver_attractions.csv")
-    attractions.columns = attractions.columns.str.strip()  # Strip whitespace
-    attractions = attractions.dropna(subset=['lat', 'lon'])  # Drop bad rows
+    attractions.columns = attractions.columns.str.strip()
+    attractions = attractions.dropna(subset=['lat', 'lon'])
     attractions['lat'] = attractions['lat'].astype(float)
     attractions['lon'] = attractions['lon'].astype(float)
 
-    # Optional: Show sample data
     if st.checkbox("Show attraction data"):
         st.dataframe(attractions.head(), use_container_width=True)
 
@@ -61,14 +56,19 @@ try:
         folium.Marker(
             location=[row['lat'], row['lon']],
             popup=folium.Popup(
-                f"<strong>{row['name']}</strong><br>{row['street name']}<br>{row['short description']}", 
+                f"<strong>{row['name']}</strong><br>{row['street name']}<br>{row['short description']}",
                 max_width=300
             ),
             icon=folium.Icon(color='red', icon='star', prefix='fa')
-        ).add_to(m)
+        ).add_to(attraction_layer)
 
 except Exception as e:
-    st.error(f"Failed to load attractions data: {e}")
+    st.error(f"Could not load attraction data: {e}")
 
-# === Final Render of Map ===
+# === Add layers to map ===
+hotel_layer.add_to(m)
+attraction_layer.add_to(m)
+folium.LayerControl(collapsed=False).add_to(m)
+
+# === Render map ===
 st_folium(m, width="100%")

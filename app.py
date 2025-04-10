@@ -6,6 +6,8 @@ import geopandas as gpd
 from shapely import wkt
 from hotel_ranking import score_hotels, get_score_color
 from shapely.geometry import Point
+from sort_attractions_by_distance import sort_attractions_by_distance
+
 
 st.set_page_config(page_title="Vancouver Hotels", layout="wide")
 
@@ -135,13 +137,14 @@ if st.session_state['ranked_hotels'] is not None:
     st.write("Ranked by your preferences! Click on the hotel markers to see more details.")
     # top 10 hotels to show
     top_10_df = st.session_state['ranked_hotels'][['name', 'total_score']].head(10).copy()
-    selected_row = st.data_editor(top_10_df, use_container_width=True, hide_index=True, num_rows="fixed")    
+    selected_row = st.data_editor(top_10_df, use_container_width=True, hide_index=True, num_rows="fixed")
 
     # get the selected hotel (simulate click by filtering row with max score)
     if isinstance(selected_row, pd.DataFrame) and not selected_row.empty:
         selected_hotel_name = selected_row.iloc[0]['name']
         selected_hotel = st.session_state['ranked_hotels'][st.session_state['ranked_hotels']['name'] == selected_hotel_name].iloc[0]
 
+# === Set map center based on selected hotel or default ===
 if selected_hotel is not None:
     center_lat, center_lon = selected_hotel.geometry.y, selected_hotel.geometry.x
     zoom_lvl = 17
@@ -155,24 +158,31 @@ m = folium.Map(location=[center_lat, center_lon], zoom_start=zoom_lvl)
 hotel_layer = folium.FeatureGroup(name="Hotels", show=True)
 attraction_layer = folium.FeatureGroup(name="Tourist Attractions", show=True)
 
-# === Add Hotel Markers ===
+# === Define map_hotels early ===
 map_hotels = st.session_state['ranked_hotels'] if st.session_state['ranked_hotels'] is not None else hotels
+
+# === Ensure map_hotels is a GeoDataFrame with correct CRS ===
+if 'geometry' in map_hotels.columns:
+    map_hotels = gpd.GeoDataFrame(map_hotels, geometry='geometry', crs="EPSG:4326")
+
+# === Add Hotel Markers and invisible click targets ===
 max_score = map_hotels['total_score'].max() if 'total_score' in map_hotels.columns else 1
 
 for _, row in map_hotels.iterrows():
     score = row.get('total_score', None)
     color = get_score_color(score, max_score) if score is not None else 'cadetblue'
-    
-    popup_html = f"""
-        <strong>{row['name']}</strong><br>
-        {row['housenumber']} {row['street']}, {row['city']}, {row['province']} {row['postcode']}
-    """
-    if score is not None:
-        popup_html += f"<br><strong>Score:</strong> {score:.1f}"
 
+    # Add visible icon marker with popup
     folium.Marker(
         location=[row.geometry.y, row.geometry.x],
-        popup=folium.Popup(popup_html, max_width=300),
+        popup=folium.Popup(
+            f"""
+            <strong>{row['name']}</strong><br>
+            {row['housenumber']} {row['street']}, {row['city']}, {row['province']} {row['postcode']}<br>
+            {'<strong>Score:</strong> {:.1f}'.format(score) if score is not None else ''}
+            """,
+            max_width=300
+        ),
         icon=folium.Icon(color=color, icon='bed', prefix='fa')
     ).add_to(hotel_layer)
 
@@ -192,5 +202,34 @@ hotel_layer.add_to(m)
 attraction_layer.add_to(m)
 folium.LayerControl(collapsed=False).add_to(m)
 
-# === Render map ===
-st_folium(m, width="100%")
+# === Render map and capture click ===
+map_data = st_folium(m, width="100%", returned_objects=["last_clicked"])
+
+# === Handle clicks on the map ===
+clicked_location = map_data.get("last_clicked")
+if clicked_location:
+    st.success(f"📍 You clicked: {clicked_location}")
+    clicked_point = Point(clicked_location["lng"], clicked_location["lat"])
+
+    # Project both hotel geometries and clicked point to UTM for accurate distance calc
+    hotels_proj = hotels.to_crs(epsg=26910)
+    clicked_point_proj = gpd.GeoSeries([clicked_point], crs="EPSG:4326").to_crs(epsg=26910).iloc[0]
+
+    hotels_proj["diff"] = hotels_proj["geometry"].distance(clicked_point_proj)
+    closest_match = hotels_proj[hotels_proj["diff"] < 50]  # meters
+
+    if not closest_match.empty:
+        hotel_name = closest_match.iloc[0]["name"]
+        selected_hotel = hotels[hotels["name"] == hotel_name].iloc[0]
+        st.success(f"🏨 Selected Hotel: {selected_hotel['name']}")
+
+        # Show sorted nearby attractions
+        sorted_attractions = sort_attractions_by_distance(selected_hotel, attractions)
+        st.subheader(f"Top 10 Nearby Attractions from: {selected_hotel['name']}")
+        st.dataframe(
+            sorted_attractions[['name', 'distance_km', 'street name', 'short description']].head(10).reset_index(drop=True),
+            use_container_width=True
+    )
+
+    else:
+        st.warning("No hotel found near your click. Try zooming in or clicking more precisely.")

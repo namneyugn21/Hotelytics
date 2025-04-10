@@ -126,9 +126,32 @@ if st.sidebar.button("Rank Hotels"):
     ranked_hotels = score_hotels(hotels, ranking)
     ranked_hotels = ranked_hotels.sort_values(by='total_score', ascending=False, ignore_index=True)
     st.session_state['ranked_hotels'] = ranked_hotels # save ranked hotels to session state
-
-if st.session_state['ranked_hotels'] is not None:
     st.success("Hotels successfully ranked based on your preferences!")
+
+# === Sidebar Select Hotel & Generate Tour ===
+if st.session_state['ranked_hotels'] is not None:
+    st.sidebar.markdown("---")
+    st.sidebar.header("Generate Tour")
+
+    # Dropdown list of ranked hotel names
+    selected_hotel_name = st.sidebar.selectbox(
+        "Choose a hotel to generate a walking tour:",
+        options=st.session_state['ranked_hotels']['name'].tolist()
+    )
+
+    if st.sidebar.button("Generate Tour"):
+        selected_hotel = st.session_state['ranked_hotels'][
+            st.session_state['ranked_hotels']['name'] == selected_hotel_name
+        ].iloc[0]
+
+        st.success(f"🏨 Selected Hotel: {selected_hotel['name']}")
+        sorted_attractions = sort_attractions_by_distance(selected_hotel, attractions)
+
+        st.subheader(f"Top 10 Nearby Attractions from: {selected_hotel['name']}")
+        st.dataframe(
+            sorted_attractions[['name', 'distance_km', 'street name', 'short description']].head(10).reset_index(drop=True),
+            use_container_width=True
+        )
 
 # always display ranked table if exists
 selected_hotel = None
@@ -229,7 +252,7 @@ if clicked_location:
         st.dataframe(
             sorted_attractions[['name', 'distance_km', 'street name', 'short description']].head(10).reset_index(drop=True),
             use_container_width=True
-    )
+        )
 
     else:
         st.warning("No hotel found near your click. Try zooming in or clicking more precisely.")

@@ -1,53 +1,179 @@
 import streamlit as st
-import folium
 from streamlit_folium import st_folium
+import folium
 import pandas as pd
 import geopandas as gpd
 from shapely import wkt
+from hotel_ranking import score_hotels, get_score_color
+from shapely.geometry import Point
+
+st.set_page_config(page_title="Vancouver Hotels", layout="wide")
 
 # === Load Vancouver Hotels Data  ===
-df = pd.read_csv("data/vancouver_hotels.csv")
-df['centroid'] = df['centroid'].apply(wkt.loads)
-hotels = gpd.GeoDataFrame(df, geometry='centroid', crs="EPSG:4326")
+@st.cache_data
+def load_hotels():
+    hotels = pd.read_csv("data/vancouver_hotels.csv")
+    hotels['geometry'] = hotels['geometry'].apply(wkt.loads)
+    hotels = gpd.GeoDataFrame(hotels, geometry='geometry', crs="EPSG:4326") # convert to crs: EPSG:4326 for folium
+    return hotels
+hotels = load_hotels() 
 
 # === Load Vancouver Attractions Data  ===
-attractions = pd.read_csv("data/vancouver_attractions.csv")
-attractions.columns = attractions.columns.str.strip()
-attractions = attractions.dropna(subset=['lat', 'lon'])
-attractions['lat'] = attractions['lat'].astype(float)
-attractions['lon'] = attractions['lon'].astype(float)
+@st.cache_data
+def load_attractions():
+    attractions = pd.read_csv("data/vancouver_attractions.csv")
+    attractions.columns = attractions.columns.str.strip()
+    attractions = attractions.dropna(subset=['lat', 'lon'])
+    attractions['lat'] = attractions['lat'].astype(float)
+    attractions['lon'] = attractions['lon'].astype(float)
+    return attractions
+attractions = load_attractions()
 
 # === Streamlit Setup ===
-st.set_page_config(page_title="Vancouver Hotels", layout="wide")
-st.title("Hotelytics: Vancouver Hotel and Tour Generator")
+st.markdown(
+    """
+    <style>
+    /* Sidebar background color */
+    [data-testid="stSidebar"] {
+        background-color: #5e0000;
+        color: white;
+    }
 
+    [data-testid="stSidebar"] * {
+        color: white !important;
+    }
+
+    [data-testid="stExpander"] * {
+        border-color: rgb(163, 168, 184, 50%) !important;
+    }
+
+    [data-testid="tooltipHoverTarget"] svg {
+        stroke: white !important;
+    }
+
+    /* Slider handle and track color */
+    .stSlider > div > div > div > div {
+        background: #ffffff; /* white handle */
+    }
+
+    .stSlider > div > div > div:nth-child(1) > div {
+        background: #c0c0c0; /* light grey track */
+    }
+
+    /* Button styling in sidebar */
+    [data-testid="stSidebar"] button {
+        background-color: #a52a2a;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    [data-testid="stSidebar"] button:hover {
+        background-color: #9b1b1b;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+st.title("Hotelytics: Vancouver Hotel and Tour Generator")
+st.write("Hotelytics helps visitors find the most suitable hotel in Vancouver based on surrounding amenities and also generates a personalized walking tour from the selected hotel to nearby attractions using real street network data.")
 st.subheader("Map of Hotels and Attractions")
-st.write(f"There are {len(hotels)} hotels in Vancouver. This map shows both hotels and curated attractions around the city.")
+st.write(f"There are {len(hotels)} hotels in Vancouver, and the following map shows both hotels and curated attractions around the city.")
+st.write("Rank hotels based on your preferences and find the best match for your stay by using the sliders in the sidebar.")
 
 # Optional: Show raw hotel data and/or attraction data
-if st.checkbox("Show raw hotel data"):
-    df = hotels[['id', 'name', 'housenumber', 'unit', 'street', 'city', 'province', 'postcode']]
+st.sidebar.header("Data Options")
+if st.sidebar.checkbox("Show raw hotel data"):
+    df = hotels[['name', 'housenumber', 'unit', 'street', 'city', 'province', 'postcode']]
+    st.subheader("Raw Hotel Data")
     st.dataframe(df, use_container_width=True)
 
-if st.checkbox("Show attraction data"):
-    st.dataframe(attractions, use_container_width=True)
+if st.sidebar.checkbox("Show attraction data"):
+    st.subheader("Attraction Data")
+    st.dataframe(attractions[['name', 'street name', 'short description']], use_container_width=True)
 
-# === Create Base Map ===
-m = folium.Map(location=[49.2827, -123.1207], zoom_start=14)
+# === Create the Ranking sidebar ===
+# check if session state exists for ranked hotels, if not then the map will show all hotels and attractions
+if "ranked_hotels" not in st.session_state:
+    st.session_state['ranked_hotels'] = None
+    
+# === Sidebar Header ===
+st.sidebar.header("Rank Hotels")
+st.sidebar.write("Customize your preferences by ranking the following categories from **0 (not important)** to **5 (very important)**.")
+
+# === Scoring Explanation ===
+with st.sidebar.expander("How scoring works"):
+    st.markdown("""
+    - Hotels are ranked based on amenities within 300m.
+    - Each category is weighted based on your slider input.
+    - Higher scores = better matches for your preferences.
+    """)
+
+# === Ranking Sliders ===
+ranking = {
+    "food & drink": st.sidebar.slider("Food & Drink", 1, 5, 3, help="Cafes, restaurants, ice cream, etc."),
+    "transportation": st.sidebar.slider("Transportation", 1, 5, 3, help="Bus stops, bike parking, fuel, etc."),
+    "entertainments & culture": st.sidebar.slider("Entertainment & Culture", 1, 5, 3, help="Museums, parks, theatres"),
+    "health & emergency": st.sidebar.slider("Health & Emergency", 1, 5, 3, help="Pharmacies, clinics, hospitals"),
+    "shop & services": st.sidebar.slider("Shop & Services", 1, 5, 3, help="ATMs, post offices, markets"),
+}
+
+# === Sidebar Button ===
+if st.sidebar.button("Rank Hotels"):
+    ranked_hotels = score_hotels(hotels, ranking)
+    ranked_hotels = ranked_hotels.sort_values(by='total_score', ascending=False, ignore_index=True)
+    st.session_state['ranked_hotels'] = ranked_hotels # save ranked hotels to session state
+
+if st.session_state['ranked_hotels'] is not None:
+    st.success("Hotels successfully ranked based on your preferences!")
+
+# always display ranked table if exists
+selected_hotel = None
+if st.session_state['ranked_hotels'] is not None:
+    st.subheader("Top 10 Hotels")
+    st.write("Ranked by your preferences! Click on the hotel markers to see more details.")
+    # top 10 hotels to show
+    top_10_df = st.session_state['ranked_hotels'][['name', 'total_score']].head(10).copy()
+    selected_row = st.data_editor(top_10_df, use_container_width=True, hide_index=True, num_rows="fixed")    
+
+    # get the selected hotel (simulate click by filtering row with max score)
+    if isinstance(selected_row, pd.DataFrame) and not selected_row.empty:
+        selected_hotel_name = selected_row.iloc[0]['name']
+        selected_hotel = st.session_state['ranked_hotels'][st.session_state['ranked_hotels']['name'] == selected_hotel_name].iloc[0]
+
+if selected_hotel is not None:
+    center_lat, center_lon = selected_hotel.geometry.y, selected_hotel.geometry.x
+    zoom_lvl = 17
+else:
+    center_lat, center_lon = 49.2827, -123.1207
+    zoom_lvl = 13
+
+m = folium.Map(location=[center_lat, center_lon], zoom_start=zoom_lvl)
 
 # === Create Feature Groups ===
 hotel_layer = folium.FeatureGroup(name="Hotels", show=True)
 attraction_layer = folium.FeatureGroup(name="Tourist Attractions", show=True)
 
 # === Add Hotel Markers ===
-for _, row in hotels.iterrows():
+map_hotels = st.session_state['ranked_hotels'] if st.session_state['ranked_hotels'] is not None else hotels
+max_score = map_hotels['total_score'].max() if 'total_score' in map_hotels.columns else 1
+
+for _, row in map_hotels.iterrows():
+    score = row.get('total_score', None)
+    color = get_score_color(score, max_score) if score is not None else 'cadetblue'
+    
+    popup_html = f"""
+        <strong>{row['name']}</strong><br>
+        {row['housenumber']} {row['street']}, {row['city']}, {row['province']} {row['postcode']}
+    """
+    if score is not None:
+        popup_html += f"<br><strong>Score:</strong> {score:.1f}"
+
     folium.Marker(
-        location=[row['centroid'].y, row['centroid'].x],
-        popup=folium.Popup(
-            f"<strong>{row['name']}</strong><br>{row['housenumber']} {row['street']}, {row['city']}, {row['province']} {row['postcode']}", 
-            max_width=300
-        ),
-        icon=folium.Icon(color='cadetblue', icon='bed', prefix='fa')
+        location=[row.geometry.y, row.geometry.x],
+        popup=folium.Popup(popup_html, max_width=300),
+        icon=folium.Icon(color=color, icon='bed', prefix='fa')
     ).add_to(hotel_layer)
 
 # === Add Attraction Markers ===
@@ -58,7 +184,7 @@ for _, row in attractions.iterrows():
             f"<strong>{row['name']}</strong><br>{row['street name']}<br>{row['short description']}",
             max_width=300
         ),
-        icon=folium.Icon(color='red', icon='star', prefix='fa')
+        icon=folium.Icon(color='darkblue', icon='star', prefix='fa')
     ).add_to(attraction_layer)
 
 # === Add layers to map ===

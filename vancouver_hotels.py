@@ -1,4 +1,5 @@
-import geopandas as gpd 
+import geopandas as gpd
+from shapely.geometry import Point 
 
 gdf = gpd.read_file("data/vancouver_hotels.geojson")
 
@@ -26,8 +27,8 @@ hotels = hotels.rename(columns={
 # filter out hotels that does not have a name
 hotels = hotels[~hotels['name'].isna()]
 
-# change the id to be 1-indexed
-hotels['id'] = hotels.index + 1
+# drop the id column
+hotels = hotels.drop(columns=['id'])
 
 # change the province and city to be BC and Vancouver and the missing postcodes to be N/A
 hotels['province'] = hotels['province'].fillna('BC')
@@ -38,5 +39,9 @@ hotels['postcode'] = hotels['postcode'].fillna('N/A')
 hotels_proj = hotels.to_crs(epsg=26910) # UTM zone 10N
 hotels['centroid'] = hotels_proj.centroid
 hotels['centroid'] = hotels.set_geometry('centroid').to_crs(epsg=4326)['centroid'] # conver back to WGS 84
+# drop the geometry column
+hotels = hotels.drop(columns=['geometry'])
+# rename the centroid column to geometry
+hotels = hotels.rename(columns={'centroid': 'geometry'})
 
 hotels.to_csv('data/vancouver_hotels.csv', index=False)

@@ -33,6 +33,7 @@ category_map = pd.Series({
 })
 
 df['category'] = df['amenity'].map(category_map).fillna('others')
-
+df = df.dropna(subset=['lon', 'lat']) # drop rows with missing lon/lat
+ 
 # create a csv file from the dataframe
 df.to_csv('data/vancouver_amenities.csv', index=False)

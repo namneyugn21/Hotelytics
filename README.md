@@ -31,21 +31,22 @@ This project uses OpenStreetMap (OSM) data to help users find the most suitable 
 ### 2. Walking Tour Generator
 
 - Use Haversine distance to identify top nearby attractions from a selected hotel.
-- Generate a realistic walking path using OpenStreetMap pedestrian data with `osmnx` and shortest path algorithms.
-- Optionally enrich attractions with data from Wikidata or Wikipedia.
+- Generate a realistic walking path using OpenStreetMap pedestrian data with `osmnx` and NearestNeighbors algorithm.
+- The attractions were created by developers.
 
 ## Technologies and Tools
 
 - **Data Processing**: `pandas`, `geopandas`, `shapely`
-- **Spatial Analysis & Routing**: `osmnx`, `networkx`, `haversine`
+- **Spatial Analysis & Routing**: `osmnx`, `networkx`
 - **Clustering**: `scikit-learn` (DBSCAN)
-- **Visualization**: `folium`, `matplotlib`
+- **Algorithm**: `scikit-learn` (NearestNeighbors)
+- **Visualization**: `folium`
 - **Web Interface**: `streamlit`, `streamlit-folium`
 
 ## How to Run
 1. **Install Required Packages**: Make sure you have Python 3.8+ installed. Then install the required libraries by running the following commands:
     ```bash
-    pip install streamlit folium streamlit-folium pandas geopandas shapel
+    pip install streamlit folium streamlit-folium pandas geopandas shapel numpy osmnx networkx scikit-learn
     ```
 
 2. **Run with this commend line**: Navigate to the project directory in your terminal and run:

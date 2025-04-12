@@ -39,14 +39,13 @@ This project uses OpenStreetMap (OSM) data to help users find the most suitable 
 - **Data Processing**: `pandas`, `geopandas`, `shapely`
 - **Spatial Analysis & Routing**: `osmnx`, `networkx`
 - **Clustering**: `scikit-learn` (DBSCAN)
-- **Algorithm**: `scikit-learn` (NearestNeighbors)
 - **Visualization**: `folium`
 - **Web Interface**: `streamlit`, `streamlit-folium`
 
 ## How to Run
 1. **Install Required Packages**: Make sure you have Python 3.8+ installed. Then install the required libraries by running the following commands:
     ```bash
-    pip install streamlit folium streamlit-folium pandas geopandas shapely numpy osmnx networkx scikit-learn
+    pip install streamlit folium streamlit-folium pandas geopandas shapely osmnx networkx
     ```
 
 2. **Run with this commend line**: Navigate to the project directory in your terminal and run:

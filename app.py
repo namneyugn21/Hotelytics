@@ -4,13 +4,13 @@ import folium
 import pandas as pd
 import geopandas as gpd
 from shapely import wkt
+from generate_tour import generate_tsp_route, generate_nn_route
 from hotel_ranking import score_hotels, get_score_color
 from shapely.geometry import Point
 from calculate_distance import calculate_distance
-from generate_tour import generate_routes_from_hotel
 
 # === Set page config ===
-st.set_page_config(page_title="Vancouver Hotels", layout="wide")
+st.set_page_config(page_title="Hotelytics", layout="wide")
 
 # === Load Vancouver Hotels Data ===
 @st.cache_data
@@ -90,7 +90,7 @@ if st.sidebar.button("Generate Tour"):
 
     st.session_state['sorted_attractions'] = sorted_attractions
     st.session_state['tour_generated'] = True
-    st.session_state['selected_hotel'] = hotel_row  # <-- Store actual row
+    st.session_state['selected_hotel'] = hotel_row
 
 # === Always display ranked table if exists ===
 best_hotel = None
@@ -172,41 +172,141 @@ folium.LayerControl(collapsed=False).add_to(ranking_map)
 # === Render map and capture click ===
 map_data = st_folium(ranking_map, width="100%")
 
-# === Add Generated Tour Path ===
-if st.session_state.get('tour_generated'):
-    st.subheader("Generated Walking Tour Path")
-    st.write(f"Walking tour path from {selected_hotel} to nearby attractions:")
-    st.success(f"Walking tour generated from {selected_hotel} to nearby attractions!")
+# === Tour generation ===
+if st.session_state.get("tour_generated"):
+    st.subheader("Walking Tour Path Result")
+    st.success(f"Generated a walking tour path from {selected_hotel} to nearby attractions")
 
     selected_hotel_row = st.session_state.get("selected_hotel")
     sorted_attractions = st.session_state.get("sorted_attractions")
-    
+
     if selected_hotel_row is not None and sorted_attractions is not None:
         try:
-            G, tsp_routes, tsp_order = generate_routes_from_hotel(selected_hotel_row, sorted_attractions)
+            # === Traveling Salesman Problem (TSP) ===
+            # get the routes coords
+            tsp_route_coords, tsp_ordered_stop_names, tsp_segment_distances = generate_tsp_route(selected_hotel_row, sorted_attractions)
             
-            tour_map = folium.Map(location=[selected_hotel_row.geometry.y, selected_hotel_row.geometry.x], zoom_start=15)
+            # Create a new map centered on the selected hotel for the TSP algorithm
+            tsp_tour_map = folium.Map(location=[selected_hotel_row.geometry.y, selected_hotel_row.geometry.x], zoom_start=14)
 
-            # Add hotel marker (start point)
+            # build an itinerary for the tour
+            # note: If there are N stops, there are N-1 segments.
+            itinerary_data = []
+            for i in range(len(tsp_segment_distances)):
+                from_stop = tsp_ordered_stop_names[i]
+                to_stop   = tsp_ordered_stop_names[i+1]
+                # Convert meters to kilometers
+                distance_km = tsp_segment_distances[i] / 1000
+                itinerary_data.append({
+                    "From": from_stop,
+                    "To": to_stop,
+                    "Distance (km)": f"{distance_km:.2f}"
+                })
+            itinerary_df = pd.DataFrame(itinerary_data)
+            st.subheader("Traveling Salesman Problem Itinerary (Total Distance: {:.2f} km)".format(sum(tsp_segment_distances) / 1000))
+            st.dataframe(itinerary_df, use_container_width=True, hide_index=True)
+
+            # Add a marker for the starting hotel
+            unit = selected_hotel_row['unit'] if pd.notna(selected_hotel_row['unit']) else ""
+            postcode = selected_hotel_row['postcode'] if pd.notna(selected_hotel_row['postcode']) else ""
+            popup_html = (
+                f"<strong>{selected_hotel_row['name']}</strong><br>"
+                f"{selected_hotel_row['housenumber']} {selected_hotel_row['street']}{(' ' + unit) if unit else ''}, "
+                f"{selected_hotel_row['city']}, {selected_hotel_row['province']} {postcode}<br>"
+            )
             folium.Marker(
                 location=[selected_hotel_row.geometry.y, selected_hotel_row.geometry.x],
-                popup="Start: Hotel",
+                popup=folium.Popup(popup_html, max_width=300),
                 icon=folium.Icon(color="black", icon="bed", prefix="fa")
-            ).add_to(tour_map)
-            
-			      # draw the path on the map
-            for route_nodes, label in tsp_routes:
-                coords = [(G.nodes[n]['y'], G.nodes[n]['x']) for n in route_nodes]
-                folium.PolyLine(coords, color="red", weight=3, opacity=0.8).add_to(tour_map)
+            ).add_to(tsp_tour_map)
 
-                # Optional: mark final destination point
+            # Add markers for the attractions
+            for attraction in sorted_attractions.itertuples():
+                # Build an HTML popup containing the attraction's info:
+                popup_html = (
+                    f"<strong>{attraction.name}</strong><br>"
+                    f"{attraction._4}<br>"
+                    f"{attraction._5}<br>"
+                    f"<em>Distance: {attraction.distance_km:.2f} km</em>"
+                )
                 folium.Marker(
-                    location=coords[-1],
-                    popup=label,
+                    location=[attraction.lat, attraction.lon],
+                    popup=folium.Popup(popup_html, max_width=300),
                     icon=folium.Icon(color="darkblue", icon="star", prefix="fa")
-                ).add_to(tour_map)
-            
-            st_folium(tour_map, width="100%")
+                ).add_to(tsp_tour_map)
+
+            # Add the walking tour path
+            folium.PolyLine(
+                locations=tsp_route_coords,
+                color="blue",
+                weight=5,
+                opacity=0.7
+            ).add_to(tsp_tour_map)
+
+            # Display the tour map
+            st_folium(tsp_tour_map, width="100%")
+
+
+            # === Nearest Neighbor (Greedy) ===
+            greedy_route_coords, greedy_ordered_stop_names, greedy_segment_distances = generate_nn_route(selected_hotel_row, sorted_attractions)
+
+            greedy_tour_map = folium.Map(location=[selected_hotel_row.geometry.y, selected_hotel_row.geometry.x], zoom_start=14)
+
+            # build an itinerary for the tour
+            # note: If there are N stops, there are N-1 segments.
+            greedy_itinerary_data = []
+            for i in range(len(greedy_segment_distances)):
+                from_stop = greedy_ordered_stop_names[i]
+                to_stop   = greedy_ordered_stop_names[i+1]
+                # Convert meters to kilometers
+                distance_km = greedy_segment_distances[i] / 1000
+                greedy_itinerary_data.append({
+                    "From": from_stop,
+                    "To": to_stop,
+                    "Distance (km)": f"{distance_km:.2f}"
+                })
+            greedy_itinerary_df = pd.DataFrame(greedy_itinerary_data)
+            st.subheader("Nearest Neighbour (Greedy) Itinerary (Total Distance: {:.2f} km)".format(sum(greedy_segment_distances) / 1000))
+            st.dataframe(greedy_itinerary_df, use_container_width=True, hide_index=True)
+
+            # Add a marker for the starting hotel
+            unit = selected_hotel_row['unit'] if pd.notna(selected_hotel_row['unit']) else ""
+            postcode = selected_hotel_row['postcode'] if pd.notna(selected_hotel_row['postcode']) else ""
+            popup_html = (
+                f"<strong>{selected_hotel_row['name']}</strong><br>"
+                f"{selected_hotel_row['housenumber']} {selected_hotel_row['street']}{(' ' + unit) if unit else ''}, "
+                f"{selected_hotel_row['city']}, {selected_hotel_row['province']} {postcode}<br>"
+            )
+            folium.Marker(
+                location=[selected_hotel_row.geometry.y, selected_hotel_row.geometry.x],
+                popup=folium.Popup(popup_html, max_width=300),
+                icon=folium.Icon(color="black", icon="bed", prefix="fa")
+            ).add_to(greedy_tour_map)
+
+            # Add markers for the attractions
+            for attraction in sorted_attractions.itertuples():
+                # Build an HTML popup containing the attraction's info:
+                popup_html = (
+                    f"<strong>{attraction.name}</strong><br>"
+                    f"{attraction._4}<br>"
+                    f"{attraction._5}<br>"
+                    f"<em>Distance: {attraction.distance_km:.2f} km</em>"
+                )
+                folium.Marker(
+                    location=[attraction.lat, attraction.lon],
+                    popup=folium.Popup(popup_html, max_width=300),
+                    icon=folium.Icon(color="darkblue", icon="star", prefix="fa")
+                ).add_to(greedy_tour_map)
+
+            # Add the walking tour path
+            folium.PolyLine(
+                locations=greedy_route_coords,
+                color="blue",
+                weight=5,
+                opacity=0.7
+            ).add_to(greedy_tour_map)
+
+            # Display the tour map
+            st_folium(greedy_tour_map, width="100%")
         except Exception as e:
             st.error(f"Could not generate walking tour path: {e}")
-            

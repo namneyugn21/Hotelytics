@@ -144,7 +144,7 @@ else:
 # === Create Feature Groups ===
 ranking_map = folium.Map(location=[center_lat, center_lon], zoom_start=zoom_lvl)
 hotel_layer = folium.FeatureGroup(name="Hotels", show=True)
-attraction_layer = folium.FeatureGroup(name="Tourist Attractions", show=False)
+attraction_layer = folium.FeatureGroup(name="Tourist Attractions", show=True)
 
 # === Ensure map_hotels is a GeoDataFrame with correct CRS ===
 map_hotels = st.session_state['ranked_hotels'] if st.session_state['ranked_hotels'] is not None else hotels
@@ -263,6 +263,19 @@ if st.session_state.get("tour_generated"):
                 })
             itinerary_df = pd.DataFrame(itinerary_data)
             st.subheader("Traveling Salesman Problem Itinerary (Total Distance: {:.2f} km)".format(sum(tsp_segment_distances) / 1000))
+            with st.expander("How does Traveling Salesman Problem work?"):
+                st.markdown("""
+                - This algorithm finds the **shortest possible route** that visits all attractions **once** and returns to the starting point (hotel).
+                - It considers **real walking paths** using OpenStreetMap data.
+                - It guarantees a near-optimal route but may take slightly longer to compute.
+                
+                **Steps:**
+                1. Convert each attraction into a network node.
+                2. Build a distance graph between all points.
+                3. Use a TSP solver to find the shortest possible path.
+                4. Calculate the real walking route between each stop.
+                """)
+
             st.dataframe(itinerary_df, use_container_width=True, hide_index=True)
 
             # Add a marker for the starting hotel
@@ -326,6 +339,18 @@ if st.session_state.get("tour_generated"):
                 })
             greedy_itinerary_df = pd.DataFrame(greedy_itinerary_data)
             st.subheader("Nearest Neighbour (Greedy) Itinerary (Total Distance: {:.2f} km)".format(sum(greedy_segment_distances) / 1000))
+            with st.expander("How does Nearest Neighbour (Greedy) work?"):
+                st.markdown("""
+                - This simpler method starts at the hotel and **always goes to the closest unvisited attraction**.
+                - It is **fast** and intuitive but doesn't always give the shortest total route.
+                
+                **Steps:**
+                1. Start at the hotel.
+                2. Find the nearest attraction not yet visited.
+                3. Repeat until all are visited.
+                
+                **Best for:** Quick route planning with decent efficiency.
+                """)
             st.dataframe(greedy_itinerary_df, use_container_width=True, hide_index=True)
 
             # Add a marker for the starting hotel

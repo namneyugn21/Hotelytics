@@ -25,6 +25,7 @@ This project uses OpenStreetMap (OSM) data to help users find the most suitable 
 - Count the number of nearby amenities per category.
 - Weight counts based on user preferences (e.g., food = 2, culture = 3).
 - Calculate the total score for each hotel and normalise the score to 0-100 scale.
+  ![Hotel Scoring System](assets/ranking.png)
 
 ### 2. Amenity Clustering System
 
@@ -33,15 +34,18 @@ This project uses OpenStreetMap (OSM) data to help users find the most suitable 
 - Remove noise points (cluster label = -1).
 - Draw convex hulls around each cluster to visualize dense amenity zones.
 - Display clusters on the map with distinct colors by category.
+  ![Amenity Clustering System](assets/cluster.png)
 
 ### 3. Walking Tour Generator
 
+- Attractions are custom-curated and manually added by the group.
 - Identify the closest attractions to a selected hotel using Haversine distance.
 - Compute realistic walking routes using OpenStreetMap pedestrian data with `osmnx`.
 - Optimize the route order using two algorithms:
-  - **Nearest Neighbour (Greedy)**: Quickly builds a short tour by always visiting the closest next stop.
   - **Traveling Salesman Problem (TSP)**: Computes the most efficient full tour using `networkx`.
-- Attractions are custom-curated and manually added by the development team.
+    ![Traveling Salesman Problem](assets/tsp.png)
+  - **Nearest Neighbour (Greedy)**: Quickly builds a short tour by always visiting the closest next stop.
+    ![Nearest Neighbour (Greedy)](assets/nn.png)
 
 ## Technologies and Tools
 

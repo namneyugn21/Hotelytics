@@ -1,6 +1,6 @@
 streamlit
 folium
-streamlit-folium==0.15.0
+streamlit-folium
 pandas
 geopandas
 shapely

@@ -3,6 +3,8 @@
 ## Overview
 
 This project uses OpenStreetMap (OSM) data to help users find the most suitable hotel in Vancouver based on (given dataset of) surrounding amenities and walkability. It also generates a personalized walking tour from the selected hotel to nearby attractions using real street network data.
+![Home](assets/home.png)
+
 
 ## Project Objectives
 

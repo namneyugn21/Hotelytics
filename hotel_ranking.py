@@ -19,7 +19,7 @@ def get_score_color(score, max_score):
     else:
         return 'darkred'
 
-def score_hotels(hotels_gdf, ranking, buffer_m=300):
+def score_hotels(hotels_gdf, ranking, buffer_m=350):
     """
     Score hotels based on the number of amenities within a certain buffer distance.
 
@@ -64,9 +64,20 @@ def score_hotels(hotels_gdf, ranking, buffer_m=300):
         # add total score
         results.at[hotel.name, 'total_score'] = total_score
     
-    # attach individual category scores to the results
+    # attach individual category scores to results
     for category in ranking:
         results[f'score_{category.replace(" ", "_")}'] = category_scores[category]
+
+    # normalize total score to 0–100
+    max_total_score = results['total_score'].max()
+    results['total_score'] = results['total_score'] / max_total_score * 100 if max_total_score > 0 else 0
+    results['total_score'] = results['total_score'].round(2)
+
+    # normalize individual category scores
+    for category in ranking:
+        col = f'score_{category.replace(" ", "_")}'
+        max_cat_score = results[col].max()
+        results[f'{col}_normalized'] = results[col] / max_cat_score * 100 if max_cat_score > 0 else 0
 
     # convert back to original CRS
     results = results.to_crs(epsg=4326)

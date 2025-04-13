@@ -3,11 +3,12 @@ from streamlit_folium import st_folium
 import folium
 import pandas as pd
 import geopandas as gpd
-from shapely import wkt
+from shapely import MultiPoint, wkt
 from generate_tour import generate_tsp_route, generate_nn_route
 from hotel_ranking import score_hotels, get_score_color
 from shapely.geometry import Point
 from calculate_distance import calculate_distance
+from amenities_cluster import get_clusters
 
 # === Set page config ===
 st.set_page_config(page_title="Hotelytics", layout="wide")
@@ -64,11 +65,11 @@ st.sidebar.write("Rank hotels based on your preferences and find the best match 
 
 # === Ranking Sliders ===
 ranking = {
-    "food & drink": st.sidebar.slider("Food & Drink", 1, 5, 3, help="Cafes, restaurants, ice cream, etc."),
-    "transportation": st.sidebar.slider("Transportation", 1, 5, 3, help="Bus stops, bike parking, fuel, etc."),
-    "entertainments & culture": st.sidebar.slider("Entertainment & Culture", 1, 5, 3, help="Museums, parks, theatres"),
-    "health & emergency": st.sidebar.slider("Health & Emergency", 1, 5, 3, help="Pharmacies, clinics, hospitals"),
-    "shop & services": st.sidebar.slider("Shop & Services", 1, 5, 3, help="ATMs, post offices, markets"),
+    "food & drink": st.sidebar.slider("Food & Drink", 0, 5, 3, help="Cafes, restaurants, ice cream, etc."),
+    "transportation": st.sidebar.slider("Transportation", 0, 5, 3, help="Bus stops, bike parking, fuel, etc."),
+    "entertainments & culture": st.sidebar.slider("Entertainment & Culture", 0, 5, 3, help="Museums, parks, theatres"),
+    "health & emergency": st.sidebar.slider("Health & Emergency", 0, 5, 3, help="Pharmacies, clinics, hospitals"),
+    "shop & services": st.sidebar.slider("Shop & Services", 0, 5, 3, help="ATMs, post offices, markets"),
 }
 
 # === Sidebar Button ===
@@ -76,7 +77,6 @@ if st.sidebar.button("Rank Hotels"):
     ranked_hotels = score_hotels(hotels, ranking)
     ranked_hotels = ranked_hotels.sort_values(by='total_score', ascending=False, ignore_index=True)
     st.session_state['ranked_hotels'] = ranked_hotels  # save ranked hotels to session state
-    st.success("Hotels successfully ranked based on your preferences!")
 
 # === Sidebar Select Hotel & Generate Tour ===
 st.sidebar.header("Generate Walking Tour")
@@ -95,16 +95,34 @@ if st.sidebar.button("Generate Tour"):
 # === Always display ranked table if exists ===
 best_hotel = None
 if st.session_state['ranked_hotels'] is not None:
+    st.success("Hotels successfully ranked based on your preferences!")
     st.subheader("Top 10 Hotels")
     st.write("The following table shows the top 10 hotels based on your preferences. Click on a hotel to see its score breakdown.")
 
     # === Scoring Explanation ===
-    with st.expander("How scoring works"):
+    with st.expander("How does scoring work?"):
         st.markdown("""
-        - Hotels are ranked based on amenities within 300m.
-        - Each category is weighted based on your slider input.
-        - Higher scores = better matches for your preferences.
+        Hotelytics ranks each hotel based on how many useful amenities are nearby, using the following method:
+
+        - A **350-meter radius** is drawn around each hotel.
+        - We **count** how many amenities fall into each category within that radius (e.g., 5 cafes, 3 clinics), with each category is **weighted** according to your sliders (e.g., food = 4, health = 2).
+        - For each hotel:
+            ```
+            Total Score = (count_food × weight_food) + (count_transport × weight_transport) + ...
+            ```
+        - After scoring, we **normalize** all scores to a 0–100 scale for easy comparison.
+
+        **Example**:
+        - A hotel has 6 food & drink, 3 transport, 2 health spots within 350m.
+        - If you set food=5, transport=3, health=2, then:
+            ```
+            Total Score = (6×5) + (3×3) + (2×2) = 30 + 9 + 4 = 43
+            ```
+        - This raw score is then scaled relative to other hotels.
+
+        **Higher scores mean the hotel better fits your priorities.**
         """)
+
 
     # top 10 hotels to show
     top_10_df = st.session_state['ranked_hotels'][['name', 'total_score']].head(10).copy()
@@ -126,7 +144,7 @@ else:
 # === Create Feature Groups ===
 ranking_map = folium.Map(location=[center_lat, center_lon], zoom_start=zoom_lvl)
 hotel_layer = folium.FeatureGroup(name="Hotels", show=True)
-attraction_layer = folium.FeatureGroup(name="Tourist Attractions", show=True)
+attraction_layer = folium.FeatureGroup(name="Tourist Attractions", show=False)
 
 # === Ensure map_hotels is a GeoDataFrame with correct CRS ===
 map_hotels = st.session_state['ranked_hotels'] if st.session_state['ranked_hotels'] is not None else hotels
@@ -163,6 +181,47 @@ for _, row in attractions.iterrows():
         ),
         icon=folium.Icon(color='darkblue', icon='star', prefix='fa')
     ).add_to(attraction_layer)
+  
+# === Add Clusters to Map ===
+clusters = get_clusters()
+
+CATEGORY_COLORS = {
+    'food & drink': 'red',
+    'transportation': 'blue',
+    'entertainments & culture': 'purple',
+    'health & emergency': 'orange',
+    'shop & services': 'green'
+}
+
+for category, df in clusters.items():
+    category_layer = folium.FeatureGroup(name=f"{category.title()} Clusters", show=False)
+    color = CATEGORY_COLORS.get(category, 'gray')
+
+    # Group by cluster label
+    for cluster_id, group in df.groupby('cluster'):
+        points = group[['lat', 'lon']].values
+        multipoint = MultiPoint([(lon, lat) for lat, lon in points])
+        
+        # Draw convex hull around points in cluster (if more than 2)
+        if len(points) >= 3:
+            hull = multipoint.convex_hull
+            folium.Polygon(
+                locations=[(pt[1], pt[0]) for pt in hull.exterior.coords],
+                color=color,
+                fill=True,
+                fill_color=color,
+                fill_opacity=0.25,
+                weight=1,
+                popup=folium.Popup(
+                    f"<strong>{category.title()} Cluster</strong><br>"
+                    f"Cluster ID: {cluster_id}<br>"
+                    f"Number of Points: {len(group)}",
+                    max_width=300
+                )
+            ).add_to(category_layer)
+
+    # Add this category layer to map
+    category_layer.add_to(ranking_map)
             
 # === Add layers to map ===
 hotel_layer.add_to(ranking_map)

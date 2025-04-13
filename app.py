@@ -278,12 +278,12 @@ if st.session_state.get("tour_generated"):
 
             st.dataframe(itinerary_df, use_container_width=True, hide_index=True)
 
-            # Add a marker for the starting hotel
-            unit = selected_hotel_row['unit'] if pd.notna(selected_hotel_row['unit']) else ""
+            # Add a marker for the starting hotel          
+            unit = int(selected_hotel_row['unit']) if pd.notna(selected_hotel_row['unit']) else ""
             postcode = selected_hotel_row['postcode'] if pd.notna(selected_hotel_row['postcode']) else ""
             popup_html = (
                 f"<strong>{selected_hotel_row['name']}</strong><br>"
-                f"{selected_hotel_row['housenumber']} {selected_hotel_row['street']}{(' ' + unit) if unit else ''}, "
+                f"{str(selected_hotel_row['housenumber'])} {selected_hotel_row['street']}{(' ' + str(unit)) if unit else ''}, "
                 f"{selected_hotel_row['city']}, {selected_hotel_row['province']} {postcode}<br>"
             )
             folium.Marker(
@@ -354,11 +354,11 @@ if st.session_state.get("tour_generated"):
             st.dataframe(greedy_itinerary_df, use_container_width=True, hide_index=True)
 
             # Add a marker for the starting hotel
-            unit = selected_hotel_row['unit'] if pd.notna(selected_hotel_row['unit']) else ""
+            unit = int(selected_hotel_row['unit']) if pd.notna(selected_hotel_row['unit']) else ""
             postcode = selected_hotel_row['postcode'] if pd.notna(selected_hotel_row['postcode']) else ""
             popup_html = (
                 f"<strong>{selected_hotel_row['name']}</strong><br>"
-                f"{selected_hotel_row['housenumber']} {selected_hotel_row['street']}{(' ' + unit) if unit else ''}, "
+                f"{str(selected_hotel_row['housenumber'])} {selected_hotel_row['street']}{(' ' + str(unit)) if unit else ''}, "
                 f"{selected_hotel_row['city']}, {selected_hotel_row['province']} {postcode}<br>"
             )
             folium.Marker(
